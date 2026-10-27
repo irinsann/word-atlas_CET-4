@@ -166,7 +166,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         <footer className="footer">
           <Logo compact />
           <p>
-            一词一画，点亮四级 · 免费开源 ·{" "}
+            一词一画，慢慢记住 · 免费开源 ·{" "}
             <a href={REPO_URL} target="_blank" rel="noreferrer">
               GitHub
             </a>{" "}

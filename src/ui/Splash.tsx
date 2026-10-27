@@ -236,7 +236,7 @@ export function Splash({ onDone }: { onDone: () => void }) {
   }); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label="欢迎打开四级大门，点击进入">
+    <div className={`splash is-${phase} ${reduce ? "is-reduced" : ""}`} onClick={() => open()} role="dialog" aria-label="词光，点击进入">
       <div className="door door-l" />
       <div className="door door-r" />
       <div className="splash-light" />
@@ -248,10 +248,10 @@ export function Splash({ onDone }: { onDone: () => void }) {
         </div>
       )}
       <div className="splash-copy">
-        <p className="splash-tag">欢迎打开四级大门</p>
+        <p className="splash-tag">四级词汇学习</p>
         <p className="splash-hint">
           <span className="splash-key" />
-          点击开启 · 按任意键
+          点击或按任意键进入
         </p>
       </div>
       <button

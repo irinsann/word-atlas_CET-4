@@ -147,12 +147,12 @@ function Intro({ step }: { step: Step }) {
   return (
     <div className="intro">
       <p className="stage-label">
-        <span className="dot dot-new" /> 初次见面
+        <span className="dot dot-new" /> 新词
       </p>
       <EntryView entry={entry} mode="intro" />
       <footer className="learn-actions">
         <button className="btn btn-primary btn-xl" onClick={next} autoFocus>
-          认识了 <ArrowRight size={20} />
+          开始练习 <ArrowRight size={20} />
         </button>
         <span className="hint-keys">
           <kbd>Enter</kbd> 继续
@@ -164,8 +164,8 @@ function Intro({ step }: { step: Step }) {
 
 const KIND_LABEL: Record<QuizKind, string> = {
   meaning: "它是什么意思？",
-  picture: "结合词图，补全这句话",
-  listen: "听，是哪个词？",
+  picture: "看图，选词补全句子",
+  listen: "听发音，选出单词",
   spell: "拼出这个词",
 };
 
@@ -248,7 +248,7 @@ function Quiz({
     >
       <p className="stage-label">
         <span className={`dot ${step.retry ? "dot-retry" : "dot-review"}`} />
-        {step.retry ? "再见一面 · " : ""}
+        {step.retry ? "再练一次 · " : ""}
         {KIND_LABEL[step.kind]}
       </p>
 
@@ -565,7 +565,7 @@ function Feedback({
         />
         <div className="feedback-text">
           <p className="feedback-verdict">
-            {correct ? "答对了" : "没关系，记住它"}
+            {correct ? "答对了" : "再看一眼"}
           </p>
           <p className="feedback-word">
             <b lang="en">{entry.w}</b>
@@ -634,15 +634,11 @@ function Summary({ session }: { session: ActiveSession }) {
       <div className="summary-card">
         <div className="summary-sky">
           <Galaxy mode="mini" highlight={words.map((w) => w.id)} ignite />
-          <p>今天点亮了 {words.length} 颗星</p>
+          <p>本轮学了 {words.length} 个词</p>
         </div>
-        <p className="eyebrow">这一程结束了</p>
+        <p className="eyebrow">本轮结果</p>
         <h1 className="display">
-          {stats.accuracy >= 90
-            ? "漂亮的一程。"
-            : stats.accuracy >= 60
-              ? "稳稳向前。"
-              : "错过的，会再相遇。"}
+          这一轮，先到这里。
         </h1>
         <div className="summary-stats">
           <Ring
@@ -690,7 +686,7 @@ function Summary({ session }: { session: ActiveSession }) {
           ))}
         </ul>
         <p className="summary-note">
-          FSRS 已为每个词排好下次相遇的时间。答错的词，会更早回来。
+          这一轮学过的词已经记下了。还没记牢的，会早点安排复习。
         </p>
         <div className="summary-actions">
           {wrong.length > 0 && (

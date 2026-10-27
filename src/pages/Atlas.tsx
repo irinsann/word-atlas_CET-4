@@ -135,9 +135,7 @@ export function AtlasPage({
         <div>
           <p className="eyebrow">图鉴 · {atlas.count.toLocaleString()} 词</p>
           <h1 className="display">
-            每个词，
-            <br className="br-sm" />
-            都有一幅画。
+            每个词，都有它的模样。
           </h1>
           <p className="lede">
             {atlas.kind === "open"
@@ -301,7 +299,7 @@ export function AtlasPage({
         <div className="filters-row">
           <span className="result-count">
             {view === "galaxy"
-              ? "搜索一个词，星图会带你飞过去"
+              ? "搜索单词，在星图中查看位置"
               : `${list.length.toLocaleString()} 个结果`}
           </span>
           <div
@@ -342,7 +340,7 @@ export function AtlasPage({
       ) : list.length === 0 ? (
         <div className="empty">
           <img src={`${import.meta.env.BASE_URL}brand/empty.webp`} alt="" />
-          <p>这片星域还没有词。换个筛选条件试试。</p>
+          <p>没有找到单词，试试其他搜索词或筛选条件。</p>
         </div>
       ) : view === "grid" ? (
         <VirtualGrid items={list} cards={cards} />

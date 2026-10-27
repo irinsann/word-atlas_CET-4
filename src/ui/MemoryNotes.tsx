@@ -3,10 +3,10 @@ import { useState } from "react";
 import { useKnowledgeCatalog, useKnowledgeNotes, type MemoryNote, type NoteSummary } from "../atlas/knowledge";
 
 export const MEMORY_METHODS = [
-  { id: "sound", title: "谐音记忆", text: "用熟悉的声音唤起词义，再回到标准发音巩固。", example: "ambition：借“俺必胜”联想到雄心。" },
-  { id: "association", title: "联想记忆", text: "把词形、动作和意义连成一个能回想起来的场景。", example: "让拆分帮助回想，再完整读出并拼写单词。" },
-  { id: "roots", title: "词根词缀", text: "对照一组词里的共同部分，结合前后缀理解差别。", example: "对照 project、reject、inject，关注共同的 ject。" },
-  { id: "contrast", title: "形近对照", text: "把容易混淆的词并排比较，分别记住拼写与用法。", example: "对照 derive 与 deprive，用各自的例句区分。" },
+  { id: "sound", title: "谐音记忆", text: "借读音相近的中文记住词义，发音仍以单词录音为准。", example: "ambition：借“俺必胜”联想到雄心。" },
+  { id: "association", title: "联想记忆", text: "把单词和一个具体的场景或动作联系起来。", example: "记住联想后，再试着完整读出、拼出单词。" },
+  { id: "roots", title: "词根词缀", text: "找出几个词里相同的词根，再看前后缀怎样改变词义。", example: "对照 project、reject、inject，看看共同的 ject。" },
+  { id: "contrast", title: "形近对照", text: "容易混的词放在一起看，比较拼写和用法有什么不同。", example: "对照 derive 与 deprive，用各自的例句区分。" },
 ];
 export const METHOD_NAMES: Record<string, string> = Object.fromEntries([...MEMORY_METHODS.map(m => [m.id, m.title]), ["context", "例句语境"]]);
 
@@ -14,7 +14,7 @@ function NoteBody({ note }: { note: MemoryNote }) {
   return <>
     {note.sections.map(section => <section className="memory-source-section" key={section.seq}>
       <p className="memory-source">《英语四级，你还在背单词吗？》 · 第 {section.unit} 单元 · 原文 #{section.seq}</p>
-      <p className="memory-meaning"><b>文档补充释义</b> {section.meaning}</p>
+      <p className="memory-meaning"><b>笔记中的释义</b> {section.meaning}</p>
       {section.blocks.map((block, i) => <div className={`memory-block memory-block-${block.kind}`} key={i}>
         <h4>{block.kind === "exam" ? "文档真题标注 · 出处未核验" : block.label}</h4>
         <p>{block.text}</p>
@@ -31,7 +31,7 @@ function LoadedNotes({ ids, currentWord }: { ids: number[]; currentWord?: string
   if (error) return <p className="memory-load">{error} <button className="link" onClick={retry}>重试</button></p>;
   if (!data) return <p className="memory-load" role="status">正在加载笔记…</p>;
   return <>{data.map(note => <div className="memory-note-body" key={note.id}>
-    {currentWord && note.word.toLowerCase() !== currentWord.toLowerCase() && <p className="memory-relation">来自 <b lang="en">{note.word}</b> 的派生或词形补充</p>}
+    {currentWord && note.word.toLowerCase() !== currentWord.toLowerCase() && <p className="memory-relation">这条笔记还涉及 <b lang="en">{note.word}</b></p>}
     {note.atlasId && !currentWord && <a className="link" href={`#/atlas?w=${note.atlasId}`}>打开 {note.word} 词卡 <ArrowUpRight size={14} /></a>}
     <NoteBody note={note} />
   </div>)}</>;
@@ -44,10 +44,10 @@ export function WordMemoryNotes({ wordId, word }: { wordId: string; word: string
   if (!ids?.length) return null;
   return <section className="block word-memory">
     <details className="memory-details" onToggle={e => setOpen(e.currentTarget.open)}>
-      <summary><span><b>记忆笔记</b><small>记忆法、语境与词形补充</small></span><ChevronDown size={18} /></summary>
+      <summary><span><b>记忆笔记</b><small>查看记法、例句和相关词</small></span><ChevronDown size={18} /></summary>
       {open && <LoadedNotes ids={ids} currentWord={word} />}
     </details>
-    <p className="memory-caution">谐音和拆词仅作记忆线索；扫描文字可能有误。<a href={`#/knowledge?q=${encodeURIComponent(word)}`}>浏览文档笔记</a></p>
+    <p className="memory-caution">谐音只用来帮助记忆。原稿来自扫描，个别文字可能有误。<a href={`#/knowledge?q=${encodeURIComponent(word)}`}>查看笔记</a></p>
   </section>;
 }
 

@@ -40,9 +40,9 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
     setTimeout(() => URL.revokeObjectURL(a.href), 2000);
   };
   const restore = async (f: File) => {
-    if (f.size > 30 * 1024 * 1024) return toast("文件太大，不像是学习备份。", "warn");
+    if (f.size > 30 * 1024 * 1024) return toast("文件超过 30 MB，请确认选的是学习备份。", "warn");
     const r = importBackup(await f.text());
-    toast(r.ok ? `已恢复 ${r.cards} 个词的记忆` : r.error, r.ok ? "ok" : "warn");
+    toast(r.ok ? `已恢复 ${r.cards} 个词的学习记录` : r.error, r.ok ? "ok" : "warn");
   };
   const maxF = Math.max(1, ...stats.forecast);
 
@@ -50,7 +50,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
     <div className="page me">
       <header className="page-head">
         <p className="eyebrow">我的</p>
-        <h1 className="display">你的星空</h1>
+        <h1 className="display">记得的，和还在记的。</h1>
       </header>
 
       <section className="stat-strip">
@@ -62,11 +62,11 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
           </dd>
         </div>
         <div>
-          <dt>已点亮</dt>
+          <dt>已学单词</dt>
           <dd>{stats.learned.toLocaleString()}</dd>
         </div>
         <div>
-          <dt>长期记住</dt>
+          <dt>已掌握</dt>
           <dd>{stats.mastered.toLocaleString()}</dd>
         </div>
         <div>
@@ -89,11 +89,11 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
         <section className="panel">
           <h3 className="eyebrow">过去 20 周</h3>
           <Heatmap days={progress.days} />
-          <p className="muted">一格是一天，颜色越深，那天答得越多。「长期记住」指记忆稳定度超过 21 天。</p>
+          <p className="muted">每格代表一天，颜色越深，答题越多。「已掌握」指已进入复习阶段、估算记忆稳定度达到 21 天的词。</p>
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">FSRS · 未来 7 天复习预测</h3>
+          <h3 className="eyebrow">未来 7 天待复习</h3>
           <ol className="forecast">
             {stats.forecast.map((n, i) => (
               <li key={i}>
@@ -107,10 +107,10 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
 
         <section className="panel settings">
           <h3 className="eyebrow">学习设置</h3>
-          <Field label="每轮新词" hint="只决定这次练几个词，不限制每日数量。已开始的练习保留原进度。">
+          <Field label="每轮新词" hint="每轮学多少个新词。修改后从下一轮生效。">
             <div className="segmented">{[10,20,50].map(n=><button key={n} className={settings.roundNew===n?"is-on":""} onClick={()=>set({roundNew:n})}>{n} 词</button>)}</div>
           </Field>
-          <Field label="目标记忆率" hint="越高复习越频繁。90% 是大多数人的甜点。">
+          <Field label="目标记忆率" hint="设置越高，复习越频繁。不确定时可以保留默认的 90%。">
             <div className="segmented">
               {[0.85, 0.9, 0.95].map((n) => (
                 <button key={n} className={settings.retention === n ? "is-on" : ""} onClick={() => set({ retention: n })}>
@@ -164,7 +164,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
 
         <section className="panel">
           <h3 className="eyebrow">数据</h3>
-          <p className="muted">进度只存在这台设备的浏览器里：没有账号，没有服务器。换设备时，导出备份再导入即可。</p>
+          <p className="muted">学习记录保存在当前浏览器，不会自动同步。换设备或清除浏览器数据前，请先导出备份。</p>
           {saveError && <p className="warn-text">浏览器拒绝保存（可能是隐私模式或空间已满）。请尽快导出备份。</p>}
           <div className="data-actions">
             <button className="btn btn-ghost" onClick={download}>

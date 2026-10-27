@@ -7,7 +7,7 @@ export function ExampleSource({ example }: { example: Example }) {
   if (source.kind === "legacy-generated")
     return (
       <p className="example-source example-unverified">
-        原项目学习示例 · 未在本次题库中核验
+        原项目例句 · 尚未找到真题出处
       </p>
     );
   const location = [
@@ -25,7 +25,7 @@ export function ExampleSource({ example }: { example: Example }) {
         {location}
       </summary>
       <div className="example-source-detail">
-        <p>来源：用户提供的真题库；原句仅合并换行与空白。</p>
+        <p>摘自四级真题库，已整理换行和空格。</p>
         <p>
           原文件：<code>{source.file}</code>
         </p>
@@ -38,9 +38,9 @@ export function ExampleSource({ example }: { example: Example }) {
         </p>
         <p>
           {example.translation
-            ? "中文为本站补充的 AI 参考译文，由大模型逐句翻译并统一校核，非官方译文。"
+            ? "中文由 AI 翻译，并做过抽查修订，供学习参考，不是官方译文。"
             : "题库未附逐句译文。"}
-          朗读由设备合成，并非原题录音。词图用于单词联想。
+          朗读使用设备语音，不是原题录音；插画用来辅助记词。
         </p>
         {example.translation?.note && <p>{example.translation.note}</p>}
       </div>

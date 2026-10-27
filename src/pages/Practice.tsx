@@ -22,8 +22,8 @@ type Source = "recent" | "mistakes" | "saved" | "path";
 
 const MODES: [Mode, string, string, typeof Type][] = [
   ["word", "单词", "看图写出单词", Type],
-  ["sentence", "例句", "照着抄写，练出手感", Keyboard],
-  ["dictation", "听写", "只听声音，写下整句", Headphones],
+  ["sentence", "例句", "照着例句打字", Keyboard],
+  ["dictation", "听写", "听发音，写出整句", Headphones],
 ];
 const SOURCES: [Source, string][] = [
   ["recent", "最近学过"],
@@ -83,9 +83,9 @@ export function Practice() {
   return (
     <div className="page practice">
       <header className="page-head">
-        <p className="eyebrow">练习 · Typing Studio</p>
-        <h1 className="display">让手，也记住它们。</h1>
-        <p className="lede">打字只练拼写和手感，不会改动记忆进度。</p>
+        <p className="eyebrow">拼写与听写</p>
+        <h1 className="display">读得熟，也写得出。</h1>
+        <p className="lede">单词、例句、听写，选一种练练。这里的打字练习不计入复习进度。</p>
       </header>
       <div className="practice-grid">
         <section className="panel">
@@ -104,7 +104,7 @@ export function Practice() {
               </button>
             ))}
           </div>
-          <h3 className="eyebrow">词来自</h3>
+          <h3 className="eyebrow">选择词库</h3>
           <div className="segmented segmented-wide">
             {SOURCES.map(([k, label]) => (
               <button
@@ -151,7 +151,7 @@ export function Practice() {
             </div>
           </dl>
           <p className="muted">
-            WPM 按标准每 5 个字符计 1 词，只统计正确输入。
+            速度按每 5 个正确字符折合 1 词计算，单位为 WPM。
           </p>
         </section>
       </div>

@@ -21,16 +21,16 @@ export function Knowledge({ query = "" }: { query?: string }) {
   const turn = (next: number) => { setPage(next); resultsTop.current?.scrollIntoView({ block: "start" }); };
   return <div className="page knowledge">
     <header className="page-head">
-      <p className="eyebrow">记忆笔记 · MEMORY NOTEBOOK</p>
-      <h1 className="display">理解一点，记得更牢。</h1>
-      <p className="lede">把谐音、联想、词根词缀与形近对照，用到正在学的单词里。</p>
+      <p className="eyebrow">单词记法</p>
+      <h1 className="display">有些词，可以这样记。</h1>
+      <p className="lede">遇到不好记的词，可以查查谐音、联想或词根词缀。</p>
     </header>
     <details className="panel memory-guide">
-      <summary><BookOpen size={20} /><span>四种方法，换一种记法</span><ChevronDown size={18} /></summary>
+      <summary><BookOpen size={20} /><span>这些记法怎么用</span><ChevronDown size={18} /></summary>
       <div className="memory-method-grid">{MEMORY_METHODS.map(m => <article key={m.id}><h3>{m.title}</h3><p>{m.text}</p><small>{m.example}</small></article>)}</div>
-      <p className="memory-caution">先用线索回想词义，再读例句、遮住释义自测，最后在到期时复习。谐音和故事不替代标准发音，拆词联想不等于严格词源。</p>
+      <p className="memory-caution">记法是辅助：记完还要听发音、读例句，再试着遮住释义回想。谐音不代表标准发音，拆词联想也不一定是词源。</p>
     </details>
-    <p className="knowledge-intro">整理自《英语四级，你还在背单词吗？》编号文档。{data && <>合并重复标题后保留 {data.stats.notes.toLocaleString()} 份词条笔记，{data.stats.linkedAtlasWords.toLocaleString()} 个现有词条已关联补充内容。</>} 文档音标及扫描文字未逐条校订，真题年份沿用原文标注。</p>
+    <p className="knowledge-intro">整理自《英语四级，你还在背单词吗？》编号文档。{data && <>共整理了 {data.stats.notes.toLocaleString()} 份笔记，其中 {data.stats.linkedAtlasWords.toLocaleString()} 个单词可以在词卡里直接查看。</>} 部分扫描文字和音标可能有误，真题年份按原文保留。</p>
     <div className="knowledge-filters">
       <label className="search"><Search size={18} /><input aria-label="搜索记忆笔记" placeholder="搜索单词、派生词或释义" value={q} onChange={e => setQ(e.target.value)} type="search" /></label>
       <label><span>单元</span><select aria-label="筛选笔记单元" value={unit} onChange={e => setUnit(Number(e.target.value))}><option value={0}>全部单元</option>{data?.units.map(u => <option key={u.id} value={u.id}>第 {u.id} 单元</option>)}</select></label>

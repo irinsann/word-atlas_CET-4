@@ -144,7 +144,7 @@ export function Palette({
           )}
           {!q && (
             <li className="palette-hint">
-              {atlas.count.toLocaleString()} 个词条 · 支持英文前缀与中文释义搜索
+              {atlas.count.toLocaleString()} 个词 · 可搜英文开头或中文释义
               <span className="palette-desktop-hint">
                 {" "}
                 · <kbd>↑</kbd>

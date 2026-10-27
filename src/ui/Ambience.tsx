@@ -54,7 +54,7 @@ export function AmbiencePicker() {
       </button>
       {open && (
         <div className="amb-pop" role="dialog" aria-label="环境声">
-          <p className="eyebrow">环境声 · 专注陪伴</p>
+          <p className="eyebrow">环境声</p>
           <ul>
             {AMBIENCE.map(({ id, label }) => {
               const Icon = ICONS[id];

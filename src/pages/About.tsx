@@ -14,15 +14,14 @@ export function About() {
         <img src={`${BASE}brand/og.webp`} alt="" />
         <div>
           <p className="eyebrow">关于词光</p>
-          <h1 className="display">自由探索，点亮四级词汇。</h1>
+          <h1 className="display">关于词光</h1>
           <p className="lede">
-            本版本使用 Words_all.md，4,449 条原始记录去重后得到{" "}
+            这是一个免费的四级单词学习网站。词表整理自 Words_all.md，4,449 条记录去重后有{" "}
             {atlas.count.toLocaleString()}{" "}
-            个词条。合并时保留不同释义、读音和来源编号；不设固定天数或每日背诵配额。
+            个词。可以自己选每轮学多少，也可以随时查词、复习。
           </p>
           <p className="lede">
-            基于 Word Atlas 开源版改编，无需注册。原项目代码遵循
-            MIT，复用插画、音频与例句遵循 CC BY 4.0，原作者署名保留。
+            网站基于 Word Atlas 改编，无需注册。代码使用 MIT 许可，复用的插画、音频和例句遵循 CC BY 4.0，并保留原作者署名。
           </p>
           <div className="about-actions">
             <a
@@ -49,50 +48,48 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">例句与真题出处</h3>
           <p className="muted">
-            从用户提供的 {paperSummary.documents} 份四级试卷及听力原文中，为{" "}
-            {paperSummary.replacedWords.toLocaleString()} 个词匹配{" "}
+            例句选自 {paperSummary.documents} 份四级试卷和听力原文，覆盖{" "}
+            {paperSummary.replacedWords.toLocaleString()} 个词，共有{" "}
             {paperSummary.genuineExamples.toLocaleString()}{" "}
-            条例句（不同词可能引用同一句）。每句保留年份、月份、套数、题型、原文件及行号，可展开核对。原句仅合并空白；原题库文件保留在本地。
+            条引用，有些词会用到同一句。点开例句下方的出处，可以查看考试时间、套数、题型，以及原文件的位置。引文只整理了换行和空格。
           </p>
           <p className="muted">
-            未匹配到真题的旧例句标为「原项目学习示例 ·
-            未核验」。真题例句已补充对应的 AI 中文参考译文，由大模型根据英文逐句翻译并统一校核，非官方译文；网页不调用翻译服务。例句使用设备合成朗读，并非原题录音。英文出处继续保留，题库转录文字未作全面校订。
+            没找到真题例句的词，会保留原项目例句，并注明尚未找到真题出处。中文由 AI 翻译，做过抽查修订，供学习参考，不是官方译文。朗读使用设备语音，不是原题录音。题库来自转录稿，个别文字可能有误。
           </p>
         </section>
         <section className="panel">
-          <h3 className="eyebrow">记忆方法与文档笔记</h3>
+          <h3 className="eyebrow">记忆笔记</h3>
           <p className="muted">
-            融合用户提供的《英语四级，你还在背单词吗？》编号文档：
+            笔记整理自《英语四级，你还在背单词吗？》，共
             {knowledgeSummary.notes.toLocaleString()}{" "}
-            份去重笔记，覆盖谐音、联想、词根词缀、形近对照与例句语境。
+            份，包含谐音、联想、词根词缀、易混词和例句。
             {knowledgeSummary.linkedAtlasWords.toLocaleString()}{" "}
-            个现有词条已关联主词或派生补充；未匹配词条仍可在笔记页阅读。保留原文单元与编号，扫描文字及音标未逐条校订。
+            个单词可以在词卡里直接查看笔记，其余内容可到笔记页搜索。笔记保留原文单元和编号，部分扫描文字和音标可能有误。
           </p>
           <a className="link" href="#/knowledge">
             浏览记忆笔记 <ArrowUpRight size={14} />
           </a>
         </section>
         <section className="panel">
-          <h3 className="eyebrow">为什么记得住</h3>
+          <h3 className="eyebrow">可以怎么学</h3>
           <ul className="feature-list">
             <li>
-              <b>先看见。</b>
-              优先复用同词插画；关联场景标注「场景联想」，缺少的图由内置生图补齐。
+              <b>看词卡。</b>
+              查看释义、插画和发音。借用其他单词图片的词卡会标注「场景联想」。
             </li>
             <li>
-              <b>再想起。</b>选义、看图补句、听音辨词、拼写，从认得走到会写。
+              <b>做练习。</b>选择词义、看图补句、听音选词，也可以练拼写。
             </li>
             <li>
-              <b>适时重逢。</b>FSRS
-              根据你的学习记录安排到期复习，你可以自由选择新学或复习。
+              <b>复习。</b>网站用 FSRS 根据答题记录安排下次复习，你可以在首页选择学新词或复习。
             </li>
             <li>
-              <b>分数诚实。</b>
-              只算第一次作答。答错的词会换个题型再见一面，但不会抬高正确率。
+              <b>看结果。</b>
+              正确率只算第一次作答，答错后重做不计分。
             </li>
             <li>
-              <b>进度只属于你。</b>
-              没有账号，没有服务器，数据存在你的浏览器里，随时能导出。
+              <b>保存记录。</b>
+              学习记录保存在浏览器里，可在「我的」导出备份。
             </li>
           </ul>
         </section>
@@ -137,15 +134,10 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">内容从哪里来</h3>
           <p className="muted">
-            词条来自用户提供的 Words_all.md（原 PDF
-            提取稿，拼写与释义未校订），去重记录见
-            data/source-import.json。例句优先使用本次题库原句，未匹配的学习示例保留原项目署名；搭配、插画与单词录音仍按原来源复用。无原录音的词使用设备英美语音。关联图片不复制其他词的释义或录音。媒体来源见
-            data/media-provenance.json，新图提示词见
-            data/image-generation-prompts.json。
+            词表来自 Words_all.md，是 PDF 的文字提取稿，拼写和释义尚未逐条校订。搭配、插画和单词录音主要沿用原项目，缺少的插画由 AI 补充，缺少录音的词使用设备语音。借用其他词的插画不会改变本词的释义和发音。
           </p>
           <p className="muted">
-            内容与原项目署名：designfuchen/word-atlas，原作者
-            yangleiocx3。四级版学习进度独立保存在当前设备中。
+            原项目：designfuchen/word-atlas，原作者 yangleiocx3。感谢原作者提供的代码和内容。
           </p>
         </section>
 
@@ -154,8 +146,7 @@ export function About() {
           <p className="muted">
             <code>data/word-atlas.json</code> 是去重词库，
             <code>cet4-source/Words_all.md</code> 是原始记录；
-            <code>public/atlas</code> 保存分块词条、插画与录音。不同来源的内容按
-            CONTENT_LICENSE.md 与逐词来源记录分别标记。
+            <code>public/atlas</code> 保存网站使用的词条、插画与录音。词表去重记录见 <code>data/source-import.json</code>，图片与录音来源见 <code>data/media-provenance.json</code>，新图提示词见 <code>data/image-generation-prompts.json</code>。各类内容的许可见 <code>CONTENT_LICENSE.md</code>。
           </p>
           <a
             className="link"
@@ -168,7 +159,7 @@ export function About() {
         </section>
       </div>
       <p className="colophon">
-        <Heart size={14} /> 做给每一个在背单词的人。
+        <Heart size={14} /> 词光 · 免费开源
       </p>
     </div>
   );

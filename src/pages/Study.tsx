@@ -1,5 +1,4 @@
 import { ArrowRight, BookOpen, Lightbulb, RotateCcw, Sparkles } from "lucide-react";
-import knowledgeSummary from "../generated/knowledge-summary.json";
 import { useAtlas } from "../atlas/context";
 import { go, openWord } from "../lib/router";
 import { buildSession, todayPlan } from "../store/session";
@@ -32,33 +31,33 @@ export function Study() {
       <header className="cet4-heading">
         <div>
           <p className="eyebrow">WORD ATLAS / CET–4 EDITION</p>
-          <h1 className="display">四级词库，自由探索。</h1>
+          <h1 className="display">四级单词，慢慢记。</h1>
           <p className="lede">
-            {atlas.count.toLocaleString()} 个独立词条，按自己的节奏认识与复习。
+            {atlas.count.toLocaleString()} 个词，配有插画、发音和例句。
           </p>
         </div>
         <span className="edition-stamp">
-          大学英语四级<b>YOUR OWN PACE</b>
+          大学英语四级<b>CET–4</b>
         </span>
       </header>
       <section className="cet4-hero">
         <img
           src={`${import.meta.env.BASE_URL}brand/hero.webp`}
-          alt="通往知识星空的旅程"
+          alt="图书馆与星空插画"
           className="cet4-hero-art"
           fetchPriority="high"
         />
         <div className="cet4-hero-copy">
           <p className="eyebrow eyebrow-light">
-            A WORD AT A TIME <span>打乱词序 · 自由学习</span>
+            本轮学习 <span>打乱词序 · 自由学习</span>
           </p>
           <h2>
-            每一次相遇，
+            多见几次，
             <br />
-            都由你决定。
+            就没那么陌生。
           </h2>
           <p className="cet4-hero-lede">
-            没有固定天数或每日配额。选一小组新词，或者重逢快要遗忘的词。
+            选几个新词，或把眼熟却想不起的词再认一遍。
           </p>
           <div className="cet4-hero-stats">
             <span>
@@ -111,20 +110,20 @@ export function Study() {
               >
                 <RotateCcw size={16} />
                 {plan.due.length
-                  ? `复习到期 ${plan.due.length} 词`
-                  : "暂无到期复习"}
+                  ? `复习 ${plan.due.length} 个词`
+                  : "暂时不用复习"}
               </button>
             )}
           </div>
-          <p className="cet4-hero-note">随时暂停 · 自动保存 · 从词库自由浏览</p>
+          <p className="cet4-hero-note">可以随时暂停，下次接着学。</p>
         </div>
       </section>
       <div className="cet4-overview">
         <div>
           <Sparkles size={19} />
           <span>
-            已点亮 <b>{learned.toLocaleString()}</b> /{" "}
-            {atlas.count.toLocaleString()} 颗星
+            已学 <b>{learned.toLocaleString()}</b> /{" "}
+            {atlas.count.toLocaleString()} 个词
           </span>
         </div>
         <div className="cet4-total-bar">
@@ -134,19 +133,19 @@ export function Study() {
           className="link"
           onClick={() => go({ page: "atlas", view: "galaxy" })}
         >
-          看看我的星图 <ArrowRight size={16} />
+          查看词汇星图 <ArrowRight size={16} />
         </button>
       </div>
       <a className="panel memory-entry" href="#/knowledge">
         <Lightbulb size={24} />
-        <span><b>换一种方式，记住单词。</b><small>{knowledgeSummary.notes.toLocaleString()} 份记忆笔记 · 谐音、联想、词根词缀、形近对照</small></span>
+        <span><b>卡住的词，换个记法。</b><small>谐音、联想、词根词缀与易混词</small></span>
         <ArrowRight size={20} />
       </a>
       <section className="cet4-browse">
         <div className="cet4-section-head">
           <div>
-            <p className="eyebrow">BROWSE THE COLLECTION</p>
-            <h2>从一个字母开始</h2>
+            <p className="eyebrow">浏览词库</p>
+            <h2>随手翻到一个词</h2>
           </div>
           <button className="link" onClick={() => go({ page: "atlas" })}>
             打开全部词库 <ArrowRight size={16} />
@@ -167,9 +166,9 @@ export function Study() {
       <div className="cet4-bottom-grid">
         <section className="panel cet4-word-preview">
           <div className="panel-head">
-            <h3 className="eyebrow">下一次相遇 · 乱序预览</h3>
+            <h3 className="eyebrow">接下来要学的词</h3>
             <button className="link" onClick={() => go({ page: "atlas" })}>
-              自由浏览 <ArrowRight size={15} />
+              浏览词库 <ArrowRight size={15} />
             </button>
           </div>
           <div className="cet4-preview-grid">
@@ -190,7 +189,7 @@ export function Study() {
           </div>
           {!preview.length && (
             <p className="muted">
-              全部词条都已认识，可以去图鉴回顾，或复习到期的词。
+              所有新词都学过了，可以到图鉴里回顾，或继续复习。
             </p>
           )}
         </section>
@@ -204,9 +203,9 @@ export function Study() {
             <b>{Math.round((learned / atlas.count) * 100)}%</b>
             <small>词库进度</small>
           </Ring>
-          <h3>自己的节奏，也能走得很远。</h3>
+          <h3>会认了，也试着写写。</h3>
           <p>
-            每轮数量只决定这次练几个词。今天想学多少、什么时候复习，都由你选择。
+            听一遍，再自己拼出来。也可以抄写例句，看看哪些词还不熟。
           </p>
           <button
             className="btn btn-ghost"
@@ -215,7 +214,7 @@ export function Study() {
             <BookOpen size={17} />
             练习与错词本
           </button>
-          <small>词表去重时保留不同释义和原始来源编号。</small>
+          <small>练习页的打字结果不计入复习进度。</small>
         </section>
       </div>
     </div>
