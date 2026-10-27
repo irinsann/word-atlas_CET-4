@@ -60,7 +60,7 @@ npm run preview
 
 `dist/` 是静态网站，需通过 HTTP 服务器打开。子路径部署可设置 `ATLAS_BASE=/words/` 后构建。
 
-GitHub Pages 由 `.github/workflows/pages.yml` 自动发布：推送到 `main` 或手动运行工作流后，先执行测试和词库校验，再构建并部署 `dist/`。仓库 Pages 的发布来源需设为 GitHub Actions；子目录路径自动使用仓库名称。
+GitHub Pages 由 `.github/workflows/pages.yml` 自动发布：推送到 `main` 或手动运行工作流后，先执行测试和词库校验，再构建并部署 `dist/`。仓库 Pages 的发布来源需设为 GitHub Actions；构建路径根据 Pages 设置自动适配仓库子目录或自定义域名根目录。
 
 如需重新生成词库，先将完整原仓库解压至 `source/word-atlas-main/`，运行 `npm run build:cet4`。也可指定 Markdown 文件：`node scripts/build-cet4.mjs "C:/path/Words_all.md"`。生成脚本会去重、保留来源、裁剪运行时媒体，并且不生成任何按天分配。
 
