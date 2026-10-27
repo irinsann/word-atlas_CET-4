@@ -31,7 +31,7 @@ import {
   type Step,
 } from "../store/store";
 import { EntryView, Highlight } from "../ui/EntryView";
-import { ExampleSource } from "../ui/ExampleSource";
+import { ExampleSource, ExampleTranslation } from "../ui/ExampleSource";
 import { Illustration } from "../ui/Illustration";
 import { Galaxy } from "../galaxy/Galaxy";
 import { AmbiencePicker } from "../ui/Ambience";
@@ -294,7 +294,7 @@ function Quiz({
               )}
             </p>
             {sentence && pending && entry.ex[0].zh && (
-              <p className="cloze-zh">{entry.ex[0].zh}</p>
+              <ExampleTranslation example={entry.ex[0]} className="cloze-zh" />
             )}
             {sentence && <ExampleSource example={entry.ex[0]} />}
           </div>
@@ -582,6 +582,10 @@ function Feedback({
               <p className="feedback-ex" lang="en">
                 <Highlight text={entry.ex[0].en} word={entry.w} />
               </p>
+              <ExampleTranslation
+                example={entry.ex[0]}
+                className="feedback-ex-zh"
+              />
               <ExampleSource example={entry.ex[0]} />
             </>
           )}

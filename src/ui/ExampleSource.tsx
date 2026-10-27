@@ -37,9 +37,30 @@ export function ExampleSource({ example }: { example: Example }) {
           文件 SHA-256：<code>{source.sha256}</code>
         </p>
         <p>
-          题库未附逐句译文；朗读由设备合成，并非原题录音。词图用于单词联想。
+          {example.translation
+            ? "中文为本站补充的参考译文（机器翻译，部分经修订），非官方译文。"
+            : "题库未附逐句译文。"}
+          朗读由设备合成，并非原题录音。词图用于单词联想。
         </p>
       </div>
     </details>
+  );
+}
+
+export function ExampleTranslation({
+  example,
+  className = "ex-zh",
+}: {
+  example: Example;
+  className?: string;
+}) {
+  if (!example.zh) return null;
+  return (
+    <p className={className} lang="zh-CN">
+      {example.translation && (
+        <small className="example-translation-label">参考译文</small>
+      )}
+      {example.zh}
+    </p>
   );
 }

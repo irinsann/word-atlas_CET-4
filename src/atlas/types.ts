@@ -39,6 +39,12 @@ export interface Example {
   en: string;
   zh: string;
   source?: PaperExampleSource | { kind: "legacy-generated"; label: string };
+  translation?: {
+    kind: "machine-assisted";
+    provider: string;
+    sentenceHash: string;
+    revised?: boolean;
+  };
 }
 
 export interface Entry {

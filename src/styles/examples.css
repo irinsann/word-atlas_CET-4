@@ -33,6 +33,30 @@
 .example-unverified {
   opacity: 0.85;
 }
+.example-translation-label {
+  display: inline-block;
+  margin-right: 8px;
+  font: 400 11px/1.5 var(--sans);
+  color: var(--ink-3);
+}
+.ex-zh,
+.cloze-zh,
+.feedback-ex-zh {
+  text-align: left;
+  overflow-wrap: anywhere;
+  line-height: 1.75;
+}
+.feedback-ex-zh {
+  font-size: 13px;
+  color: var(--ink-2);
+  margin-top: 6px;
+}
+.typing-zh {
+  width: min(100%, 840px);
+  text-align: left;
+  justify-items: start;
+  line-height: 1.75;
+}
 .prompt-picture > .example-source,
 .prompt-spell .example-source {
   width: 100%;
@@ -50,7 +74,8 @@
   .example-source {
     font-size: 12px;
   }
-  .feedback .example-source {
+  .feedback .example-source,
+  .feedback-ex-zh {
     display: none;
   }
 }

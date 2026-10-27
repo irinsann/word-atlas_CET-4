@@ -9,7 +9,7 @@ import { Speak } from "./Speak";
 import { shareWord } from "./share";
 import { openWord } from "../lib/router";
 import { WordMemoryNotes } from "./MemoryNotes";
-import { ExampleSource } from "./ExampleSource";
+import { ExampleSource, ExampleTranslation } from "./ExampleSource";
 
 export function Highlight({ text, word }: { text: string; word: string }) {
   const parts = splitHighlight(text, word);
@@ -210,7 +210,7 @@ export function EntryView({
                       className="ex-speak"
                     />
                   </p>
-                  {x.zh && <p className="ex-zh">{x.zh}</p>}
+                  <ExampleTranslation example={x} />
                   <ExampleSource example={x} />
                 </li>
               ))}

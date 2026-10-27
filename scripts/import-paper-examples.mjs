@@ -3,6 +3,10 @@ import path from "node:path";
 import { createHash } from "node:crypto";
 import { headwordForms, headwordPattern } from "../src/lib/text.ts";
 import { readPaper, normalizeQuote } from "./read-papers.mjs";
+import {
+  readTranslations,
+  applyPaperTranslations,
+} from "./paper-translations.mjs";
 
 // Read the corpus in place. Only selected quotations and provenance are written;
 // no source paper, full paragraph, or audio file is copied into the website.
@@ -136,7 +140,9 @@ for (const entry of entries) {
   if (entry.ex[0] && pattern.test(entry.ex[0].en)) entry.m |= 32;
   else entry.m &= ~32;
 }
+const translationStats = applyPaperTranslations(entries, readTranslations());
 const index = JSON.parse(fs.readFileSync("public/atlas/index.json", "utf8"));
+Object.assign(index, translationStats);
 if (
   index.words.length !== entries.length ||
   entries.some((e, i) => index.words[i][0] !== e.id)
@@ -166,6 +172,7 @@ const stats = {
     0,
   ),
   wordsWithoutExamples: entries.filter((e) => !e.ex.length).length,
+  ...translationStats,
 };
 index.realExamples = genuineExamples;
 index.realExampleWords = replacedWords;

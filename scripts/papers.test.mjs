@@ -144,10 +144,10 @@ test("every published quotation resolves to document metadata and a real headwor
       assert.ok(s.lineStart >= 1 && s.lineEnd >= s.lineStart);
       assert.ok(isUsableSentence(x.en), e.w);
       assert.equal(headwordPattern(e.w).exec(x.en)?.[0], s.matchedForm, e.w);
-      assert.equal(
+      assert.match(
         x.zh,
-        "",
-        "Do not pair new English with an unrelated old translation",
+        /[\u3400-\u9fff]/,
+        "Every paper quotation needs its corresponding Chinese translation",
       );
     }
   }

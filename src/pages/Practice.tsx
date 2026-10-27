@@ -319,10 +319,15 @@ function TypingRound({
                 再听一遍
               </button>
             )}
-            {e.ex[0].zh ||
-              (mode === "dictation"
-                ? "听发音，输入完整原句。"
-                : "先读原句，再开始输入。")}
+            <span lang="zh-CN">
+              {e.ex[0].translation && (
+                <small className="example-translation-label">参考译文</small>
+              )}
+              {e.ex[0].zh ||
+                (mode === "dictation"
+                  ? "听发音，输入完整原句。"
+                  : "先读原句，再开始输入。")}
+            </span>
           </p>
         )}
         <p
