@@ -1,7 +1,16 @@
 export type Accent = "uk" | "us";
 
 /** Compact row from atlas/index.json: [id, word, zh, ipa, cefr, topic, media]. Media bit 32 indicates an example suitable for cloze quizzes. */
-export type IndexRow = [string, string, string, string, number, number, number, number?];
+export type IndexRow = [
+  string,
+  string,
+  string,
+  string,
+  number,
+  number,
+  number,
+  number?,
+];
 
 export interface Sense {
   pos: string;
@@ -9,9 +18,27 @@ export interface Sense {
   en: string;
 }
 
+export interface PaperExampleSource {
+  kind: "cet4-paper";
+  documentId: string;
+  file: string;
+  year: number;
+  month: number;
+  set: number;
+  part: "reading" | "listening";
+  section: string;
+  passage: string;
+  paragraph: string;
+  lineStart: number;
+  lineEnd: number;
+  sha256: string;
+  matchedForm: string;
+}
+
 export interface Example {
   en: string;
   zh: string;
+  source?: PaperExampleSource | { kind: "legacy-generated"; label: string };
 }
 
 export interface Entry {
@@ -37,7 +64,13 @@ export interface Entry {
   /** Media bit flags, see MEDIA. */
   m: number;
   /** Absolute media URLs for datasets that do not follow the atlas layout. */
-  media?: { img?: string | null; uk?: string | null; us?: string | null; ex?: string | null; ex2?: string | null };
+  media?: {
+    img?: string | null;
+    uk?: string | null;
+    us?: string | null;
+    ex?: string | null;
+    ex2?: string | null;
+  };
 }
 
 export const MEDIA = { img: 1, uk: 2, us: 4, ex: 8, ex2: 16 } as const;
@@ -70,5 +103,8 @@ export interface Atlas {
   entry: (id: string) => Promise<Entry>;
   peek: (id: string) => Entry | undefined;
   img: (ref: WordRef | Entry, size?: "thumb" | "full") => string | null;
-  audio: (ref: WordRef | Entry, kind: "uk" | "us" | "ex" | "ex2") => string | null;
+  audio: (
+    ref: WordRef | Entry,
+    kind: "uk" | "us" | "ex" | "ex2",
+  ) => string | null;
 }

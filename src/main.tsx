@@ -7,6 +7,7 @@ import "./styles/app.css";
 import "./styles/cet4.css";
 import "./styles/mobile.css";
 import "./styles/knowledge.css";
+import "./styles/examples.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

@@ -6,24 +6,117 @@ const IRREGULAR = new Map(
     .map(([base, ...forms]) => [base, forms] as const),
 );
 
-/** Find the headword (or an inflected form) inside an example sentence. */
-export function headwordPattern(word: string) {
-  const w = word.trim().toLowerCase();
-  const esc = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-  if (/\s/.test(w)) return new RegExp(`(?<![A-Za-z])(${w.split(/\s+/).map(esc).join("\\s+")})(?![A-Za-z])`, "i");
-  const irregular = IRREGULAR.get(w);
-  if (irregular) return new RegExp(`(?<![A-Za-z])((?:${[w, ...irregular].map(esc).join("|")})[a-z]{0,3})(?![A-Za-z])`, "i");
-  let stem = w;
-  if (w.length > 3 && /[^aeiou]y$|e$/.test(w)) stem = w.slice(0, -1);
-  // spin → spinning, stop → stopped
-  const double = /[^aeiou][aeiou][bdgmnprt]$/.test(w) ? `${esc(w.slice(-1))}?` : "";
-  return new RegExp(`(?<![A-Za-z])(${esc(stem)}${double}[a-z]{0,4})(?![A-Za-z])`, "i");
+const SPELLINGS = [
+  "colour color",
+  "favour favor",
+  "labour labor",
+  "honour honor",
+  "neighbour neighbor",
+  "centre center",
+  "theatre theater",
+  "metre meter",
+  "catalogue catalog",
+  "dialogue dialog",
+  "humour humor",
+  "programme program",
+  "organise organize",
+  "recognise recognize",
+  "analyse analyze",
+].map((s) => s.split(" "));
+const CASE_DISTINCT = new Set([
+  "China",
+  "china",
+  "Polish",
+  "polish",
+  "Angle",
+  "angle",
+  "Grant",
+  "grant",
+]);
+const COMPARABLE = new Set(
+  "big small great hard long short high low fast slow young old new nice large wide safe fine close hot cold dark light easy early happy heavy busy healthy funny strong weak deep cheap rich poor clean clear quick bright thin thick tall late neat soft tough warm cool dry wet fit sad mad quiet clever simple gentle narrow shallow".split(
+    " ",
+  ),
+);
+
+/** Explicit inflections, never an arbitrary stem suffix: art cannot match artist/article. */
+export function headwordForms(word: string) {
+  const w = word.trim();
+  const base = w.toLowerCase();
+  const forms = new Set([w]);
+  if (/\s/.test(w)) return [...forms];
+  const bases = new Set([w]);
+  for (const pair of SPELLINGS)
+    if (pair.includes(base)) pair.forEach((s) => bases.add(s));
+  if (/\([a-z]+\)/i.test(w)) {
+    bases.add(w.replace(/[()]/g, ""));
+    bases.add(w.replace(/\([a-z]+\)/gi, ""));
+  }
+  for (const b of bases) {
+    forms.add(b);
+    if (
+      !/^[a-z]+$/i.test(b) ||
+      (CASE_DISTINCT.has(w) && w[0] !== w[0].toLowerCase())
+    )
+      continue;
+    const irregular = IRREGULAR.get(b.toLowerCase());
+    for (const f of irregular ?? []) if (f !== b + b.slice(-1)) forms.add(f);
+    if (b.length < 3) continue;
+    if (/[^aeiou]y$/i.test(b)) {
+      forms.add(b.slice(0, -1) + "ies");
+      forms.add(b.slice(0, -1) + "ied");
+    } else forms.add(b + (/(?:s|sh|ch|x|z)$/i.test(b) ? "es" : "s"));
+    if (!irregular) forms.add(b + (/e$/i.test(b) ? "d" : "ed"));
+    forms.add(
+      /ie$/i.test(b)
+        ? b.slice(0, -2) + "ying"
+        : /[^eoy]e$/i.test(b)
+          ? b.slice(0, -1) + "ing"
+          : b + "ing",
+    );
+    if (b.length <= 6 && /[^aeiou][aeiou][bdgmnprt]$/i.test(b)) {
+      forms.add(b + b.slice(-1) + "ing");
+      if (!irregular) forms.add(b + b.slice(-1) + "ed");
+    }
+    if (COMPARABLE.has(b.toLowerCase())) {
+      const stem = /[^aeiou]y$/i.test(b)
+        ? b.slice(0, -1) + "i"
+        : /e$/i.test(b)
+          ? b.slice(0, -1)
+          : /^[^aeiou]*[aeiou][bdgmnprt]$/i.test(b)
+            ? b + b.slice(-1)
+            : b;
+      forms.add(stem + "er");
+      forms.add(stem + "est");
+    }
+  }
+  return [...forms];
 }
 
-export function splitHighlight(sentence: string, word: string): [string, string, string] | null {
+/** Find a complete headword or one of its listed inflections in a sentence. */
+export function headwordPattern(word: string) {
+  const esc = (s: string) =>
+    s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&").replace(/'/g, "['’]");
+  const forms = headwordForms(word)
+    .sort((a, b) => b.length - a.length)
+    .map((s) => s.split(/\s+/).map(esc).join("\\s+"));
+  return new RegExp(
+    `(?<![A-Za-z])(${forms.join("|")})(?![A-Za-z])`,
+    CASE_DISTINCT.has(word) ? "" : "i",
+  );
+}
+
+export function splitHighlight(
+  sentence: string,
+  word: string,
+): [string, string, string] | null {
   const m = headwordPattern(word).exec(sentence);
   if (!m) return null;
-  return [sentence.slice(0, m.index), m[0], sentence.slice(m.index + m[0].length)];
+  return [
+    sentence.slice(0, m.index),
+    m[0],
+    sentence.slice(m.index + m[0].length),
+  ];
 }
 
 export function gap(sentence: string, word: string) {
@@ -53,7 +146,8 @@ export function shuffle<T>(xs: T[], seed = Math.random() * 2 ** 31): T[] {
 
 export function hashSeed(s: string) {
   let h = 2166136261;
-  for (let i = 0; i < s.length; i++) h = Math.imul(h ^ s.charCodeAt(i), 16777619);
+  for (let i = 0; i < s.length; i++)
+    h = Math.imul(h ^ s.charCodeAt(i), 16777619);
   return h >>> 0;
 }
 

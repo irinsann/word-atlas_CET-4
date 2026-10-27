@@ -10,6 +10,7 @@ interface IndexFile {
   name: string;
   count: number;
   examples: number;
+  exampleRevision?: string;
   illustrated: number;
   chunk: number;
   topics: [string, string][];
@@ -29,7 +30,11 @@ export async function loadOpenAtlas(): Promise<Atlas> {
   const loadChunk = (n: number) => {
     let p = pending.get(n);
     if (!p) {
-      p = fetch(url(`entries/${n}.json`))
+      p = fetch(
+        url(
+          `entries/${n}.json${idx.exampleRevision ? `?v=${idx.exampleRevision}` : ""}`,
+        ),
+      )
         .then((r) => {
           if (!r.ok) throw new Error(`词条加载失败（${r.status}）`);
           return r.json() as Promise<Entry[]>;
@@ -67,11 +72,16 @@ export async function loadOpenAtlas(): Promise<Atlas> {
       return e;
     },
     img: (ref, size = "full") =>
-      ("media" in ref && typeof ref.media === "number" ? ref.media : (ref as Entry).m) & MEDIA.img
+      ("media" in ref && typeof ref.media === "number"
+        ? ref.media
+        : (ref as Entry).m) & MEDIA.img
         ? url(`${size === "thumb" ? "thumb" : "img"}/${ref.id}.webp`)
         : null,
     audio(ref, kind) {
-      const m = "media" in ref && typeof ref.media === "number" ? ref.media : (ref as Entry).m;
+      const m =
+        "media" in ref && typeof ref.media === "number"
+          ? ref.media
+          : (ref as Entry).m;
       const bit = MEDIA[kind];
       return m & bit ? url(`audio/${kind}/${ref.id}.mp3`) : null;
     },
@@ -94,17 +104,26 @@ interface PrivateWord {
   sentenceAudio?: string | null;
 }
 
-export async function loadPrivateAtlas(open: Atlas | null): Promise<Atlas | null> {
+export async function loadPrivateAtlas(
+  open: Atlas | null,
+): Promise<Atlas | null> {
   let res: Response;
   try {
     res = await fetch("/local/catalog.json", { cache: "no-store" });
   } catch {
     return null;
   }
-  if (!res.ok || !(res.headers.get("content-type") || "").includes("json")) return null;
-  const cat = (await res.json()) as { id: string; name: string; words: PrivateWord[] };
+  if (!res.ok || !(res.headers.get("content-type") || "").includes("json"))
+    return null;
+  const cat = (await res.json()) as {
+    id: string;
+    name: string;
+    words: PrivateWord[];
+  };
   const entries = new Map<string, Entry>();
-  const twins = new Map(open?.words.map((o) => [o.word.toLowerCase(), o]) ?? []);
+  const twins = new Map(
+    open?.words.map((o) => [o.word.toLowerCase(), o]) ?? [],
+  );
   const words: WordRef[] = cat.words.map((w, order) => {
     const twin = twins.get(w.word.toLowerCase());
     const pos = (w.meaning.match(/·\s*([a-z]+\.)\s*$/) || [])[1] || "";
@@ -123,7 +142,11 @@ export async function loadPrivateAtlas(open: Atlas | null): Promise<Atlas | null
       tip: w.hint,
       cefr: twin ? (open?.cefr[twin.cefr] ?? "B1") : "B1",
       topic: twin ? (open?.topics[twin.topic]?.[0] ?? "thinking") : "thinking",
-      m: (w.image ? MEDIA.img : 0) | (w.uk ? MEDIA.uk : 0) | (w.us ? MEDIA.us : 0) | (w.sentenceAudio ? MEDIA.ex : 0),
+      m:
+        (w.image ? MEDIA.img : 0) |
+        (w.uk ? MEDIA.uk : 0) |
+        (w.us ? MEDIA.us : 0) |
+        (w.sentenceAudio ? MEDIA.ex : 0),
       media: { img: w.image, uk: w.uk, us: w.us, ex: w.sentenceAudio },
     });
     return {

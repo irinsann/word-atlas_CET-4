@@ -2980,6 +2980,7 @@ code {
   opacity: 0;
   inset: 0;
   font-size: 16px;
+  pointer-events: none;
 }
 .typing-help {
   font-size: 13px;

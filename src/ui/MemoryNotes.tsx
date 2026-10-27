@@ -16,7 +16,7 @@ function NoteBody({ note }: { note: MemoryNote }) {
       <p className="memory-source">《英语四级，你还在背单词吗？》 · 第 {section.unit} 单元 · 原文 #{section.seq}</p>
       <p className="memory-meaning"><b>文档补充释义</b> {section.meaning}</p>
       {section.blocks.map((block, i) => <div className={`memory-block memory-block-${block.kind}`} key={i}>
-        <h4>{block.kind === "exam" ? "真题摘录 · 原文标注" : block.label}</h4>
+        <h4>{block.kind === "exam" ? "文档真题标注 · 出处未核验" : block.label}</h4>
         <p>{block.text}</p>
       </div>)}
     </section>)}

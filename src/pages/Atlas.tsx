@@ -17,6 +17,7 @@ import { useStore } from "../store/store";
 import { Illustration } from "../ui/Illustration";
 import { searchAtlas } from "../ui/Palette";
 import { Speak } from "../ui/Speak";
+import paperSummary from "../generated/paper-summary.json";
 
 type Status = "all" | "new" | "learning" | "mastered" | "saved";
 const STATUS: [Status, string][] = [
@@ -139,8 +140,10 @@ export function AtlasPage({
             都有一幅画。
           </h1>
           <p className="lede">
-            {atlas.examples.toLocaleString()} 条复用例句 · 英美发音 ·{" "}
-            {atlas.topics.length} 个主题 · 默认乱序，可按首字母筛选
+            {atlas.kind === "open"
+              ? `${paperSummary.genuineExamples.toLocaleString()} 条真题例句`
+              : `${atlas.examples.toLocaleString()} 条例句`}{" "}
+            · 英美发音 · {atlas.topics.length} 个主题 · 默认乱序，可按首字母筛选
           </p>
         </div>
         <div className="atlas-search-row">
@@ -189,7 +192,9 @@ export function AtlasPage({
           >
             <option value="">全部字母</option>
             {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => (
-              <option key={letter} value={letter}>{letter}</option>
+              <option key={letter} value={letter}>
+                {letter}
+              </option>
             ))}
           </select>
         </label>

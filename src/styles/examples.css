@@ -1,0 +1,56 @@
+.example-source {
+  margin: 12px 0 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--ink-3);
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+.example-source summary {
+  cursor: pointer;
+  text-wrap: pretty;
+}
+.example-source summary::marker {
+  color: var(--ink-3);
+}
+.example-source-detail {
+  padding: 8px 12px;
+  margin-top: 6px;
+  border-left: 2px solid currentColor;
+}
+.example-source-detail p {
+  margin: 5px 0;
+  font: inherit;
+}
+.example-source-detail code {
+  font-size: 11px;
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.example-unverified {
+  opacity: 0.85;
+}
+.prompt-picture > .example-source,
+.prompt-spell .example-source {
+  width: 100%;
+  max-width: 680px;
+  margin-inline: auto;
+}
+.typing-stage > .example-source {
+  width: min(100%, 840px);
+  margin: 18px auto;
+}
+.feedback .example-source {
+  margin-top: 6px;
+}
+@media (max-width: 759px) {
+  .example-source {
+    font-size: 12px;
+  }
+  .feedback .example-source {
+    display: none;
+  }
+}

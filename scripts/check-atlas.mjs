@@ -41,7 +41,8 @@ for (let n = 0; n * index.chunk < index.count; n++) {
     if (!row || row[0] !== e.id) return fail(`chunk ${n} out of order at ${e.id}`);
     entries++;
     if (!Array.isArray(e.senses) || !e.senses.length || e.senses.some((s) => !s.zh)) fail(`no senses: ${e.id}`);
-    if (!Array.isArray(e.ex) || e.ex.some((x) => !x.en || !x.zh)) fail(`bad examples: ${e.id}`);
+    if (!Array.isArray(e.ex) || e.ex.some((x) => !x.en || !x.zh && x.source?.kind !== "cet4-paper")) fail(`bad examples: ${e.id}`);
+    if (e.m !== row[6]) fail(`media flags differ: ${e.id}`);
     if (!e.ex.length) warn.sourceOnly++;
     examples += e.ex.length;
     if (e.ex.length === 1) warn.oneExample++;

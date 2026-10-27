@@ -7,14 +7,15 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --import tsx --test src/**/*.test.ts scripts/words-source.test.mjs scripts/knowledge.test.mjs",
+    "test": "node --import tsx --test src/**/*.test.ts scripts/words-source.test.mjs scripts/knowledge.test.mjs scripts/papers.test.mjs",
     "check:atlas": "node scripts/check-atlas.mjs",
     "build:atlas": "python3 scripts/atlas/build_atlas.py",
     "render:cards": "node scripts/render-cards.mjs",
     "pack:public": "python3 scripts/package_public.py --out ../开源发布/word-atlas",
     "format": "prettier --write src vite.config.ts scripts/*.mjs package.json tsconfig.json",
     "build:cet4": "node scripts/build-cet4.mjs",
-    "import:knowledge": "node scripts/import-knowledge.mjs"
+    "import:knowledge": "node scripts/import-knowledge.mjs",
+    "import:papers": "node --import tsx scripts/import-paper-examples.mjs"
   },
   "dependencies": {
     "@fontsource-variable/fraunces": "^5.3.0",
