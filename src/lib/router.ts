@@ -7,7 +7,8 @@ export type Route =
   | { page: "learn" }
   | { page: "practice" }
   | { page: "me" }
-  | { page: "about" };
+  | { page: "about" }
+  | { page: "knowledge"; q?: string };
 
 export interface Location {
   route: Route;
@@ -27,6 +28,7 @@ function parse(hash: string): Location {
   else if (seg[0] === "practice") route = { page: "practice" };
   else if (seg[0] === "me") route = { page: "me" };
   else if (seg[0] === "about") route = { page: "about" };
+  else if (seg[0] === "knowledge") route = { page: "knowledge", q: params.get("q") || undefined };
   else if (seg[0] === "w" && seg[1]) return { route: { page: "atlas" }, word: decodeURIComponent(seg[1]) };
   return { route, word };
 }
@@ -40,6 +42,7 @@ export function href(route: Route, word?: string | null) {
     if (route.view) params.set("view", route.view);
     if (route.letter) params.set("letter", route.letter);
   }
+  if (route.page === "knowledge" && route.q) params.set("q", route.q);
   if (word) params.set("w", word);
   const q = params.toString();
   return `#/${route.page === "today" ? "" : route.page}${q ? `?${q}` : ""}`;

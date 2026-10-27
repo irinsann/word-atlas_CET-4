@@ -1,5 +1,6 @@
 import type { Atlas, Entry, IndexRow, WordRef } from "./types";
 import { MEDIA } from "./types";
+import { makeWordCatalog } from "./catalog";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 const url = (p: string) => `${BASE}/atlas/${p}`;
@@ -20,17 +21,7 @@ export async function loadOpenAtlas(): Promise<Atlas> {
   const res = await fetch(url("index.json"));
   if (!res.ok) throw new Error(`词库索引加载失败（${res.status}）`);
   const idx = (await res.json()) as IndexFile;
-  const words: WordRef[] = idx.words.map((r, order) => ({
-    id: r[0],
-    word: r[1],
-    zh: r[2],
-    ipa: r[3],
-    cefr: r[4],
-    topic: r[5],
-    media: r[6],
-    order,
-    sourceSeq: r[7],
-  }));
+  const { words, sourcePositions } = makeWordCatalog(idx.words, idx.id);
   const byId = new Map(words.map((w) => [w.id, w]));
   const cache = new Map<string, Entry>();
   const pending = new Map<number, Promise<void>>();
@@ -70,7 +61,7 @@ export async function loadOpenAtlas(): Promise<Atlas> {
       if (hit) return hit;
       const ref = byId.get(id);
       if (!ref) throw new Error(`没有找到词条 ${id}`);
-      await loadChunk(Math.floor(ref.order / idx.chunk));
+      await loadChunk(Math.floor(sourcePositions.get(id)! / idx.chunk));
       const e = cache.get(id);
       if (!e) throw new Error(`没有找到词条 ${id}`);
       return e;

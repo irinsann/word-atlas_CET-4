@@ -12,6 +12,7 @@ import { Me } from "./pages/Me";
 import { Onboarding } from "./pages/Onboarding";
 import { Practice } from "./pages/Practice";
 import { Study } from "./pages/Study";
+import { Knowledge } from "./pages/Knowledge";
 import { cue } from "./lib/sound";
 import { store, useStore } from "./store/store";
 import { EntryView } from "./ui/EntryView";
@@ -158,6 +159,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         {route.page === "practice" && <Practice />}
         {route.page === "me" && <Me privateAvailable={privateAvailable} />}
         {route.page === "about" && <About />}
+        {route.page === "knowledge" && <Knowledge query={route.q} />}
       </main>
 
       {!focus && (
@@ -168,7 +170,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
             <a href={REPO_URL} target="_blank" rel="noreferrer">
               GitHub
             </a>{" "}
-            · <a href="#/about">关于</a>
+            · <a href="#/knowledge">记忆笔记</a> · <a href="#/about">关于</a>
           </p>
         </footer>
       )}

@@ -1,4 +1,5 @@
-import { ArrowRight, BookOpen, RotateCcw, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, Lightbulb, RotateCcw, Sparkles } from "lucide-react";
+import knowledgeSummary from "../generated/knowledge-summary.json";
 import { useAtlas } from "../atlas/context";
 import { go, openWord } from "../lib/router";
 import { buildSession, todayPlan } from "../store/session";
@@ -49,7 +50,7 @@ export function Study() {
         />
         <div className="cet4-hero-copy">
           <p className="eyebrow eyebrow-light">
-            A WORD AT A TIME <span>从 A 到 Z · 自由学习</span>
+            A WORD AT A TIME <span>打乱词序 · 自由学习</span>
           </p>
           <h2>
             每一次相遇，
@@ -136,6 +137,11 @@ export function Study() {
           看看我的星图 <ArrowRight size={16} />
         </button>
       </div>
+      <a className="panel memory-entry" href="#/knowledge">
+        <Lightbulb size={24} />
+        <span><b>换一种方式，记住单词。</b><small>{knowledgeSummary.notes.toLocaleString()} 份记忆笔记 · 谐音、联想、词根词缀、形近对照</small></span>
+        <ArrowRight size={20} />
+      </a>
       <section className="cet4-browse">
         <div className="cet4-section-head">
           <div>
@@ -161,7 +167,7 @@ export function Study() {
       <div className="cet4-bottom-grid">
         <section className="panel cet4-word-preview">
           <div className="panel-head">
-            <h3 className="eyebrow">下一次相遇 · 词汇预览</h3>
+            <h3 className="eyebrow">下一次相遇 · 乱序预览</h3>
             <button className="link" onClick={() => go({ page: "atlas" })}>
               自由浏览 <ArrowRight size={15} />
             </button>

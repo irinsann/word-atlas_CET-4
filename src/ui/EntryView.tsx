@@ -8,6 +8,7 @@ import { Illustration } from "./Illustration";
 import { Speak } from "./Speak";
 import { shareWord } from "./share";
 import { openWord } from "../lib/router";
+import { WordMemoryNotes } from "./MemoryNotes";
 
 export function Highlight({ text, word }: { text: string; word: string }) {
   const parts = splitHighlight(text, word);
@@ -119,6 +120,8 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             </li>
           ))}
         </ol>
+
+        <WordMemoryNotes key={entry.id} wordId={entry.id} word={entry.w} />
 
         {entry.ex.length > 0 && (
           <section className="block">

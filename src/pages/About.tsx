@@ -1,6 +1,7 @@
 import { ArrowUpRight, Database, Github, Heart } from "lucide-react";
 import { useAtlas } from "../atlas/context";
 import { REPO_URL, UPSTREAM_REPO_URL } from "../config";
+import knowledgeSummary from "../generated/knowledge-summary.json";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -29,6 +30,11 @@ export function About() {
       </header>
 
       <div className="about-grid">
+        <section className="panel">
+          <h3 className="eyebrow">记忆方法与文档笔记</h3>
+          <p className="muted">融合用户提供的《英语四级，你还在背单词吗？》编号文档：{knowledgeSummary.notes.toLocaleString()} 份去重笔记，覆盖谐音、联想、词根词缀、形近对照与例句语境。{knowledgeSummary.linkedAtlasWords.toLocaleString()} 个现有词条已关联主词或派生补充；未匹配词条仍可在笔记页阅读。保留原文单元与编号，扫描文字及音标未逐条校订。</p>
+          <a className="link" href="#/knowledge">浏览记忆笔记 <ArrowUpRight size={14} /></a>
+        </section>
         <section className="panel">
           <h3 className="eyebrow">为什么记得住</h3>
           <ul className="feature-list">

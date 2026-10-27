@@ -8,7 +8,7 @@ import { review, Rating } from "./srs";
 const words:WordRef[]=Array.from({length:60},(_,i)=>({id:`all-${i}`,word:`word${i}`,zh:`释义${i}`,ipa:"",cefr:i%6,topic:0,media:0,order:i}));
 const atlas={id:"word-atlas-cet4-words-all-v1",words,byId:new Map(words.map(w=>[w.id,w]))} as Atlas;
 
-test("a fresh round follows source order and is not limited by words already studied today",()=>{
+test("a fresh round follows the current catalog order and is not limited by words already studied today",()=>{
   const p=emptyProgress(atlas.id);
   p.days[dayKey()]={n:400,r:400,c:400,t:2000};
   p.cards[words[0].id]=review(undefined,Rating.Good,Date.now());

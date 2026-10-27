@@ -140,7 +140,7 @@ export function AtlasPage({
           </h1>
           <p className="lede">
             {atlas.examples.toLocaleString()} 条复用例句 · 英美发音 ·{" "}
-            {atlas.topics.length} 个主题 · 按首字母浏览
+            {atlas.topics.length} 个主题 · 默认乱序，可按首字母筛选
           </p>
         </div>
         <div className="atlas-search-row">

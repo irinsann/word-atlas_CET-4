@@ -30,3 +30,7 @@ The material above is offered under CC BY 4.0, to the extent of the rights the m
 本版本基于 https://github.com/designfuchen/word-atlas 改编，保留 Word Atlas contributors — CC BY 4.0 署名。修改包括：以用户提供的 Words_all.md 替换词表，合并重复记录并保留原始释义与读音，提供自由学习、首字母浏览与 FSRS 复习，裁剪原媒体并补充 AI 插画。逐词媒体来源与新图提示词在 data/media-provenance.json、data/image-generation-prompts.json。
 
 Words_all.md 来自用户提供的 PDF 提取材料，其来源单独保留在 cet4-source/，不将其声称为原项目贡献者原创。AI 新图由内置 image_gen 生成，与原 CC BY 素材分别记录。
+
+## 文档记忆笔记
+
+`public/atlas/knowledge/` 的补充释义、记忆法、真题／例句、派生与短语，整理自用户提供的《英语四级，你还在背单词吗？》编号转录文档，原文署名“晓艳老师”。保留原文单元、编号及文件校验值，见 `data/knowledge-import.json`。这些来源内容单独标记，不纳入上文对 Word Atlas 原始素材的 CC BY 4.0 授权声明。文档扫描文字、音标及真题年份未逐条校订，谐音与拆词仅作为记忆线索。
