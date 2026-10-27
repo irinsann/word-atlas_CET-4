@@ -77,7 +77,8 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             <span className={`chip chip-level lv-${entry.cefr}`}>{entry.cefr}</span>
             {topic && <span className="chip">{topic[1]}</span>}
             {status && <span className={`chip chip-status ${status === "已掌握" ? "is-done" : ""}`}>{status}</span>}
-            {entry.sourceSeq && <span className="chip">Day {Math.min(13, Math.ceil(entry.sourceSeq / 200))}</span>}
+            {entry.sourceSeq && <span className="chip">原表 #{entry.sourceSeq}</span>}
+            {(entry.sourceRows?.length ?? 0) > 1 && <span className="chip">合并词条</span>}
             {entry.imageKind === "association" && <span className="chip" title={`关联画面：${entry.imageSource}`}>场景联想</span>}
             {entry.imageKind === "generated" && <span className="chip">新增插画</span>}
           </div>
@@ -94,7 +95,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
         </header>
         {ref && (
           <p className="specimen">
-            № {String(ref.order + 1).padStart(4, "0")}
+            № {String(entry.sourceSeq ?? ref.order + 1).padStart(4, "0")}
             <i />
             Word Atlas
           </p>
@@ -103,6 +104,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
           {entry.w}
         </h2>
         <Pronounce entry={entry} refw={ref ?? entry} />
+        {(entry.sourceRows?.length ?? 0) > 1 && <section className="block source-forms"><h3 className="eyebrow">原表读音与释义 · 已合并重复记录</h3>{entry.sourceRows!.map(row => <p key={row.seq}><small>#{row.seq} · {row.w} · /{row.ipa}/</small><br/>{row.zh}</p>)}</section>}
 
         <ol className="senses">
           {entry.senses.map((s, i) => (

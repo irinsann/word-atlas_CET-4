@@ -1,7 +1,7 @@
 export type Accent = "uk" | "us";
 
 /** Compact row from atlas/index.json: [id, word, zh, ipa, cefr, topic, media]. Media bit 32 indicates an example suitable for cloze quizzes. */
-export type IndexRow = [string, string, string, string, number, number, number];
+export type IndexRow = [string, string, string, string, number, number, number, number?];
 
 export interface Sense {
   pos: string;
@@ -29,6 +29,7 @@ export interface Entry {
   cefr: string;
   topic: string;
   sourceSeq?: number;
+  sourceRows?: { seq: number; w: string; ipa: string; zh: string }[];
   imageKind?: string;
   imageSource?: string;
   /** Usage caution (register, offensiveness, spelling), shown with the entry. */
@@ -42,6 +43,7 @@ export interface Entry {
 export const MEDIA = { img: 1, uk: 2, us: 4, ex: 8, ex2: 16 } as const;
 
 export interface WordRef {
+  sourceSeq?: number;
   id: string;
   word: string;
   zh: string;

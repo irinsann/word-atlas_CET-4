@@ -27,6 +27,6 @@ The material above is offered under CC BY 4.0, to the extent of the rights the m
 
 ## 四级改编说明
 
-本版本基于 https://github.com/designfuchen/word-atlas 改编，保留 `Word Atlas contributors — CC BY 4.0` 署名。原作者为 yangleiocx3。修改包括：按用户提供的四级 Daily_Plans 替换词表及顺序、实现 14 天学习路线、裁剪原媒体至对应词条、使用关联场景复用部分插画、使用内置 image_gen 新增 7 张插画。逐词媒体来源与新图提示词在 `data/media-provenance.json`、`data/image-generation-prompts.json`。
+本版本基于 https://github.com/designfuchen/word-atlas 改编，保留 Word Atlas contributors — CC BY 4.0 署名。修改包括：以用户提供的 Words_all.md 替换词表，合并重复记录并保留原始释义与读音，提供自由学习、首字母浏览与 FSRS 复习，裁剪原媒体并补充 AI 插画。逐词媒体来源与新图提示词在 data/media-provenance.json、data/image-generation-prompts.json。
 
-用户提供的 Daily_Plans、原编号、释义和音标属于另行提供的学习资料，其来源保留于 `cet4-source/`，不将其声称为原项目贡献者原创。新增 AI 插画的来源为内置 image_gen，来源记录与原 CC BY 素材分开保存。
+Words_all.md 来自用户提供的 PDF 提取材料，其来源单独保留在 cet4-source/，不将其声称为原项目贡献者原创。AI 新图由内置 image_gen 生成，与原 CC BY 素材分别记录。

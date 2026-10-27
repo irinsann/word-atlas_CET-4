@@ -12,9 +12,9 @@ export function About() {
         <img src={`${BASE}brand/og.webp`} alt="" />
         <div>
           <p className="eyebrow">关于词光</p>
-          <h1 className="display">十四天，点亮四级词汇。</h1>
+          <h1 className="display">自由探索，点亮四级词汇。</h1>
           <p className="lede">
-            四级版以本地 Daily_Plans 的 {atlas.count.toLocaleString()} 个词为准，完整保留编号、英美音标和中文释义。前 13 天学习新词，第 14 天收尾复习；从第 2 天起，先复习前一天的词。
+            本版本使用 Words_all.md，4,449 条原始记录去重后得到 {atlas.count.toLocaleString()} 个词条。合并时保留不同释义、读音和来源编号；不设固定天数或每日背诵配额。
           </p>
           <p className="lede">基于 Word Atlas 开源版改编，无需注册。原项目代码遵循 MIT，复用插画、音频与例句遵循 CC BY 4.0，原作者署名保留。</p>
           <div className="about-actions">
@@ -39,7 +39,7 @@ export function About() {
               <b>再想起。</b>选义、看图补句、听音辨词、拼写，从认得走到会写。
             </li>
             <li>
-              <b>昨日重逢。</b>14 天路线固定复习前一天的词；FSRS 另外记录每个词的记忆稳定度和预计复习时间。
+              <b>适时重逢。</b>FSRS 根据你的学习记录安排到期复习，你可以自由选择新学或复习。
             </li>
             <li>
               <b>分数诚实。</b>只算第一次作答。答错的词会换个题型再见一面，但不会抬高正确率。
@@ -90,7 +90,7 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">内容从哪里来</h3>
           <p className="muted">
-            词条与学习安排来自你提供的 Daily_Plans。匹配的词复用原项目的例句、搭配、插画和录音；没有原录音的词使用设备的英美语音朗读，没有原例句的词只显示词表内容。关联图片不复制其他词的释义或录音。详细来源记录在 data/media-provenance.json，新图提示词记录在 data/image-generation-prompts.json。
+            词条来自用户提供的 Words_all.md（原 PDF 提取稿，拼写与释义未校订），去重记录见 data/source-import.json。匹配的词复用原项目的例句、搭配、插画和录音；无原录音的词使用设备英美语音，没有原例句时保留词表内容。关联图片不复制其他词的释义或录音。媒体来源见 data/media-provenance.json，新图提示词见 data/image-generation-prompts.json。
           </p>
           <p className="muted">内容与原项目署名：designfuchen/word-atlas，原作者 yangleiocx3。四级版学习进度独立保存在当前设备中。</p>
         </section>
@@ -98,7 +98,7 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">给开发者</h3>
           <p className="muted">
-            <code>data/word-atlas.json</code> 和 <code>.csv</code> 是完整词库；<code>public/atlas</code> 里是网页用的分块数据、插画和音频。拿去做 Anki 牌组、背词小程序、浏览器插件，或者 AI 应用的评测集，署名即可。
+            <code>data/word-atlas.json</code> 是去重词库，<code>cet4-source/Words_all.md</code> 是原始记录；<code>public/atlas</code> 保存分块词条、插画与录音。不同来源的内容按 CONTENT_LICENSE.md 与逐词来源记录分别标记。
           </p>
           <a className="link" href={`${REPO_URL}#readme`} target="_blank" rel="noreferrer">
             阅读文档 <ArrowUpRight size={14} />

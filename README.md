@@ -1,54 +1,49 @@
-# 词光 · 四级 14 天版
+# 词光 · 四级自由词库
 
-基于 [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) 开源版改编，保留原项目的插画词卡、英美发音、练习、词汇星图、深浅主题与本地进度备份。
-
-本四级衍生版由 [irinsann](https://github.com/irinsann) 独立维护，与原项目维护者及考试机构无隶属或背书关系。原项目提供应用基础及大部分媒体，本版本新增四级词库适配、14 天滚动学习路线、关联场景映射与 7 张 AI 插画。
+基于 [designfuchen/word-atlas](https://github.com/designfuchen/word-atlas) 改编，由 [irinsann](https://github.com/irinsann) 独立维护，与原项目维护者及考试机构无隶属或背书关系。
 
 ![四级版首页](docs/assets/cet4-home.jpg)
 
+## 词表与去重
+
+唯一词表来源为 `cet4-source/Words_all.md`，由用户提供的 `Words_all.pdf` 提取。原表有 **4,449 条**，去重后为 **4,445 个独立词条**。
+
+- 合并 communism / Communism、forbid、Kingdom / kingdom、present 四组重复记录。
+- 合并后保留每条原始释义、读音和来源编号；例如 present 的两种读音都可在词卡中查看。
+- angle / Angle、China / china、grant / Grant、polish / Polish 因大小写改变含义而分别保留。
+- 保留原 PDF 的拼写和释义，不擅自校订；accommodatio、inser、recommendati、reservior 等提取异常在词卡中注明。原表未提供 a.m 的音标。
+- 去重明细位于 `data/source-import.json`，所有来源编号均可追溯。图鉴编号对应原表，合并后会有正常的编号间隔。
+
+## 自由学习
+
+已移除旧的固定天数、每日新词与昨日复习分配，也不再使用旧的按天筛选。
+
+- 首页可选择每轮新学 10、20 或 50 个词，按原表顺序认识尚未学过的词。每轮数量不构成每日配额，可反复开始新轮。
+- 复习依据 FSRS 记忆记录与到期时间，用户可单独选择复习或新学。
+- 图鉴支持 A–Z 首字母、主题、难度、学习状态与中英文搜索，自由浏览词卡。
+- 拼写、例句与听写练习支持全部词库、最近学过、收藏与错词本；抽词范围覆盖全部词库。
+- 练习可随时暂停，刷新后继续，首次作答才计入正确率。
+- 新词库使用独立的数据集标识；旧编号的学习记录不会套用到新单词。旧词库的浏览器备份不自动导入新词库，也不会被主动删除。
+- 进度保存在当前浏览器，在「我的」可导出与恢复备份。备份不包含练习中间步骤；当前浏览器中的会话会自动保存。
+
 ## 打开使用
 
-双击本目录的 **start-cet4.cmd**，会打开浏览器。首次需要 Node.js 20+；依赖已安装时可直接运行。
-
-也可以在本目录运行：
+Windows 双击 **start-cet4.cmd**。需要 Node.js 20+；首次启动会安装依赖。也可以运行：
 
 ```powershell
 npm ci
 npm run dev
 ```
 
-浏览器地址：**http://127.0.0.1:5194/**。关闭启动窗口即停止本地服务；学习进度仍保存在该浏览器与地址中。请固定使用同一地址，localhost 与 127.0.0.1 的浏览器存储彼此独立。
+打开 **http://127.0.0.1:5194/**。固定使用同一浏览器和地址，localhost 与 127.0.0.1 的存储相互独立。
 
-## 学习安排
+## 图片、例句与发音
 
-完整导入 Daily_Plans 的 **2,607 个原始词条**，严格保留编号、拼写、英美音标和中文释义。原文档副本位于 `cet4-source/Daily_Plans/`。
+匹配的单词复用原项目插画、录音、例句和搭配；无同词图的词使用注明来源的关联场景，少数词使用内置 image_gen 新增插画。关联图片不会带入其他单词的释义、例句或录音。
 
-| 天数 | 新学 | 复习 |
-| --- | --- | --- |
-| Day 01 | List 01–02，200 词 | 无 |
-| Day 02–12 | 每天后续两个 List，200 词 | 前一天的 200 词 |
-| Day 13 | List 25–26，207 词 | Day 12 的 200 词 |
-| Day 14 | 无 | List 25–26，207 词 |
+逐词媒体记录在 `data/media-provenance.json`；新增插画位于 `public/generated/`，完整提示词在 `data/image-generation-prompts.json`。无原录音时使用设备英美语音合成，效果取决于设备；原表没有提供例句的词不编造例句。
 
-- 新词每 10 个一组，先认识再测试；复习在新词之前。
-- 选中天数后点击「开始这一程」。暂停、刷新后能继续原会话。
-- 每天独立记录复习进度；复习不会被原版 120 词上限截断。
-- 图鉴可按天、难度、主题、学习状态筛选，也能搜索中英文、收藏词条。
-- 打字练习支持当天路线、已学、收藏、错词；不改动主线学习进度。
-- FSRS 记录记忆状态；主线复习严格遵循 14 天原计划。未来复习预测是 FSRS 预测，不等于主线每日任务。
-- 「我的」可导出、恢复备份。备份含所选天数和每日复习记录；进行中的会话会在当前浏览器自动保存，但导出备份不包含会话中间步骤。
-
-## 图片、录音和内容来源
-
-全部 2,607 个词均有本地图片：
-
-- **2,177** 个词直接复用原仓库的同词插画、录音、例句和搭配。
-- **423** 个词复用词形或关联场景图，词卡显示「场景联想」及来源词；不复制关联词的释义、例句或录音。
-- **7** 个词使用内置 `image_gen` 新增插画：camel、dragon、molecule、bracket、newsstand、ax、devil，保存于 `public/generated/`。
-
-新增图片的完整提示词：`data/image-generation-prompts.json`；逐词媒体来源：`data/media-provenance.json`。图片经过 WebP 格式压缩，已接入正式词卡和缩略图。
-
-430 个没有原录音的词使用浏览器/设备的英美语音合成，效果取决于设备语音支持。原词表未提供例句的词保留释义和音标，不编造例句；例句练习只使用有例句的词。原始词表中的过时或有冒犯性的词保留编号，并在词卡中附有用法说明。
+原表只提供一列音标，保留在词卡中；匹配原项目时补充原项目美音。未匹配词的难度与关联主题仅用于浏览整理。
 
 ## 构建与校验
 
@@ -59,10 +54,12 @@ npm run build
 npm run preview
 ```
 
-`dist/` 是构建好的静态网站，需通过 HTTP 静态服务器打开。支持子路径部署：设置 `ATLAS_BASE=/words/` 后构建。
+`dist/` 是静态网站，需通过 HTTP 服务器打开。子路径部署可设置 `ATLAS_BASE=/words/` 后构建。
 
-如需重新从原资料生成词库，先将完整原仓库解压至 `source/word-atlas-main/`，然后运行 `npm run build:cet4`。可传入新的 Daily_Plans 路径：`node scripts/build-cet4.mjs "C:/path/Daily_Plans"`；不传则使用仓库内的副本。新增图已经保存在本项目中，无需再次生图。
+如需重新生成词库，先将完整原仓库解压至 `source/word-atlas-main/`，运行 `npm run build:cet4`。也可指定 Markdown 文件：`node scripts/build-cet4.mjs "C:/path/Words_all.md"`。生成脚本会去重、保留来源、裁剪运行时媒体，并且不生成任何按天分配。
 
-## 原项目与授权
+## 署名与授权
 
-原项目：[designfuchen/word-atlas](https://github.com/designfuchen/word-atlas)，原作者 yangleiocx3。应用代码沿用 MIT，原项目插画、录音和例句遵循 CC BY 4.0。见 `LICENSE` 与 `CONTENT_LICENSE.md`，本改编保留原署名。用户提供的四级词表来源单独保存在 `cet4-source/`，不将其错误归为原作者创作。
+原项目：[designfuchen/word-atlas](https://github.com/designfuchen/word-atlas)。代码沿用 MIT；复用媒体、例句等保留 **Word Atlas contributors — CC BY 4.0** 署名。见 `LICENSE` 与 `CONTENT_LICENSE.md`。
+
+用户提供的 Words_all 来源材料单独保存在 `cet4-source/`，不将其归为原项目作者原创。AI 新图来源与复用媒体分别记录。

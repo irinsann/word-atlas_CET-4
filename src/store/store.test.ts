@@ -23,9 +23,9 @@ test("keeps valid progress and drops malformed records", () => {
 
 test("rejects other versions and unknown settings", () => {
   assert.deepEqual(sanitizeProgress({ version: 1, cards: { ok: card } }, "x").cards, {});
-  const s = sanitizeSettings({ accent: "fr", dailyNew: 1e9, theme: "dark", retention: 0.5 });
+  const s = sanitizeSettings({ accent: "fr", roundNew: 1e9, theme: "dark", retention: 0.5 });
   assert.equal(s.accent, "uk");
-  assert.equal(s.dailyNew, 10);
+  assert.equal(s.roundNew, 10);
   assert.equal(s.theme, "dark");
   assert.equal(s.retention, 0.9);
 });

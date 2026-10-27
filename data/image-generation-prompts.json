@@ -33,5 +33,15 @@
     "tool": "built-in image_gen",
     "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'devil'. Primary request: A small fictional red devil character with curved horns, pointed tail and a tiny trident, standing in a theatrical fairy-tale setting. Friendly storybook depiction, not frightening, no religious people, no text. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
     "file": "public/generated/devil.webp"
+  },
+  "owl": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary learning card for 'owl'. Primary request: A clearly recognizable barn owl perched on a branch in a quiet woodland at dusk, facing the viewer, round facial disc and detailed soft feathers, pale moon and blue-green leaves in the distance. Style: vintage mid-century gouache editorial illustration on textured warm paper; simplified natural forms; muted mustard ochre, terracotta, sage, ink navy and dusty blue. Square composition, clear memorable subject. No text, numbers, logos or watermark.",
+    "file": "public/generated/owl.webp"
+  },
+  "zoo": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary learning card for 'zoo'. Primary request: A welcoming small zoological park with visitors observing a giraffe and zebra in a spacious natural habitat, a winding footpath and a distant park entrance, calm family educational scene, no cages dominating the image. Style: vintage mid-century gouache editorial illustration on textured warm paper; simplified natural forms; muted mustard ochre, terracotta, sage, ink navy and dusty blue. Square composition, clear memorable subject. No text, numbers, logos or watermark.",
+    "file": "public/generated/zoo.webp"
   }
 }

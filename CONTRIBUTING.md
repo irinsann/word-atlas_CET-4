@@ -6,7 +6,7 @@
 
 最有价值的贡献是纠错。请在 Issue 中写明词条 `id`、问题和建议的改法，或直接提交 PR：
 
-1. 修改词库前，请先看 [词库说明](data/README.md) 与 [生成流程](README.md#构建与校验)。词表来源保存在 `cet4-source/Daily_Plans/`；修正时请保持原编号和滚动复习表中的重复词条一致。图片映射维护在 `scripts/cet4-image-map.mjs`，媒体来源记录在 `data/media-provenance.json`。
+1. 修改词库前，请先看 [词库说明](data/README.md) 与 [生成流程](README.md#构建与校验)。词表来源保存在 `cet4-source/Words_all.md`；去重规则在 `scripts/read-word-list.mjs`，修正时请保留原编号、不同释义及读音。图片映射维护在 `scripts/cet4-image-map.mjs` 与 `scripts/words-image-map.mjs`，媒体来源记录在 `data/media-provenance.json`。
 2. 运行 `npm run check:atlas` 和 `npm test`。
 3. 在 PR 里说明修改理由，必要时附权威词典链接。
 

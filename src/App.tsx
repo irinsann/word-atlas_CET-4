@@ -11,7 +11,7 @@ import { Learn } from "./pages/Learn";
 import { Me } from "./pages/Me";
 import { Onboarding } from "./pages/Onboarding";
 import { Practice } from "./pages/Practice";
-import { Plan } from "./pages/Plan";
+import { Study } from "./pages/Study";
 import { cue } from "./lib/sound";
 import { store, useStore } from "./store/store";
 import { EntryView } from "./ui/EntryView";
@@ -23,7 +23,7 @@ import { shouldShowSplash, Splash } from "./ui/Splash";
 import { Toasts } from "./ui/Toast";
 
 const NAV: { page: Route["page"]; label: string; icon: typeof Compass }[] = [
-  { page: "today", label: "14 天计划", icon: Compass },
+  { page: "today", label: "自由学习", icon: Compass },
   { page: "atlas", label: "图鉴", icon: BookOpen },
   { page: "practice", label: "练习", icon: Keyboard },
   { page: "me", label: "我的", icon: User },
@@ -152,7 +152,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       )}
 
       <main className="main" id="main">
-        {route.page === "today" && <Plan />}
+        {route.page === "today" && <Study />}
         {route.page === "atlas" && <AtlasPage route={route} />}
         {route.page === "learn" && <Learn />}
         {route.page === "practice" && <Practice />}

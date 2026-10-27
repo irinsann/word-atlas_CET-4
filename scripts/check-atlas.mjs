@@ -3,6 +3,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { readWordList, deduplicateWords } from "./read-word-list.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const pub = path.join(root, "public/atlas");
@@ -52,13 +53,15 @@ for (let n = 0; n * index.chunk < index.count; n++) {
 }
 if (entries !== index.count) fail(`entries ${entries} != count ${index.count}`);
 if (examples !== index.examples) fail(`examples ${examples} != ${index.examples}`);
-if (index.id === "word-atlas-cet4") {
-  if (index.count !== 2607) fail("CET-4 must contain 2,607 words");
-  if (index.illustrated !== 2607) fail("CET-4 illustrations incomplete");
-  const plan = JSON.parse(fs.readFileSync(path.join(root, "data/cet4-plan.json"), "utf8"));
-  if (plan.length !== 14) fail("Expected 14 days");
-  if (new Set(plan.flatMap(d => d.fresh)).size !== 2607) fail("Fresh coverage mismatch");
-  for (let i = 1; i < 14; i++) if (JSON.stringify(plan[i].review) !== JSON.stringify(plan[i - 1].fresh)) fail(`Review mismatch on day ${i + 1}`);
+if (index.id === "word-atlas-cet4-words-all-v1") {
+  const rows=readWordList(fs.readFileSync(path.join(root,"cet4-source/Words_all.md"),"utf8"));
+  const unique=deduplicateWords(rows);
+  if (index.count !== unique.length || index.sourceCount !== rows.length) fail("Source/unique word counts do not match");
+  if (index.illustrated !== index.count) fail("CET-4 illustrations incomplete");
+  for(let i=0;i<unique.length;i++) {
+    if(index.words[i][1]!==unique[i].w || index.words[i][7]!==unique[i].seq) fail(`Source identity/order mismatch at ${i}`);
+  }
+  if(fs.existsSync(path.join(root,"data/cet4-plan.json"))) fail("Old study allocation still exists");
 }
 
 const bits = (b) => index.words.filter((r) => r[6] & b).length;

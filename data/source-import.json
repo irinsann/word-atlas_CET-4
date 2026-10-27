@@ -1,0 +1,98 @@
+{
+  "source": "cet4-source/Words_all.md",
+  "sourceCount": 4449,
+  "uniqueCount": 4445,
+  "mergedCount": 4,
+  "merges": [
+    {
+      "word": "communism",
+      "sources": [
+        {
+          "seq": 750,
+          "w": "communism",
+          "ipa": "'kɔmjunizəm",
+          "zh": "n.共产主义",
+          "pos": "n.",
+          "raw": "'kɔmjunizəm  n.共产主义"
+        },
+        {
+          "seq": 751,
+          "w": "Communism",
+          "ipa": "'kɔmjunizəm",
+          "zh": "n.共产主义学说 共产主义制度",
+          "pos": "n.",
+          "raw": "'kɔmjunizəm  n.共产主义学说 共产主义制度"
+        }
+      ]
+    },
+    {
+      "word": "forbid",
+      "sources": [
+        {
+          "seq": 1548,
+          "w": "forbid",
+          "ipa": "fə'bid",
+          "zh": "vt.禁止 不许 阻止 妨碍",
+          "pos": "vt.",
+          "raw": "fə'bid  vt.禁止 不许 阻止 妨碍"
+        },
+        {
+          "seq": 1549,
+          "w": "forbid",
+          "ipa": "fə'bidn",
+          "zh": "adj.被禁止的",
+          "pos": "adj.",
+          "raw": "fə'bidn  adj.被禁止的"
+        }
+      ]
+    },
+    {
+      "word": "kingdom",
+      "sources": [
+        {
+          "seq": 2130,
+          "w": "Kingdom",
+          "ipa": "'kiŋdəm",
+          "zh": "n.天国",
+          "pos": "n.",
+          "raw": "'kiŋdəm n.天国"
+        },
+        {
+          "seq": 2131,
+          "w": "kingdom",
+          "ipa": "'kiŋdəm",
+          "zh": "n.王国 领域 界",
+          "pos": "n.",
+          "raw": "'kiŋdəm n.王国 领域 界"
+        }
+      ]
+    },
+    {
+      "word": "present",
+      "sources": [
+        {
+          "seq": 2889,
+          "w": "present",
+          "ipa": "'preznt",
+          "zh": "adj.现在的 当面的 出席的 n.礼物 赠送物 现在 目前",
+          "pos": "adj.",
+          "raw": "'preznt  adj.现在的 当面的 出席的 n.礼物 赠送物 现在 目前"
+        },
+        {
+          "seq": 2890,
+          "w": "present",
+          "ipa": "pri'zent",
+          "zh": "vt.赠送 介绍 提出 呈现",
+          "pos": "vt.",
+          "raw": "pri'zent  vt.赠送 介绍 提出 呈现"
+        }
+      ]
+    }
+  ],
+  "caseDistinct": [
+    "angle / Angle",
+    "China / china",
+    "grant / Grant",
+    "polish / Polish"
+  ]
+}

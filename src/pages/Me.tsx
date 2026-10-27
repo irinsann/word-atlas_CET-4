@@ -3,7 +3,7 @@ import { useMemo, useRef } from "react";
 import { isMastered } from "../store/srs";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
 import { toast } from "../ui/Toast";
-import { streakOf } from "./Today";
+import { streakOf } from "../store/activity";
 
 export function Me({ privateAvailable }: { privateAvailable: boolean }) {
   const progress = useStore((s) => s.progress);
@@ -107,11 +107,8 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
 
         <section className="panel settings">
           <h3 className="eyebrow">学习设置</h3>
-          <Field label="14 天滚动计划" hint="按 Daily_Plans 原编号学习，每天先复习昨日词，再学习新词。">
-            <p>第 1—12 天新学 200 词；第 13 天新学 207 词；第 14 天仅复习 207 词。</p>
-          </Field>
-          <Field label="当前学习日" hint="切换天数不会清除已有进度，未完成的学习会话仍可继续。">
-            <select value={settings.planDay} aria-label="当前学习日" onChange={e => set({planDay:Number(e.target.value)})}>{Array.from({length:14},(_,i) => <option key={i} value={i+1}>Day {String(i+1).padStart(2,"0")}</option>)}</select>
+          <Field label="每轮新词" hint="只决定这次练几个词，不限制每日数量。已开始的练习保留原进度。">
+            <div className="segmented">{[10,20,50].map(n=><button key={n} className={settings.roundNew===n?"is-on":""} onClick={()=>set({roundNew:n})}>{n} 词</button>)}</div>
           </Field>
           <Field label="目标记忆率" hint="越高复习越频繁。90% 是大多数人的甜点。">
             <div className="segmented">

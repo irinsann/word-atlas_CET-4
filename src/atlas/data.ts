@@ -29,6 +29,7 @@ export async function loadOpenAtlas(): Promise<Atlas> {
     topic: r[5],
     media: r[6],
     order,
+    sourceSeq: r[7],
   }));
   const byId = new Map(words.map((w) => [w.id, w]));
   const cache = new Map<string, Entry>();

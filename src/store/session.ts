@@ -3,7 +3,6 @@ import { MEDIA } from "../atlas/types";
 import { hashSeed, normalize, shuffle } from "../lib/text";
 import { isMastered, review, Rating, type Grade } from "./srs";
 import { bumpDay, dayKey, store, type ActiveSession, type Progress, type QuizKind, type Settings, type Step } from "./store";
-import { cet4Plan } from "./cet4";
 
 export function dueIds(p: Progress, now = Date.now()) {
   return Object.entries(p.cards)
@@ -16,26 +15,14 @@ export function newToday(p: Progress) {
   return p.days[dayKey()]?.n ?? 0;
 }
 
-/** Next unseen words along the learning path, starting at the learner's level. */
-export function nextNew(atlas: Atlas, p: Progress, settings: Settings, count: number) {
-  const out: string[] = [];
-  const pass = (from: number) => {
-    for (const w of atlas.words) {
-      if (out.length >= count) return;
-      if (w.cefr < from || p.cards[w.id] || out.includes(w.id)) continue;
-      out.push(w.id);
-    }
-  };
-  pass(settings.startLevel);
-  if (out.length < count) pass(0);
-  return out;
+/** An optional round in source order; there is no day number or daily allowance. */
+export function nextNew(atlas: Atlas, p: Progress, count: number) {
+  return atlas.words.filter(w => !p.cards[w.id]).slice(0, count).map(w => w.id);
 }
 
 export function todayPlan(atlas: Atlas, p: Progress, s: Settings) {
-  if (atlas.id === "word-atlas-cet4") return cet4Plan(atlas, p, s.planDay);
   const due = dueIds(p).filter((id) => atlas.byId.has(id));
-  const newLeft = Math.max(0, s.dailyNew - newToday(p));
-  const fresh = nextNew(atlas, p, s, newLeft);
+  const fresh = nextNew(atlas, p, s.roundNew);
   return { due, fresh, minutes: Math.max(1, Math.round(due.length * 0.25 + fresh.length * 0.9)) };
 }
 
@@ -85,11 +72,11 @@ export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: nu
   return shuffle([ref.id, ...picks], seed);
 }
 
-export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { ids?: string[]; reviewOnly?: boolean }): ActiveSession {
+export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { ids?: string[]; reviewOnly?: boolean; newOnly?: boolean }): ActiveSession {
   const seed = Date.now();
   const plan = todayPlan(atlas, p, s);
-  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id]) : plan.due;
-  const newIds = opts?.ids ? opts.ids.filter((id) => !p.cards[id]) : opts?.reviewOnly ? [] : plan.fresh;
+  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id] && atlas.byId.has(id)) : opts?.newOnly ? [] : plan.due;
+  const newIds = opts?.ids ? opts.ids.filter((id) => !p.cards[id] && atlas.byId.has(id)) : opts?.reviewOnly ? [] : plan.fresh;
   const steps: Step[] = [];
   const quiz = (id: string, salt: number): Step => {
     const ref = atlas.byId.get(id)!;
@@ -104,7 +91,7 @@ export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { id
     group.forEach((id) => steps.push({ id, kind: "intro" }));
     shuffle(group, seed + g).forEach((id, i) => steps.push(quiz(id, 1000 + g + i)));
   }
-  return { id: `s${seed}`, started: seed, steps, index: 0, graded: {}, newIds, reviewIds, planDay: atlas.id === "word-atlas-cet4" && !opts?.ids ? s.planDay : undefined };
+  return { id: `s${seed}`, started: seed, steps, index: 0, graded: {}, newIds, reviewIds };
 }
 
 export function gradeFor(kind: QuizKind, correct: boolean, ms: number, hinted: boolean): Grade {
@@ -126,11 +113,8 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
     let next: Progress = { ...p, session: { ...sess, pending: { correct, value } } };
     const first = !(step.id in sess.graded) && !step.retry;
     if (first) {
-      const planReviews = { ...p.planReviews };
-      if (sess.planDay && sess.reviewIds.includes(step.id)) planReviews[sess.planDay] = [...new Set([...(planReviews[sess.planDay] ?? []), step.id])];
       next = {
         ...next,
-        planReviews,
         cards: { ...next.cards, [step.id]: review(p.cards[step.id], grade, Date.now(), settings.retention) },
         session: { ...next.session!, graded: { ...sess.graded, [step.id]: grade } },
         mistakes: correct ? next.mistakes : [step.id, ...next.mistakes.filter((x) => x !== step.id)].slice(0, 300),
