@@ -221,15 +221,7 @@ function WordSheet({ id }: { id: string | null }) {
     return () => window.removeEventListener("keydown", on);
   }, [id, neighbor]);
   return (
-    <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 词条` : "词条"} wide>
-      {entry ? (
-        <EntryView key={entry.id} entry={entry} />
-      ) : error ? (
-        <p className="sheet-error">{error}</p>
-      ) : (
-        <span className="spinner" />
-      )}
-      {ref && (
+    <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 词条` : "词条"} wide footer={ref && (
         <nav className="sheet-nav" aria-label="切换词条">
           <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label="上一个">
             <ChevronLeft size={20} />
@@ -241,6 +233,13 @@ function WordSheet({ id }: { id: string | null }) {
             <ChevronRight size={20} />
           </button>
         </nav>
+      )}>
+      {entry ? (
+        <EntryView key={entry.id} entry={entry} />
+      ) : error ? (
+        <p className="sheet-error">{error}</p>
+      ) : (
+        <span className="spinner" />
       )}
     </Sheet>
   );

@@ -7,6 +7,7 @@ export function Sheet({
   onClose,
   label,
   children,
+  footer,
   wide = false,
   className = "",
 }: {
@@ -14,10 +15,15 @@ export function Sheet({
   onClose: () => void;
   label: string;
   children: React.ReactNode;
+  footer?: React.ReactNode;
   wide?: boolean;
   className?: string;
 }) {
   const panel = useRef<HTMLDivElement>(null);
+  const content = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    content.current?.scrollTo({ top: 0 });
+  }, [open, label]);
   useEffect(() => {
     if (!open) return;
     const prev = document.activeElement as HTMLElement | null;
@@ -27,7 +33,9 @@ export function Sheet({
         onClose();
       }
       if (e.key === "Tab" && panel.current) {
-        const f = panel.current.querySelectorAll<HTMLElement>('button,[href],input,select,textarea,[tabindex]:not([tabindex="-1"])');
+        const f = panel.current.querySelectorAll<HTMLElement>(
+          'button:not([disabled]),[href],input:not([disabled]),select:not([disabled]),textarea:not([disabled]),[tabindex]:not([tabindex="-1"])',
+        );
         if (!f.length) return;
         const first = f[0];
         const last = f[f.length - 1];
@@ -51,13 +59,32 @@ export function Sheet({
   }, [open, onClose]);
   if (!open) return null;
   return (
-    <div className="sheet-root" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div ref={panel} className={`sheet ${wide ? "sheet-wide" : ""} ${className}`} role="dialog" aria-modal="true" aria-label={label} tabIndex={-1}>
-        <span className="sheet-grip" aria-hidden="true" />
-        <button className="icon-btn sheet-close" onClick={onClose} aria-label="关闭">
-          <X size={20} />
-        </button>
-        {children}
+    <div
+      className="sheet-root"
+      onMouseDown={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div
+        ref={panel}
+        className={`sheet ${wide ? "sheet-wide" : ""} ${className}`}
+        role="dialog"
+        aria-modal="true"
+        aria-label={label}
+        tabIndex={-1}
+      >
+        <div className="sheet-toolbar">
+          <span className="sheet-grip" aria-hidden="true" />
+          <button
+            className="icon-btn sheet-close"
+            onClick={onClose}
+            aria-label="关闭"
+          >
+            <X size={20} />
+          </button>
+        </div>
+        <div ref={content} className="sheet-content">
+          {children}
+        </div>
+        {footer}
       </div>
     </div>
   );

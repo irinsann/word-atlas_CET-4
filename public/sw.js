@@ -1,5 +1,5 @@
 /* Word Atlas offline cache: app shell network-first, everything else cache-first. */
-const VERSION = "atlas-cet4-words-all-v1";
+const VERSION = "atlas-cet4-mobile-v2";
 const SHELL = `${VERSION}-shell`;
 const MEDIA = `${VERSION}-media`;
 

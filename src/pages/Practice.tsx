@@ -80,7 +80,7 @@ export function Practice() {
           <p className="muted">
             {pool.length
               ? source === "path"
-                ? "从学习路线的前 400 个词里随机抽 10 个。"
+                ? `从全部 ${pool.length.toLocaleString()} 个词中随机抽 10 个。`
                 : `可练 ${pool.length} 个词，每轮随机 10 个。`
               : "这里还没有词，先去学几个，或换个来源。"}
           </p>

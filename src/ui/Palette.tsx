@@ -1,4 +1,4 @@
-import { CornerDownLeft, Search } from "lucide-react";
+import { CornerDownLeft, Search, X } from "lucide-react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Atlas, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
@@ -27,12 +27,27 @@ export function searchAtlas(atlas: Atlas, raw: string, limit = 40): WordRef[] {
   return hits.slice(0, limit).map((h) => h[1]);
 }
 
-export function Palette({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function Palette({
+  open,
+  onClose,
+}: {
+  open: boolean;
+  onClose: () => void;
+}) {
   const atlas = useAtlas();
   const [q, setQ] = useState("");
   const [sel, setSel] = useState(0);
   const input = useRef<HTMLInputElement>(null);
   const results = useMemo(() => searchAtlas(atlas, q, 30), [atlas, q]);
+  useEffect(() => {
+    if (!open) return;
+    const root = document.documentElement;
+    const wasLocked = root.classList.contains("is-locked");
+    root.classList.add("is-locked");
+    return () => {
+      if (!wasLocked) root.classList.remove("is-locked");
+    };
+  }, [open]);
   useEffect(() => {
     if (open) {
       setQ("");
@@ -47,14 +62,24 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
     openWord(w.id);
   };
   return (
-    <div className="palette-root" onMouseDown={(e) => e.target === e.currentTarget && onClose()}>
-      <div className="palette" role="dialog" aria-modal="true" aria-label="搜索单词">
+    <div
+      className="palette-root"
+      onMouseDown={(e) => e.target === e.currentTarget && onClose()}
+    >
+      <div
+        className="palette"
+        role="dialog"
+        aria-modal="true"
+        aria-label="搜索单词"
+      >
         <label className="palette-input">
           <Search size={20} />
           <input
             ref={input}
             value={q}
-            placeholder="搜索英文或中文，例如 serendipity / 环境"
+            placeholder="搜索英文或中文释义"
+            aria-label="搜索英文或中文释义"
+            type="search"
             onChange={(e) => setQ(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Escape") onClose();
@@ -69,11 +94,20 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
               if (e.key === "Enter" && results[sel]) pick(results[sel]);
             }}
             aria-controls="palette-list"
-            aria-activedescendant={results[sel] ? `pal-${results[sel].id}` : undefined}
+            aria-activedescendant={
+              results[sel] ? `pal-${results[sel].id}` : undefined
+            }
             autoComplete="off"
             spellCheck={false}
           />
           <kbd>Esc</kbd>
+          <button
+            className="icon-btn palette-close"
+            onClick={onClose}
+            aria-label="关闭搜索"
+          >
+            <X size={20} />
+          </button>
         </label>
         <ul id="palette-list" className="palette-list" role="listbox">
           {results.map((w, i) => (
@@ -86,19 +120,32 @@ export function Palette({ open, onClose }: { open: boolean; onClose: () => void 
               onMouseEnter={() => setSel(i)}
               onClick={() => pick(w)}
             >
-              <Illustration src={atlas.img(w, "thumb")} word={w.word} topic={w.topic} className="palette-thumb" />
+              <Illustration
+                src={atlas.img(w, "thumb")}
+                word={w.word}
+                topic={w.topic}
+                className="palette-thumb"
+              />
               <span className="palette-word" lang="en">
                 {w.word}
               </span>
               <span className="palette-zh">{w.zh}</span>
-              {i === sel && <CornerDownLeft size={15} className="palette-enter" />}
+              {i === sel && (
+                <CornerDownLeft size={15} className="palette-enter" />
+              )}
             </li>
           ))}
-          {q && !results.length && <li className="palette-empty">没有找到「{q}」</li>}
+          {q && !results.length && (
+            <li className="palette-empty">没有找到「{q}」</li>
+          )}
           {!q && (
             <li className="palette-hint">
-              {atlas.count.toLocaleString()} 个词条 · 支持英文前缀与中文释义搜索 · <kbd>↑</kbd>
-              <kbd>↓</kbd> 选择 <kbd>↵</kbd> 打开
+              {atlas.count.toLocaleString()} 个词条 · 支持英文前缀与中文释义搜索
+              <span className="palette-desktop-hint">
+                {" "}
+                · <kbd>↑</kbd>
+                <kbd>↓</kbd> 选择 <kbd>↵</kbd> 打开
+              </span>
             </li>
           )}
         </ul>

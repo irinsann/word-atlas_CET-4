@@ -1,4 +1,11 @@
-import { Grid3x3, List, Search, Sparkles, X } from "lucide-react";
+import {
+  Grid3x3,
+  List,
+  Search,
+  SlidersHorizontal,
+  Sparkles,
+  X,
+} from "lucide-react";
 import { Galaxy } from "../galaxy/Galaxy";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import { useAtlas } from "../atlas/context";
@@ -40,6 +47,13 @@ export function AtlasPage({
   const bookmarks = useStore((s) => s.progress.bookmarks);
   const [q, setQ] = useState(route.q ?? "");
   const [status, setStatus] = useState<Status>("all");
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const letters = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    letters.current
+      ?.querySelector('[aria-pressed="true"]')
+      ?.scrollIntoView({ block: "nearest", inline: "center" });
+  }, [route.letter]);
   const [view, setViewState] = useState<View>(() =>
     route.view === "galaxy" || route.view === "list" || route.view === "grid"
       ? route.view
@@ -47,7 +61,12 @@ export function AtlasPage({
   );
   // Follow the URL when a link switches views while this page is already open.
   useEffect(() => {
-    if (route.view === "grid" || route.view === "list" || route.view === "galaxy") setViewState(route.view);
+    if (
+      route.view === "grid" ||
+      route.view === "list" ||
+      route.view === "galaxy"
+    )
+      setViewState(route.view);
   }, [route.view]);
   const setView = (v: View) => {
     setViewState(v);
@@ -65,6 +84,8 @@ export function AtlasPage({
   };
   const topic = route.topic;
   const level = route.level;
+  const filterCount =
+    Number(!!topic) + Number(!!level) + Number(status !== "all");
 
   useEffect(() => {
     try {
@@ -80,7 +101,8 @@ export function AtlasPage({
     const li = level ? atlas.cefr.indexOf(level) : -1;
     const base = q.trim() ? searchAtlas(atlas, q, 5000) : atlas.words;
     return base.filter((w) => {
-      if (route.letter && w.word[0]?.toUpperCase() !== route.letter) return false;
+      if (route.letter && w.word[0]?.toUpperCase() !== route.letter)
+        return false;
       if (ti >= 0 && w.topic !== ti) return false;
       if (li >= 0 && w.cefr !== li) return false;
       const c = cards[w.id];
@@ -93,7 +115,18 @@ export function AtlasPage({
   }, [atlas, q, topic, level, status, cards, bookmarks, route.letter]);
 
   const setFilter = (patch: Partial<Extract<Route, { page: "atlas" }>>) =>
-    go({ page: "atlas", topic, level, letter: route.letter, view: route.view, ...patch }, null, true);
+    go(
+      {
+        page: "atlas",
+        topic,
+        level,
+        letter: route.letter,
+        view: route.view,
+        ...patch,
+      },
+      null,
+      true,
+    );
 
   return (
     <div className={`page atlas ${view === "galaxy" ? "is-galaxy" : ""}`}>
@@ -106,37 +139,80 @@ export function AtlasPage({
             都有一幅画。
           </h1>
           <p className="lede">
-            {atlas.examples.toLocaleString()} 条复用例句 · 英美发音 · {atlas.topics.length} 个主题 · 按首字母浏览
+            {atlas.examples.toLocaleString()} 条复用例句 · 英美发音 ·{" "}
+            {atlas.topics.length} 个主题 · 按首字母浏览
           </p>
         </div>
-        <label className="search">
-          <Search size={19} />
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="搜索单词或中文释义"
-            spellCheck={false}
-            autoComplete="off"
-          />
-          {q && (
+        <div className="atlas-search-row">
+          <label className="search">
+            <Search size={19} />
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="搜索单词或中文释义"
+              aria-label="搜索单词或中文释义"
+              type="search"
+              spellCheck={false}
+              autoComplete="off"
+            />
+            {q && (
+              <button
+                className="icon-btn"
+                onClick={() => setQ("")}
+                aria-label="清空搜索"
+              >
+                <X size={16} />
+              </button>
+            )}
+          </label>
+          {view !== "galaxy" && (
             <button
-              className="icon-btn"
-              onClick={() => setQ("")}
-              aria-label="清空搜索"
+              className={`atlas-filter-toggle ${filtersOpen || filterCount ? "is-on" : ""}`}
+              aria-expanded={filtersOpen}
+              aria-controls="atlas-filter-details"
+              onClick={() => setFiltersOpen(!filtersOpen)}
             >
-              <X size={16} />
+              <SlidersHorizontal size={18} />
+              <span>筛选{filterCount ? ` · ${filterCount}` : ""}</span>
             </button>
           )}
-        </label>
+        </div>
       </header>
 
       <div className="filters">
-        <div className="chips chips-scroll" role="group" aria-label="首字母"><button className={`chip-btn ${!route.letter ? "is-on" : ""}`} onClick={()=>setFilter({letter:undefined})}>全部字母</button>{"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map(letter=><button key={letter} className={`chip-btn ${route.letter===letter?"is-on":""}`} onClick={()=>setFilter({letter})}>{letter}</button>)}</div>
+        <div
+          className="chips chips-scroll atlas-letters"
+          ref={letters}
+          role="group"
+          aria-label="首字母"
+        >
+          <button
+            className={`chip-btn ${!route.letter ? "is-on" : ""}`}
+            aria-pressed={!route.letter}
+            onClick={() => setFilter({ letter: undefined })}
+          >
+            全部字母
+          </button>
+          {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => (
+            <button
+              key={letter}
+              className={`chip-btn ${route.letter === letter ? "is-on" : ""}`}
+              aria-pressed={route.letter === letter}
+              onClick={() => setFilter({ letter })}
+            >
+              {letter}
+            </button>
+          ))}
+        </div>
         {view !== "galaxy" && (
-          <>
+          <div
+            id="atlas-filter-details"
+            className={`atlas-filter-details ${filtersOpen ? "is-open" : ""}`}
+          >
             <div className="chips chips-scroll" role="group" aria-label="难度">
               <button
                 className={`chip-btn ${!level ? "is-on" : ""}`}
+                aria-pressed={!level}
                 onClick={() => setFilter({ level: undefined })}
               >
                 所有难度
@@ -145,6 +221,7 @@ export function AtlasPage({
                 <button
                   key={l}
                   className={`chip-btn lv lv-${l} ${level === l ? "is-on" : ""}`}
+                  aria-pressed={level === l}
                   onClick={() =>
                     setFilter({ level: level === l ? undefined : l })
                   }
@@ -156,6 +233,7 @@ export function AtlasPage({
             <div className="chips chips-scroll" role="group" aria-label="主题">
               <button
                 className={`chip-btn ${!topic ? "is-on" : ""}`}
+                aria-pressed={!topic}
                 onClick={() => setFilter({ topic: undefined })}
               >
                 所有主题
@@ -164,6 +242,7 @@ export function AtlasPage({
                 <button
                   key={k}
                   className={`chip-btn ${topic === k ? "is-on" : ""}`}
+                  aria-pressed={topic === k}
                   onClick={() =>
                     setFilter({ topic: topic === k ? undefined : k })
                   }
@@ -172,10 +251,6 @@ export function AtlasPage({
                 </button>
               ))}
             </div>
-          </>
-        )}
-        <div className="filters-row">
-          {view !== "galaxy" && (
             <div className="segmented" role="group" aria-label="学习状态">
               {STATUS.map(([k, label]) => (
                 <button
@@ -188,7 +263,24 @@ export function AtlasPage({
                 </button>
               ))}
             </div>
-          )}
+            {(filterCount > 0 || route.letter) && (
+              <button
+                className="link atlas-filter-reset"
+                onClick={() => {
+                  setStatus("all");
+                  setFilter({
+                    topic: undefined,
+                    level: undefined,
+                    letter: undefined,
+                  });
+                }}
+              >
+                重置筛选 <X size={14} />
+              </button>
+            )}
+          </div>
+        )}
+        <div className="filters-row">
           <span className="result-count">
             {view === "galaxy"
               ? "搜索一个词，星图会带你飞过去"
@@ -332,7 +424,12 @@ function VirtualGrid({
               width: cell,
               height: rowH - gap,
             }}
-            onClick={(e) => morphFrom(e.currentTarget.querySelector<HTMLElement>(".illo"), () => openWord(w.id))}
+            onClick={(e) =>
+              morphFrom(
+                e.currentTarget.querySelector<HTMLElement>(".illo"),
+                () => openWord(w.id),
+              )
+            }
           >
             <Illustration
               src={atlas.img(w, "thumb")}
