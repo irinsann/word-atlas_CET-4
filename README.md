@@ -28,6 +28,10 @@
 
 ## 打开使用
 
+在线使用：[打开四级词汇图鉴](https://irinsann.github.io/word-atlas_CET-4/)。无需安装或注册，学习进度保存在当前浏览器，可在「我的」导出备份。
+
+### 本地运行
+
 Windows 双击 **start-cet4.cmd**。需要 Node.js 20+；首次启动会安装依赖。也可以运行：
 
 ```powershell
@@ -35,7 +39,7 @@ npm ci
 npm run dev
 ```
 
-打开 **http://127.0.0.1:5194/**。固定使用同一浏览器和地址，localhost 与 127.0.0.1 的存储相互独立。
+打开 [http://127.0.0.1:5194/](http://127.0.0.1:5194/)。固定使用同一浏览器和地址，localhost 与 127.0.0.1 的存储相互独立。本地版与在线版的进度也分别保存，需要时可手动导出、导入备份。
 
 ## 图片、例句与发音
 
@@ -55,6 +59,8 @@ npm run preview
 ```
 
 `dist/` 是静态网站，需通过 HTTP 服务器打开。子路径部署可设置 `ATLAS_BASE=/words/` 后构建。
+
+GitHub Pages 由 `.github/workflows/pages.yml` 自动发布：推送到 `main` 或手动运行工作流后，先执行测试和词库校验，再构建并部署 `dist/`。仓库 Pages 的发布来源需设为 GitHub Actions；子目录路径自动使用仓库名称。
 
 如需重新生成词库，先将完整原仓库解压至 `source/word-atlas-main/`，运行 `npm run build:cet4`。也可指定 Markdown 文件：`node scripts/build-cet4.mjs "C:/path/Words_all.md"`。生成脚本会去重、保留来源、裁剪运行时媒体，并且不生成任何按天分配。
 
