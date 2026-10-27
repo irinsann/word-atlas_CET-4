@@ -19,7 +19,7 @@ export function Logo({ compact = false }: { compact?: boolean }) {
       <Mark />
       <span className="logo-text">
         <b>词光</b>
-        {!compact && <small>Word Atlas</small>}
+        {!compact && <small>Word Atlas · CET–4</small>}
       </span>
     </span>
   );

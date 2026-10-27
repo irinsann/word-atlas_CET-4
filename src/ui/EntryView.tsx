@@ -77,6 +77,9 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             <span className={`chip chip-level lv-${entry.cefr}`}>{entry.cefr}</span>
             {topic && <span className="chip">{topic[1]}</span>}
             {status && <span className={`chip chip-status ${status === "已掌握" ? "is-done" : ""}`}>{status}</span>}
+            {entry.sourceSeq && <span className="chip">Day {Math.min(13, Math.ceil(entry.sourceSeq / 200))}</span>}
+            {entry.imageKind === "association" && <span className="chip" title={`关联画面：${entry.imageSource}`}>场景联想</span>}
+            {entry.imageKind === "generated" && <span className="chip">新增插画</span>}
           </div>
           {mode === "detail" && (
             <div className="entry-actions">
@@ -121,7 +124,7 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
             <ul className="examples">
               {entry.ex.map((x, i) => (
                 <li key={i}>
-                  {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "雅思语境" : "日常"}</span>}
+                  {entry.ex.length > 1 && <span className={`ex-tag ${i ? "is-ielts" : ""}`}>{i ? "四级语境" : "日常"}</span>}
                   <p className="ex-en" lang="en">
                     <Highlight text={x.en} word={entry.w} />
                     <Speak url={exUrls[i] ?? null} text={x.en} accent={i === 1 && exUrls[1] ? "us" : accent} size="sm" className="ex-speak" />

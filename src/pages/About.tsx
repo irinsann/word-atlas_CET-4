@@ -1,6 +1,6 @@
 import { ArrowUpRight, Database, Github, Heart } from "lucide-react";
 import { useAtlas } from "../atlas/context";
-import { REPO_URL } from "../config";
+import { REPO_URL, UPSTREAM_REPO_URL } from "../config";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -12,17 +12,17 @@ export function About() {
         <img src={`${BASE}brand/og.webp`} alt="" />
         <div>
           <p className="eyebrow">关于词光</p>
-          <h1 className="display">一词一画，点亮雅思。</h1>
+          <h1 className="display">十四天，点亮四级词汇。</h1>
           <p className="lede">
-            词光把雅思阅读 8000 词整理成 {atlas.count.toLocaleString()} 个词条。每个词一幅原创插画，一句日常例句，一句雅思例句，配英美发音、常用搭配和易混提示。学会一个，就在你的星图上点亮一颗星。
+            四级版以本地 Daily_Plans 的 {atlas.count.toLocaleString()} 个词为准，完整保留编号、英美音标和中文释义。前 13 天学习新词，第 14 天收尾复习；从第 2 天起，先复习前一天的词。
           </p>
-          <p className="lede">它免费、开源、无需注册。代码用 MIT，词库用 CC BY 4.0，谁都可以拿去用。</p>
+          <p className="lede">基于 Word Atlas 开源版改编，无需注册。原项目代码遵循 MIT，复用插画、音频与例句遵循 CC BY 4.0，原作者署名保留。</p>
           <div className="about-actions">
             <a className="btn btn-primary" href={REPO_URL} target="_blank" rel="noreferrer">
               <Github size={18} /> 在 GitHub 上查看
             </a>
-            <a className="btn btn-ghost" href={`${REPO_URL}/tree/main/data`} target="_blank" rel="noreferrer">
-              <Database size={18} /> 下载词库 JSON / CSV
+            <a className="btn btn-ghost" href={`${UPSTREAM_REPO_URL}/tree/main/data`} target="_blank" rel="noreferrer">
+              <Database size={18} /> 查看原项目词库
             </a>
           </div>
         </div>
@@ -33,13 +33,13 @@ export function About() {
           <h3 className="eyebrow">为什么记得住</h3>
           <ul className="feature-list">
             <li>
-              <b>先看见。</b>每个词都有一幅画，画的就是第一句例句里发生的事。
+              <b>先看见。</b>优先复用同词插画；关联场景标注「场景联想」，缺少的图由内置生图补齐。
             </li>
             <li>
               <b>再想起。</b>选义、看图补句、听音辨词、拼写，从认得走到会写。
             </li>
             <li>
-              <b>刚好在快忘时重逢。</b>FSRS 是新版 Anki 用的开源记忆算法，只在你快要遗忘时安排复习。
+              <b>昨日重逢。</b>14 天路线固定复习前一天的词；FSRS 另外记录每个词的记忆稳定度和预计复习时间。
             </li>
             <li>
               <b>分数诚实。</b>只算第一次作答。答错的词会换个题型再见一面，但不会抬高正确率。
@@ -90,9 +90,9 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">内容从哪里来</h3>
           <p className="muted">
-            释义、例句、搭配和提示由大语言模型按统一的词典规范重新撰写；插画由图像模型按统一画风逐词绘制；发音和朗读由 ElevenLabs 合成（英音 Alice，美音 Sarah）。所有内容都经过结构和一致性的自动校验，但没有逐条人工审校。看到错的地方，欢迎在 GitHub 提 Issue，或者直接改数据提 PR。
+            词条与学习安排来自你提供的 Daily_Plans。匹配的词复用原项目的例句、搭配、插画和录音；没有原录音的词使用设备的英美语音朗读，没有原例句的词只显示词表内容。关联图片不复制其他词的释义或录音。详细来源记录在 data/media-provenance.json，新图提示词记录在 data/image-generation-prompts.json。
           </p>
-          <p className="muted">词光不是官方雅思词表，也不承诺提分。它只想把背单词这件事，做得好看一点、扎实一点。</p>
+          <p className="muted">内容与原项目署名：designfuchen/word-atlas，原作者 yangleiocx3。四级版学习进度独立保存在当前设备中。</p>
         </section>
 
         <section className="panel">

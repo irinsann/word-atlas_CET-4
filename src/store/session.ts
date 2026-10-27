@@ -3,6 +3,7 @@ import { MEDIA } from "../atlas/types";
 import { hashSeed, normalize, shuffle } from "../lib/text";
 import { isMastered, review, Rating, type Grade } from "./srs";
 import { bumpDay, dayKey, store, type ActiveSession, type Progress, type QuizKind, type Settings, type Step } from "./store";
+import { cet4Plan } from "./cet4";
 
 export function dueIds(p: Progress, now = Date.now()) {
   return Object.entries(p.cards)
@@ -31,6 +32,7 @@ export function nextNew(atlas: Atlas, p: Progress, settings: Settings, count: nu
 }
 
 export function todayPlan(atlas: Atlas, p: Progress, s: Settings) {
+  if (atlas.id === "word-atlas-cet4") return cet4Plan(atlas, p, s.planDay);
   const due = dueIds(p).filter((id) => atlas.byId.has(id));
   const newLeft = Math.max(0, s.dailyNew - newToday(p));
   const fresh = nextNew(atlas, p, s, newLeft);
@@ -39,7 +41,7 @@ export function todayPlan(atlas: Atlas, p: Progress, s: Settings) {
 
 function quizKind(ref: WordRef, p: Progress, s: Settings, salt: number): QuizKind {
   const c = p.cards[ref.id];
-  const hasImg = !!(ref.media & MEDIA.img);
+  const hasImg = !!(ref.media & MEDIA.img) && !!(ref.media & 32);
   const roll = hashSeed(ref.id + salt) % 100;
   if (!c || c.s < 2) {
     if (hasImg && roll < 45) return "picture";
@@ -86,7 +88,7 @@ export function distractors(atlas: Atlas, ref: WordRef, kind: QuizKind, seed: nu
 export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { ids?: string[]; reviewOnly?: boolean }): ActiveSession {
   const seed = Date.now();
   const plan = todayPlan(atlas, p, s);
-  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id]) : plan.due.slice(0, 120);
+  const reviewIds = opts?.ids ? opts.ids.filter((id) => p.cards[id]) : plan.due;
   const newIds = opts?.ids ? opts.ids.filter((id) => !p.cards[id]) : opts?.reviewOnly ? [] : plan.fresh;
   const steps: Step[] = [];
   const quiz = (id: string, salt: number): Step => {
@@ -95,14 +97,14 @@ export function buildSession(atlas: Atlas, p: Progress, s: Settings, opts?: { id
     return { id, kind, options: kind === "spell" ? undefined : distractors(atlas, ref, kind, seed + salt) };
   };
   // Reviews first while attention is fresh, then new words in small groups:
-  // meet five, then recall those five in a different order.
+  // meet ten, then recall those ten in a different order.
   reviewIds.forEach((id, i) => steps.push(quiz(id, i)));
-  for (let g = 0; g < newIds.length; g += 5) {
-    const group = newIds.slice(g, g + 5);
+  for (let g = 0; g < newIds.length; g += 10) {
+    const group = newIds.slice(g, g + 10);
     group.forEach((id) => steps.push({ id, kind: "intro" }));
     shuffle(group, seed + g).forEach((id, i) => steps.push(quiz(id, 1000 + g + i)));
   }
-  return { id: `s${seed}`, started: seed, steps, index: 0, graded: {}, newIds, reviewIds };
+  return { id: `s${seed}`, started: seed, steps, index: 0, graded: {}, newIds, reviewIds, planDay: atlas.id === "word-atlas-cet4" && !opts?.ids ? s.planDay : undefined };
 }
 
 export function gradeFor(kind: QuizKind, correct: boolean, ms: number, hinted: boolean): Grade {
@@ -124,8 +126,11 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
     let next: Progress = { ...p, session: { ...sess, pending: { correct, value } } };
     const first = !(step.id in sess.graded) && !step.retry;
     if (first) {
+      const planReviews = { ...p.planReviews };
+      if (sess.planDay && sess.reviewIds.includes(step.id)) planReviews[sess.planDay] = [...new Set([...(planReviews[sess.planDay] ?? []), step.id])];
       next = {
         ...next,
+        planReviews,
         cards: { ...next.cards, [step.id]: review(p.cards[step.id], grade, Date.now(), settings.retention) },
         session: { ...next.session!, graded: { ...sess.graded, [step.id]: grade } },
         mistakes: correct ? next.mistakes : [step.id, ...next.mistakes.filter((x) => x !== step.id)].slice(0, 300),
@@ -138,7 +143,7 @@ export function answer(atlas: Atlas, step: Step & { kind: QuizKind }, correct: b
       const retries = steps.filter((x) => x.id === step.id && "retry" in x && x.retry).length;
       if (retries < 2) {
         const ref = atlas.byId.get(step.id)!;
-        const kind: QuizKind = step.kind === "meaning" ? (ref.media & MEDIA.img ? "picture" : "listen") : "meaning";
+        const kind: QuizKind = step.kind === "meaning" ? (ref.media & MEDIA.img && ref.media & 32 ? "picture" : "listen") : "meaning";
         const at = Math.min(steps.length, sess.index + 4);
         steps.splice(at, 0, { id: step.id, kind, retry: true, options: distractors(atlas, ref, kind, Date.now()) });
         next = { ...next, session: { ...next.session!, steps } };

@@ -99,7 +99,7 @@ export default defineConfig({
       },
     },
   ],
-  server: { port: 5188, strictPort: true },
-  preview: { port: 5188, strictPort: true },
+  server: { port: 5194, strictPort: true },
+  preview: { port: 5194, strictPort: true },
   build: { chunkSizeWarningLimit: 600 },
 });

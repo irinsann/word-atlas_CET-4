@@ -9,6 +9,7 @@ import { clean, correctCharacterCount, same, typingDelta, typingMetrics } from "
 import { store, useStore } from "../store/store";
 import { AmbiencePicker } from "../ui/Ambience";
 import { Illustration } from "../ui/Illustration";
+import { dayWords } from "../store/cet4";
 
 type Mode = "word" | "sentence" | "dictation";
 type Source = "recent" | "mistakes" | "saved" | "path";
@@ -28,7 +29,7 @@ const SOURCES: [Source, string][] = [
 export function Practice() {
   const atlas = useAtlas();
   const progress = useStore((s) => s.progress);
-  const startLevel = useStore((s) => s.settings.startLevel);
+  const planDay = useStore((s) => s.settings.planDay);
   const [mode, setMode] = useState<Mode>("word");
   const [source, setSource] = useState<Source>(() => (Object.keys(progress.cards).length ? "recent" : "path"));
   const [round, setRound] = useState<{ entries: Entry[]; key: number } | null>(null);
@@ -38,9 +39,9 @@ export function Practice() {
       .sort((a, b) => (b[1].last ?? 0) - (a[1].last ?? 0))
       .map(([id]) => id);
     const ids =
-      source === "recent" ? learned : source === "mistakes" ? progress.mistakes : source === "saved" ? progress.bookmarks : atlas.words.filter((w) => w.cefr >= startLevel).slice(0, 400).map((w) => w.id);
+      source === "recent" ? learned : source === "mistakes" ? progress.mistakes : source === "saved" ? progress.bookmarks : [...dayWords(atlas, planDay).review, ...dayWords(atlas, planDay).fresh].map(w => w.id);
     return ids.filter((id) => atlas.byId.has(id));
-  }, [atlas, progress.cards, progress.mistakes, progress.bookmarks, source, startLevel]);
+  }, [atlas, progress.cards, progress.mistakes, progress.bookmarks, source, planDay]);
 
   const start = async () => {
     const ids = shuffle(pool.slice(0, 60), hashSeed(String(Date.now()))).slice(0, 10);

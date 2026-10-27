@@ -17,6 +17,7 @@ export interface ActiveSession {
   /** Answer shown but not yet continued; survives reload without double counting. */
   pending?: { correct: boolean; value: string };
   finished?: number;
+  planDay?: number;
 }
 
 export interface DayStat {
@@ -44,6 +45,7 @@ export interface Progress {
   session: ActiveSession | null;
   /** Rolling list of recent mistakes, newest first. */
   mistakes: string[];
+  planReviews: Record<number, string[]>;
 }
 
 export interface Settings {
@@ -60,6 +62,7 @@ export interface Settings {
   ambience: "off" | "stars" | "rain" | "sea" | "forest" | "fire" | "voyage" | "cafe";
   ambienceVolume: number;
   splash: boolean;
+  planDay: number;
 }
 
 export const defaultSettings: Settings = {
@@ -76,6 +79,7 @@ export const defaultSettings: Settings = {
   ambience: "stars",
   ambienceVolume: 0.45,
   splash: true,
+  planDay: 1,
 };
 
 export const emptyProgress = (datasetId: string): Progress => ({
@@ -87,12 +91,13 @@ export const emptyProgress = (datasetId: string): Progress => ({
   typing: [],
   session: null,
   mistakes: [],
+  planReviews: {},
 });
 
 export const dayKey = (d = new Date()) =>
   `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 
-const SETTINGS_KEY = "word-atlas:settings";
+const SETTINGS_KEY = "word-atlas-cet4:settings";
 const progressKey = (id: string) => `word-atlas:v2:${id}`;
 
 function read<T>(key: string): T | null {
@@ -137,6 +142,9 @@ function validCard(v: unknown): v is CardState {
 export function sanitizeProgress(v: unknown, datasetId: string): Progress {
   const out = emptyProgress(datasetId);
   if (!isObj(v) || v.version !== 2) return out;
+  if (isObj(v.planReviews)) for (const [day, ids] of Object.entries(v.planReviews)) {
+    if (/^(?:[1-9]|1[0-4])$/.test(day) && Array.isArray(ids)) out.planReviews[Number(day)] = [...new Set(ids.filter((x): x is string => typeof x === "string"))].slice(0, 207);
+  }
   if (isObj(v.cards)) for (const [k, c] of Object.entries(v.cards)) if (validCard(c)) out.cards[k] = c;
   if (Array.isArray(v.bookmarks)) out.bookmarks = v.bookmarks.filter((x): x is string => typeof x === "string").slice(0, 20000);
   if (Array.isArray(v.mistakes)) out.mistakes = v.mistakes.filter((x): x is string => typeof x === "string").slice(0, 300);
@@ -173,6 +181,7 @@ export function sanitizeSettings(v: unknown): Settings {
   if (["off", "stars", "rain", "sea", "forest", "fire", "voyage", "cafe"].includes(v.ambience as string)) s.ambience = v.ambience as Settings["ambience"];
   if (num(v.ambienceVolume, 0, 1)) s.ambienceVolume = v.ambienceVolume as number;
   if (typeof v.splash === "boolean") s.splash = v.splash;
+  if (num(v.planDay, 1, 14)) s.planDay = Math.round(v.planDay as number);
   return s;
 }
 

@@ -24,3 +24,9 @@ The material above is offered under CC BY 4.0, to the extent of the rights the m
 - 内容由 AI 模型按项目规范生成（文本：大语言模型；插画：图像模型；录音：ElevenLabs 合成语音），经过自动校验，未逐条人工审校，按现状提供，不作准确性担保。Content was generated with AI models under the project's specifications, checked automatically, not proofread entry by entry, and is provided as-is without warranty.
 - 录音授权只涉及这些完成的音频文件，不包含底层声音模型、声音身份或任何人的肖像、人格权，也不表示声音提供方为本项目背书。英音声音为 ElevenLabs “Alice”，美音为 “Sarah”。The recording license covers the finished audio files only, not the underlying voice models or voice identities, and implies no endorsement. Voices: ElevenLabs "Alice" (UK) and "Sarah" (US).
 - 不是官方雅思（IELTS）词表，与雅思考试主办方无关。Not an official IELTS list and not affiliated with the IELTS partners.
+
+## 四级改编说明
+
+本版本基于 https://github.com/designfuchen/word-atlas 改编，保留 `Word Atlas contributors — CC BY 4.0` 署名。原作者为 yangleiocx3。修改包括：按用户提供的四级 Daily_Plans 替换词表及顺序、实现 14 天学习路线、裁剪原媒体至对应词条、使用关联场景复用部分插画、使用内置 image_gen 新增 7 张插画。逐词媒体来源与新图提示词在 `data/media-provenance.json`、`data/image-generation-prompts.json`。
+
+用户提供的 Daily_Plans、原编号、释义和音标属于另行提供的学习资料，其来源保留于 `cet4-source/`，不将其声称为原项目贡献者原创。新增 AI 插画的来源为内置 image_gen，来源记录与原 CC BY 素材分开保存。

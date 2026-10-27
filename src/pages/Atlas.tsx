@@ -10,6 +10,7 @@ import { useStore } from "../store/store";
 import { Illustration } from "../ui/Illustration";
 import { searchAtlas } from "../ui/Palette";
 import { Speak } from "../ui/Speak";
+import { dayWords } from "../store/cet4";
 
 type Status = "all" | "new" | "learning" | "mastered" | "saved";
 const STATUS: [Status, string][] = [
@@ -56,6 +57,7 @@ export function AtlasPage({
         page: "atlas",
         topic: route.topic,
         level: route.level,
+        day: route.day,
         view: v === "grid" ? undefined : v,
       },
       null,
@@ -78,7 +80,10 @@ export function AtlasPage({
     const ti = topic ? atlas.topics.findIndex((t) => t[0] === topic) : -1;
     const li = level ? atlas.cefr.indexOf(level) : -1;
     const base = q.trim() ? searchAtlas(atlas, q, 5000) : atlas.words;
+    const daily = route.day ? dayWords(atlas, Number(route.day)) : null;
+    const dailyIds = daily ? new Set([...daily.fresh, ...daily.review].map(w => w.id)) : null;
     return base.filter((w) => {
+      if (dailyIds && !dailyIds.has(w.id)) return false;
       if (ti >= 0 && w.topic !== ti) return false;
       if (li >= 0 && w.cefr !== li) return false;
       const c = cards[w.id];
@@ -88,10 +93,10 @@ export function AtlasPage({
       if (status === "saved") return saved.has(w.id);
       return true;
     });
-  }, [atlas, q, topic, level, status, cards, bookmarks]);
+  }, [atlas, q, topic, level, status, cards, bookmarks, route.day]);
 
   const setFilter = (patch: Partial<Extract<Route, { page: "atlas" }>>) =>
-    go({ page: "atlas", topic, level, view: route.view, ...patch }, null, true);
+    go({ page: "atlas", topic, level, day: route.day, view: route.view, ...patch }, null, true);
 
   return (
     <div className={`page atlas ${view === "galaxy" ? "is-galaxy" : ""}`}>
@@ -104,7 +109,7 @@ export function AtlasPage({
             都有一幅画。
           </h1>
           <p className="lede">
-            {atlas.examples.toLocaleString()} 条原创例句 · 英美发音 · 按难度和 {atlas.topics.length} 个雅思话题整理
+            {atlas.examples.toLocaleString()} 条复用例句 · 英美发音 · {atlas.topics.length} 个主题 · 支持按天筛词
           </p>
         </div>
         <label className="search">
@@ -129,6 +134,7 @@ export function AtlasPage({
       </header>
 
       <div className="filters">
+        <div className="chips chips-scroll" role="group" aria-label="计划天数"><button className={`chip-btn ${!route.day ? "is-on" : ""}`} onClick={() => setFilter({day: undefined})}>全部天数</button>{Array.from({length:14},(_,i) => <button key={i} className={`chip-btn ${route.day === String(i+1) ? "is-on" : ""}`} onClick={() => setFilter({day:String(i+1)})}>Day {String(i+1).padStart(2,"0")}</button>)}</div>
         {view !== "galaxy" && (
           <>
             <div className="chips chips-scroll" role="group" aria-label="难度">

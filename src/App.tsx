@@ -1,7 +1,7 @@
 import { BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Search, Sun, User } from "lucide-react";
 import { useCallback, useEffect, useState } from "react";
 import { AtlasContext, useAtlas, useEntry } from "./atlas/context";
-import { loadOpenAtlas, loadPrivateAtlas } from "./atlas/data";
+import { loadOpenAtlas } from "./atlas/data";
 import type { Atlas } from "./atlas/types";
 import { REPO_URL } from "./config";
 import { closeWord, currentLocation, go, openWord, useLocation, type Route } from "./lib/router";
@@ -11,7 +11,7 @@ import { Learn } from "./pages/Learn";
 import { Me } from "./pages/Me";
 import { Onboarding } from "./pages/Onboarding";
 import { Practice } from "./pages/Practice";
-import { Today } from "./pages/Today";
+import { Plan } from "./pages/Plan";
 import { cue } from "./lib/sound";
 import { store, useStore } from "./store/store";
 import { EntryView } from "./ui/EntryView";
@@ -23,7 +23,7 @@ import { shouldShowSplash, Splash } from "./ui/Splash";
 import { Toasts } from "./ui/Toast";
 
 const NAV: { page: Route["page"]; label: string; icon: typeof Compass }[] = [
-  { page: "today", label: "今日", icon: Compass },
+  { page: "today", label: "14 天计划", icon: Compass },
   { page: "atlas", label: "图鉴", icon: BookOpen },
   { page: "practice", label: "练习", icon: Keyboard },
   { page: "me", label: "我的", icon: User },
@@ -44,7 +44,7 @@ function useTheme() {
 export default function App() {
   const [atlas, setAtlas] = useState<Atlas | null>(null);
   const [open, setOpen] = useState<Atlas | null>(null);
-  const [priv, setPriv] = useState<Atlas | null>(null);
+  const [priv] = useState<Atlas | null>(null);
   const [error, setError] = useState<string | null>(null);
   const dataset = useStore((s) => s.settings.dataset);
   useTheme();
@@ -53,7 +53,6 @@ export default function App() {
     loadOpenAtlas().then(
       (a) => {
         setOpen(a);
-        if (import.meta.env.DEV) loadPrivateAtlas(a).then(setPriv, () => null);
       },
       (e: Error) => setError(e.message),
     );
@@ -153,7 +152,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
       )}
 
       <main className="main" id="main">
-        {route.page === "today" && <Today />}
+        {route.page === "today" && <Plan />}
         {route.page === "atlas" && <AtlasPage route={route} />}
         {route.page === "learn" && <Learn />}
         {route.page === "practice" && <Practice />}
@@ -165,7 +164,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         <footer className="footer">
           <Logo compact />
           <p>
-            一词一画，点亮雅思 · 免费开源 ·{" "}
+            一词一画，点亮四级 · 免费开源 ·{" "}
             <a href={REPO_URL} target="_blank" rel="noreferrer">
               GitHub
             </a>{" "}

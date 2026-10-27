@@ -1,13 +1,11 @@
 import { Download, RotateCcw, Upload } from "lucide-react";
 import { useMemo, useRef } from "react";
-import { useAtlas } from "../atlas/context";
 import { isMastered } from "../store/srs";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
 import { toast } from "../ui/Toast";
 import { streakOf } from "./Today";
 
 export function Me({ privateAvailable }: { privateAvailable: boolean }) {
-  const atlas = useAtlas();
   const progress = useStore((s) => s.progress);
   const settings = useStore((s) => s.settings);
   const saveError = useStore((s) => s.saveError);
@@ -95,7 +93,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">未来 7 天的复习量</h3>
+          <h3 className="eyebrow">FSRS · 未来 7 天复习预测</h3>
           <ol className="forecast">
             {stats.forecast.map((n, i) => (
               <li key={i}>
@@ -109,23 +107,11 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
 
         <section className="panel settings">
           <h3 className="eyebrow">学习设置</h3>
-          <Field label="每日新词" hint="复习不设上限，算法只安排快要遗忘的词。">
-            <div className="segmented">
-              {[5, 10, 15, 20, 30].map((n) => (
-                <button key={n} className={settings.dailyNew === n ? "is-on" : ""} onClick={() => set({ dailyNew: n })}>
-                  {n}
-                </button>
-              ))}
-            </div>
+          <Field label="14 天滚动计划" hint="按 Daily_Plans 原编号学习，每天先复习昨日词，再学习新词。">
+            <p>第 1—12 天新学 200 词；第 13 天新学 207 词；第 14 天仅复习 207 词。</p>
           </Field>
-          <Field label="从哪个难度开始" hint="跳过已经熟悉的低级别词。">
-            <div className="segmented">
-              {atlas.cefr.map((l, i) => (
-                <button key={l} className={settings.startLevel === i ? "is-on" : ""} onClick={() => set({ startLevel: i })}>
-                  {l}
-                </button>
-              ))}
-            </div>
+          <Field label="当前学习日" hint="切换天数不会清除已有进度，未完成的学习会话仍可继续。">
+            <select value={settings.planDay} aria-label="当前学习日" onChange={e => set({planDay:Number(e.target.value)})}>{Array.from({length:14},(_,i) => <option key={i} value={i+1}>Day {String(i+1).padStart(2,"0")}</option>)}</select>
           </Field>
           <Field label="目标记忆率" hint="越高复习越频繁。90% 是大多数人的甜点。">
             <div className="segmented">

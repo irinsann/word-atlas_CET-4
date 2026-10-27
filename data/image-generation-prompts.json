@@ -1,0 +1,37 @@
+{
+  "camel": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary learning card. Primary request: A camel with two humps walking slowly across golden desert dunes, carrying a woven saddle, with a small oasis and distant mountains. Style: sophisticated vintage mid-century gouache editorial illustration, textured warm paper, simplified natural forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue, clear memorable subject. Composition: square, camel prominently centered, calm daylight. No text, letters, numbers, logos or watermark.",
+    "file": "public/generated/camel.webp"
+  },
+  "dragon": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary learning card for 'dragon'. Primary request: A magnificent emerald-green dragon with curved horns and a long serpentine body, resting beside an old stone bridge and a tranquil lake, mythical creature is clear and dominant. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified shapes, muted mustard ochre, terracotta, sage green, ink navy and dusty blue. Composition: square, full dragon body readable, soft daylight. No text, letters, numbers, logos or watermark.",
+    "file": "public/generated/dragon.webp"
+  },
+  "molecule": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'molecule'. Primary request: A clear educational ball-and-stick model of a water molecule, one large red oxygen sphere bonded to two smaller cream hydrogen spheres, placed on a vintage chemistry laboratory desk with glassware in the soft background. Three-dimensional molecule model must be scientifically coherent; no written labels. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
+    "file": "public/generated/molecule.webp"
+  },
+  "bracket": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'bracket'. Primary request: A close-up of a cream notebook on a writing desk. On its page a clearly recognizable bold pair of square brackets [ ] enclosing a small terracotta circle, with a graphite pencil beside it. The brackets are the primary focal point. No other writing. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
+    "file": "public/generated/bracket.webp"
+  },
+  "newsstand": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'newsstand'. Primary request: A small charming street newsstand selling neatly arranged newspapers and colorful magazines, with a friendly vendor inside and a pedestrian choosing a newspaper, on a calm city street. The kiosk and racks are dominant, no readable headlines. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
+    "file": "public/generated/newsstand.webp"
+  },
+  "ax": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'ax'. Primary request: A sturdy woodcutting axe with a steel head and a long wooden handle resting diagonally against a chopping block, with split logs and a peaceful forest background. Axe blade and handle clearly visible, no people, no text. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
+    "file": "public/generated/ax.webp"
+  },
+  "devil": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case: illustration-story. Asset type: square English vocabulary card for 'devil'. Primary request: A small fictional red devil character with curved horns, pointed tail and a tiny trident, standing in a theatrical fairy-tale setting. Friendly storybook depiction, not frightening, no religious people, no text. Style: vintage mid-century gouache editorial illustration on warm textured paper, simplified forms, muted mustard ochre, terracotta, sage, ink navy and dusty blue. Composition: square, clear memorable main subject, soft daylight. No logos or watermark.",
+    "file": "public/generated/devil.webp"
+  }
+}
