@@ -100,7 +100,7 @@ test("all real quotations have matching Chinese translations while provenance is
       translations.set(x.en, x.zh);
       total++;
     }
-  assert.equal(total, 7129);
+  assert.equal(total, report.stats.genuineExamples);
   assert.equal(translations.size, 4043);
   assert.equal(catalog.translations.length, 4043);
   const index = JSON.parse(fs.readFileSync("public/atlas/index.json", "utf8"));

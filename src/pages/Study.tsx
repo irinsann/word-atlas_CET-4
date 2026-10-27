@@ -49,7 +49,7 @@ export function Study() {
         />
         <div className="cet4-hero-copy">
           <p className="eyebrow eyebrow-light">
-            本轮学习 <span>打乱词序 · 自由学习</span>
+            本轮学习 <span>重点词优先 · 自由学习</span>
           </p>
           <h2>
             多见几次，
@@ -180,7 +180,7 @@ export function Study() {
                   topic={w.topic}
                 />
                 <span>
-                  <small>原表 #{w.sourceSeq ?? w.order + 1}</small>
+                  <small>{w.sourceSeq ? `原表 #${w.sourceSeq}` : "重点词"}</small>
                   <b lang="en">{w.word}</b>
                   <em>{w.zh}</em>
                 </span>

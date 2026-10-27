@@ -1,0 +1,2831 @@
+{
+ "source": {
+  "file": "CET4_Core_2607_Vocabulary.md",
+  "sha256": "8a20a86ab7a7882358016de5eb3f1ef627d819b40fd0470f52122f4f5c8c7752",
+  "attribution": "The supplied document credits RealKai42/qwerty-learner.",
+  "url": "https://github.com/RealKai42/qwerty-learner"
+ },
+ "words": [
+  {
+   "seq": 16,
+   "word": "persistent",
+   "uk": "/pə'sɪstənt/",
+   "us": "/pə'zɪstənt/",
+   "zh": "坚持的， 不屈不挠的； 持续不断的； 反复出现的"
+  },
+  {
+   "seq": 30,
+   "word": "click",
+   "uk": "/klɪk/",
+   "us": "/klɪk/",
+   "zh": "发出咔嗒声；点击； 咔嗒声"
+  },
+  {
+   "seq": 39,
+   "word": "multicultural",
+   "uk": "/ˌmʌlti'kʌltʃərəl/",
+   "us": "/'mʌltɪ'kʌltʃərəl/",
+   "zh": "融合多种文化的"
+  },
+  {
+   "seq": 48,
+   "word": "concede",
+   "uk": "/kən'siːd/",
+   "us": "/kən'sid/",
+   "zh": "承认， 承认…为真； 承认失败； 允许， 让予； 让步， 认输"
+  },
+  {
+   "seq": 54,
+   "word": "sexism",
+   "uk": "/'seksɪzəm/",
+   "us": "/'sɛk'sɪzəm/",
+   "zh": "性别偏见， 性别歧视"
+  },
+  {
+   "seq": 60,
+   "word": "editorial",
+   "uk": "/ˌedɪ'tɔːriəl/",
+   "us": "/,ɛdɪ'tɔrɪəl/",
+   "zh": "编辑的，主笔的，编者的；社论的，社论式的； 社论， 重要评论"
+  },
+  {
+   "seq": 62,
+   "word": "rebuild",
+   "uk": "/ˌriː'bɪld/",
+   "us": "/,ri'bɪld/",
+   "zh": "重建， 改造； 复原"
+  },
+  {
+   "seq": 70,
+   "word": "consultant",
+   "uk": "/kən'sʌltənt/",
+   "us": "/kən'sʌltənt/",
+   "zh": "顾问； 会诊医师， 专科医生"
+  },
+  {
+   "seq": 82,
+   "word": "confront",
+   "uk": "/kən'frʌnt/",
+   "us": "/kən'frʌnt/",
+   "zh": "迎面遇到， 遭遇； 勇敢地面对， 正视； 使对质， 使当面对证"
+  },
+  {
+   "seq": 83,
+   "word": "dominate",
+   "uk": "/'dɒmɪneɪt/",
+   "us": "/'dɑmɪnet/",
+   "zh": "拥有优势； 在…中占首要地位；支配，统治，控制；耸立于，俯视"
+  },
+  {
+   "seq": 88,
+   "word": "pad",
+   "uk": "/pæd/",
+   "us": "/pæd/",
+   "zh": "垫，衬垫；便笺本；发射台，直升机起落场； 填塞"
+  },
+  {
+   "seq": 89,
+   "word": "provocation",
+   "uk": "/ˌprɒvə'keɪʃn/",
+   "us": "/,prɑvə'keʃən/",
+   "zh": "激怒， 刺激； 挑衅， 挑拨"
+  },
+  {
+   "seq": 96,
+   "word": "implement",
+   "uk": "/'ɪmplɪm(ə)nt/",
+   "us": "/'ɪmplɪmɛnt/",
+   "zh": "工具， 器具， 用具； 使生效， 履行， 实施"
+  },
+  {
+   "seq": 98,
+   "word": "Christ",
+   "uk": "/kraɪst/",
+   "us": "/kraist/",
+   "zh": "基督， 救世主"
+  },
+  {
+   "seq": 100,
+   "word": "pat",
+   "uk": "/pæt/",
+   "us": "/pæt/",
+   "zh": "非常恰当的， 适时的； 轻拍"
+  },
+  {
+   "seq": 101,
+   "word": "fantasy",
+   "uk": "/'fæntəsi/",
+   "us": "/'fæntəsi/",
+   "zh": "想象， 幻想； 想象的产物"
+  },
+  {
+   "seq": 103,
+   "word": "visibility",
+   "uk": "/ˌvɪzə'bɪləti/",
+   "us": "/'vɪzə'bɪləti/",
+   "zh": "可见度， 能见度； 可见性， 明显性"
+  },
+  {
+   "seq": 105,
+   "word": "paw",
+   "uk": "/pɔː/",
+   "us": "/pɔ/",
+   "zh": "用爪子抓， 用蹄扒； 翻找； 爪子"
+  },
+  {
+   "seq": 109,
+   "word": "frustrate",
+   "uk": "/frʌ'streɪt/",
+   "us": "/'frʌstret/",
+   "zh": "使沮丧， 使灰心； 挫败， 使受挫折"
+  },
+  {
+   "seq": 139,
+   "word": "perform",
+   "uk": "/pə'fɔːm/",
+   "us": "/pɚ'fɔrm/",
+   "zh": "做， 履行， 完成； 表演， 演出； 工作情况， 表现"
+  },
+  {
+   "seq": 141,
+   "word": "peak",
+   "uk": "/piːk/",
+   "us": "/pik/",
+   "zh": "达到高峰， 达到最大值； 最大值的，高峰的； 山顶，顶点"
+  },
+  {
+   "seq": 144,
+   "word": "halfway",
+   "uk": "/ˌhɑːf'weɪ/",
+   "us": "/,hæf'we/",
+   "zh": "半路地； 在中途， 在半途； 中途的；部分的；不彻底的"
+  },
+  {
+   "seq": 154,
+   "word": "personnel",
+   "uk": "/ˌpɜːsə'nel/",
+   "us": "/,pɝsə'nɛl/",
+   "zh": "人员， 员工"
+  },
+  {
+   "seq": 158,
+   "word": "offense",
+   "uk": "/ə'fens/",
+   "us": "/ə'fɛns/",
+   "zh": "犯规， 违法行为； 冒犯， 得罪"
+  },
+  {
+   "seq": 165,
+   "word": "pea",
+   "uk": "/piː/",
+   "us": "/pi/",
+   "zh": "豌豆"
+  },
+  {
+   "seq": 169,
+   "word": "myth",
+   "uk": "/mɪθ/",
+   "us": "/mɪθ/",
+   "zh": "杜撰出来的人； 神话"
+  },
+  {
+   "seq": 174,
+   "word": "bump",
+   "uk": "/bʌmp/",
+   "us": "/bʌmp/",
+   "zh": "碰，撞；颠簸着前进； 碰撞， 猛撞； 肿块； 隆起物"
+  },
+  {
+   "seq": 175,
+   "word": "reservation",
+   "uk": "/ˌrezə'veɪʃn/",
+   "us": "/,rɛzɚ'veʃən/",
+   "zh": "预订； 保留； 犹豫； 保留地"
+  },
+  {
+   "seq": 176,
+   "word": "per",
+   "uk": "/pə/",
+   "us": "/pɚ/",
+   "zh": "每， 每一"
+  },
+  {
+   "seq": 178,
+   "word": "considering",
+   "uk": "/kən'sɪdərɪŋ/",
+   "us": "/kən'sɪdərɪŋ/",
+   "zh": "鉴于， 考虑到， 顾及"
+  },
+  {
+   "seq": 186,
+   "word": "draught",
+   "uk": "/drɑːft/",
+   "us": "/drɑft/",
+   "zh": "穿堂风，冷风； 〔啤酒〕桶装的，散装的"
+  },
+  {
+   "seq": 189,
+   "word": "integration",
+   "uk": "/ˌɪntɪ'greɪʃn/",
+   "us": "/'ɪntə'greʃən/",
+   "zh": "综合"
+  },
+  {
+   "seq": 199,
+   "word": "guy",
+   "uk": "/gaɪ/",
+   "us": "/ɡai/",
+   "zh": "家伙， 伙计"
+  },
+  {
+   "seq": 206,
+   "word": "peer",
+   "uk": "/pɪə/",
+   "us": "/pɪr/",
+   "zh": "仔细看， 费力地看； 同龄人，同等地位的人；贵族"
+  },
+  {
+   "seq": 215,
+   "word": "particularly",
+   "uk": "/pə'tɪkjələli/",
+   "us": "/pɚ'tɪkjəlɚlɪ/",
+   "zh": "特别， 尤其"
+  },
+  {
+   "seq": 216,
+   "word": "dominant",
+   "uk": "/'dɒmɪnənt/",
+   "us": "/'dɑmɪnənt/",
+   "zh": "占优势的， 支配的， 统治的； 居高临下的， 高耸的"
+  },
+  {
+   "seq": 230,
+   "word": "cop",
+   "uk": "/kɒp/",
+   "us": "/kɑp/",
+   "zh": "警察"
+  },
+  {
+   "seq": 238,
+   "word": "lad",
+   "uk": "/læd/",
+   "us": "/læd/",
+   "zh": "男孩， 小伙子"
+  },
+  {
+   "seq": 258,
+   "word": "surge",
+   "uk": "/sɜːdʒ/",
+   "us": "/sɝdʒ/",
+   "zh": "蜂拥而出；洋溢，奔放；汹涌，奔腾； 大浪， 波涛； 高涨； 汹涌"
+  },
+  {
+   "seq": 264,
+   "word": "senator",
+   "uk": "/'senətə/",
+   "us": "/'sɛnətɚ/",
+   "zh": "参议员"
+  },
+  {
+   "seq": 270,
+   "word": "obligation",
+   "uk": "/ˌɒblɪ'geɪʃn/",
+   "us": "/,ɑblɪ'ɡeʃən/",
+   "zh": "义务， 责任"
+  },
+  {
+   "seq": 272,
+   "word": "gym",
+   "uk": "/dʒɪm/",
+   "us": "/dʒɪm/",
+   "zh": "体育馆； 健身房"
+  },
+  {
+   "seq": 282,
+   "word": "combat",
+   "uk": "/'kɒmbæt/",
+   "us": "/'kɑmbæt/",
+   "zh": "战争，斗争，格斗； 与…斗争， 与…战斗"
+  },
+  {
+   "seq": 297,
+   "word": "garlic",
+   "uk": "/'gɑːlɪk/",
+   "us": "/'ɡɑrlɪk/",
+   "zh": "大蒜"
+  },
+  {
+   "seq": 312,
+   "word": "fantastic",
+   "uk": "/fæn'tæstɪk/",
+   "us": "/fæn'tæstɪk/",
+   "zh": "极好的， 极出色的， 了不起的； 极大的； 难以相信的； 异想天开的， 不实际的； 奇异的， 古怪的"
+  },
+  {
+   "seq": 327,
+   "word": "confidential",
+   "uk": "/ˌkɒnfɪ'denʃl/",
+   "us": "/,kɑnfɪ'dɛnʃl/",
+   "zh": "秘密的， 机密的； 亲信的"
+  },
+  {
+   "seq": 330,
+   "word": "chaos",
+   "uk": "/'keɪɒs/",
+   "us": "/'keɑs/",
+   "zh": "混乱， 紊乱"
+  },
+  {
+   "seq": 333,
+   "word": "pace",
+   "uk": "/peɪs/",
+   "us": "/pes/",
+   "zh": "踱步； 步，步速；速度；节奏"
+  },
+  {
+   "seq": 339,
+   "word": "pack",
+   "uk": "/pæk/",
+   "us": "/pæk/",
+   "zh": "捆扎，把…打包；使挤在一起，塞满； 包， 小盒"
+  },
+  {
+   "seq": 342,
+   "word": "cue",
+   "uk": "/kjuː/",
+   "us": "/kju/",
+   "zh": "暗示，信号；提示； 提示； 暗示"
+  },
+  {
+   "seq": 345,
+   "word": "stereotype",
+   "uk": "/'steriətaɪp/",
+   "us": "/'stɛrɪətaɪp/",
+   "zh": "陈规，老套，固定的模式；铅版； 把…浇铸成铅版； 对…形成固定看法"
+  },
+  {
+   "seq": 346,
+   "word": "enroll",
+   "uk": "/ɪn'rəul/",
+   "us": "/ɪn'rol/",
+   "zh": "入学，加入； 招收， 吸收"
+  },
+  {
+   "seq": 354,
+   "word": "entertainment",
+   "uk": "/ˌentə'teɪnmənt/",
+   "us": "/ˌɛntɚ'tenmənt/",
+   "zh": "娱乐， 文娱节目， 表演会； 招待， 款待， 请客"
+  },
+  {
+   "seq": 368,
+   "word": "currency",
+   "uk": "/'kʌrənsi/",
+   "us": "/ˈkɜrənsi/",
+   "zh": "通货， 货币； 通行， 流行"
+  },
+  {
+   "seq": 373,
+   "word": "convict",
+   "uk": "/kən'vɪkt/",
+   "us": "/kən'vɪkt/",
+   "zh": "证明…有罪， 宣判…有罪； 囚犯"
+  },
+  {
+   "seq": 374,
+   "word": "legislation",
+   "uk": "/ˌledʒɪs'leɪʃn/",
+   "us": "/,lɛdʒɪs'leʃən/",
+   "zh": "法律， 法规； 立法， 法律的制定"
+  },
+  {
+   "seq": 375,
+   "word": "clause",
+   "uk": "/klɔːz/",
+   "us": "/klɔz/",
+   "zh": "条款； 从句， 分句"
+  },
+  {
+   "seq": 377,
+   "word": "participate",
+   "uk": "/pɑː'tɪsɪpeɪt/",
+   "us": "/pɑr'tɪsə'pet/",
+   "zh": "参与， 参加； 分享"
+  },
+  {
+   "seq": 378,
+   "word": "ingredient",
+   "uk": "/ɪn'griːdiənt/",
+   "us": "/ɪn'ɡridɪənt/",
+   "zh": "组成部分， 成分； 原料； 要素， 因素"
+  },
+  {
+   "seq": 379,
+   "word": "surplus",
+   "uk": "/'sɜːpləs/",
+   "us": "/'sɝpləs/",
+   "zh": "过剩的， 多余的； 过剩，剩余，盈余"
+  },
+  {
+   "seq": 380,
+   "word": "correspondence",
+   "uk": "/ˌkɒrə'spɒndəns/",
+   "us": "/,kɔrə'spɑndəns/",
+   "zh": "信件， 函件； 通信， 通信联系； 符合， 一致， 相似"
+  },
+  {
+   "seq": 385,
+   "word": "declaration",
+   "uk": "/ˌdeklə'reɪʃn/",
+   "us": "/,dɛklə'reʃən/",
+   "zh": "宣布， 宣告； 宣言， 声明； 申报"
+  },
+  {
+   "seq": 393,
+   "word": "charm",
+   "uk": "/tʃɑːm/",
+   "us": "/tʃɑrm/",
+   "zh": "迷人的特性，魅力；符咒，咒文； 吸引， 迷住"
+  },
+  {
+   "seq": 412,
+   "word": "deception",
+   "uk": "/dɪ'sepʃn/",
+   "us": "/dɪ'sɛpʃən/",
+   "zh": "欺骗； 诡计， 骗局"
+  },
+  {
+   "seq": 414,
+   "word": "donation",
+   "uk": "/dəu'neɪʃn/",
+   "us": "/do'neʃən/",
+   "zh": "捐款， 捐赠物； 捐赠， 赠送"
+  },
+  {
+   "seq": 417,
+   "word": "budget",
+   "uk": "/'bʌdʒɪt/",
+   "us": "/'bʌdʒɪt/",
+   "zh": "规划，安排；编预算； 低廉的， 收费公道的； 预算，预算拨款"
+  },
+  {
+   "seq": 418,
+   "word": "given",
+   "uk": "/'gɪvn/",
+   "us": "/'ɡɪvn/",
+   "zh": "规定的，特定的；假设的；已知的；有癖好的，有倾向的； 考虑到"
+  },
+  {
+   "seq": 421,
+   "word": "tension",
+   "uk": "/'tenʃn/",
+   "us": "/'tɛnʃən/",
+   "zh": "紧张， 不安； 拉紧； 张力， 拉力"
+  },
+  {
+   "seq": 427,
+   "word": "solicitor",
+   "uk": "/sə'lɪsɪtə/",
+   "us": "/sə'lɪsɪtɚ/",
+   "zh": "律师， 法律顾问"
+  },
+  {
+   "seq": 436,
+   "word": "pepper",
+   "uk": "/'pepə/",
+   "us": "/'pɛpɚ/",
+   "zh": "胡椒，胡椒粉； 在…上撒； 使布满"
+  },
+  {
+   "seq": 438,
+   "word": "doctoral",
+   "uk": "/'dɒktərəl/",
+   "us": "/'dɔktərəl/",
+   "zh": "博士的"
+  },
+  {
+   "seq": 448,
+   "word": "painful",
+   "uk": "/'peɪnfl/",
+   "us": "/'penfl/",
+   "zh": "疼痛的， 引起疼痛的； 困难的； 令人不快的"
+  },
+  {
+   "seq": 451,
+   "word": "enhance",
+   "uk": "/ɪn'hɑːns/",
+   "us": "/ɪn'hæns/",
+   "zh": "提高， 增加， 加强"
+  },
+  {
+   "seq": 460,
+   "word": "generic",
+   "uk": "/dʒə'nerɪk/",
+   "us": "/dʒə'nɛrɪk/",
+   "zh": "【生物】 属的， 类的； 一般的， 普通的"
+  },
+  {
+   "seq": 468,
+   "word": "studio",
+   "uk": "/'stjuːdiəu/",
+   "us": "/'studɪo/",
+   "zh": "画室， 摄影室； 播音室， 录音室， 摄影棚"
+  },
+  {
+   "seq": 473,
+   "word": "palm",
+   "uk": "/pɑːm/",
+   "us": "/pɑm/",
+   "zh": "手掌， 掌状物； 棕榈树"
+  },
+  {
+   "seq": 480,
+   "word": "payment",
+   "uk": "/'peɪmənt/",
+   "us": "/'pemənt/",
+   "zh": "支付， 支付的款项"
+  },
+  {
+   "seq": 481,
+   "word": "specifically",
+   "uk": "/spə'sɪfɪkli/",
+   "us": "/spə'sɪfɪkli/",
+   "zh": "特别地， 特定地； 明确地， 具体地"
+  },
+  {
+   "seq": 482,
+   "word": "controversial",
+   "uk": "/ˌkɒntrə'vɜːʃl/",
+   "us": "/,kɑntrə'vɝʃl/",
+   "zh": "引起争论的， 有争议的"
+  },
+  {
+   "seq": 487,
+   "word": "deputy",
+   "uk": "/'depjuti/",
+   "us": "/'dɛpjuti/",
+   "zh": "副职， 副手； 代表， 代理人"
+  },
+  {
+   "seq": 491,
+   "word": "priority",
+   "uk": "/praɪ'ɒrəti/",
+   "us": "/praɪ'ɔrəti/",
+   "zh": "优先， 重点； 优先考虑的事"
+  },
+  {
+   "seq": 494,
+   "word": "preventive",
+   "uk": "/prɪ'ventɪv/",
+   "us": "/pri'vɛntɪv/",
+   "zh": "预防性的"
+  },
+  {
+   "seq": 497,
+   "word": "allocate",
+   "uk": "/'æləkeɪt/",
+   "us": "/'æləket/",
+   "zh": "分配， 分派， 把…拨给"
+  },
+  {
+   "seq": 512,
+   "word": "theme",
+   "uk": "/θiːm/",
+   "us": "/θim/",
+   "zh": "主题， 题目"
+  },
+  {
+   "seq": 513,
+   "word": "smash",
+   "uk": "/smæʃ/",
+   "us": "/smæʃ/",
+   "zh": "粉碎，打烂；狠打，猛击；破灭，失败；猛撞，猛冲； 破碎 ； 猛击， 猛撞； 轰动的演出， 巨大的成功"
+  },
+  {
+   "seq": 516,
+   "word": "fuss",
+   "uk": "/fʌs/",
+   "us": "/fʌs/",
+   "zh": "忙乱； 大惊小怪， 小题大做； 烦恼， 过于忧虑"
+  },
+  {
+   "seq": 528,
+   "word": "heterogeneity",
+   "uk": "/ˌhetərədʒə'niːəti/",
+   "us": "/,hetərəudʒi'ni:əti/",
+   "zh": "异种， 异质， 不同成分"
+  },
+  {
+   "seq": 530,
+   "word": "permanent",
+   "uk": "/'pɜːmənənt/",
+   "us": "/'pɝmənənt/",
+   "zh": "永久的， 固定的"
+  },
+  {
+   "seq": 531,
+   "word": "barely",
+   "uk": "/'beəli/",
+   "us": "/'bɛrli/",
+   "zh": "仅仅， 只不过， 几乎不"
+  },
+  {
+   "seq": 533,
+   "word": "chap",
+   "uk": "/tʃæp/",
+   "us": "/tʃæp/",
+   "zh": "小伙子， 男人， 家伙"
+  },
+  {
+   "seq": 536,
+   "word": "alliance",
+   "uk": "/ə'laɪəns/",
+   "us": "/ə'laɪəns/",
+   "zh": "结盟， 联盟"
+  },
+  {
+   "seq": 542,
+   "word": "hip",
+   "uk": "/hɪp/",
+   "us": "/hɪp/",
+   "zh": "臀部， 髋部"
+  },
+  {
+   "seq": 545,
+   "word": "pessimistic",
+   "uk": "/ˌpesɪ'mɪstɪk/",
+   "us": "/,pɛsɪ'mɪstɪk/",
+   "zh": "悲观的"
+  },
+  {
+   "seq": 566,
+   "word": "format",
+   "uk": "/'fɔːmæt/",
+   "us": "/'fɔrmæt/",
+   "zh": "设计，安排；格式，样式，版式； 使格式化"
+  },
+  {
+   "seq": 574,
+   "word": "soar",
+   "uk": "/sɔː/",
+   "us": "/sɔr/",
+   "zh": "猛增， 剧增； 高飞， 升腾； 高涨； 高耸， 屹立"
+  },
+  {
+   "seq": 586,
+   "word": "wagon",
+   "uk": "/'wægən/",
+   "us": "/'wægən/",
+   "zh": "四轮马车， 大篷车； 铁路货车， 客货两用车"
+  },
+  {
+   "seq": 588,
+   "word": "penetrate",
+   "uk": "/'penɪtreɪt/",
+   "us": "/'pɛnətret/",
+   "zh": "透入， 渗入， 进入； 刺穿； 洞察， 了解"
+  },
+  {
+   "seq": 600,
+   "word": "therapy",
+   "uk": "/'θerəpi/",
+   "us": "/'θɛrəpi/",
+   "zh": "治疗， 理疗"
+  },
+  {
+   "seq": 616,
+   "word": "developmental",
+   "uk": "/dɪˌveləp'mentl/",
+   "us": "/dɪ,vɛləp'mɛntl/",
+   "zh": "发展的"
+  },
+  {
+   "seq": 620,
+   "word": "compassion",
+   "uk": "/kəm'pæʃn/",
+   "us": "/kəm'pæʃən/",
+   "zh": "同情， 怜悯"
+  },
+  {
+   "seq": 622,
+   "word": "parliament",
+   "uk": "/'pɑːləmənt/",
+   "us": "/'pɑrləmənt/",
+   "zh": "议会， 国会"
+  },
+  {
+   "seq": 623,
+   "word": "evaluation",
+   "uk": "/ɪˌvælju'eɪʃn/",
+   "us": "/ɪ,væljʊ'eʃən/",
+   "zh": "评价； 估计"
+  },
+  {
+   "seq": 628,
+   "word": "dental",
+   "uk": "/'dentl/",
+   "us": "/'dɛntl/",
+   "zh": "牙齿的， 牙科的"
+  },
+  {
+   "seq": 629,
+   "word": "predictable",
+   "uk": "/prɪ'dɪktəbl/",
+   "us": "/prɪ'dɪktəbl/",
+   "zh": "可预料的"
+  },
+  {
+   "seq": 633,
+   "word": "rally",
+   "uk": "/'ræli/",
+   "us": "/'ræli/",
+   "zh": "集合， 团结； 恢复， 重新振作； 集会；公路汽车赛"
+  },
+  {
+   "seq": 638,
+   "word": "profile",
+   "uk": "/'prəufaɪl/",
+   "us": "/'profaɪl/",
+   "zh": "侧面；人物简介；轮廓，形象；姿态，引人注目的状态； 为…描绘； 写…的传略"
+  },
+  {
+   "seq": 662,
+   "word": "pluralism",
+   "uk": "/'pluərəlɪzəm/",
+   "us": "/'plʊər(ə)lɪz(ə)m/",
+   "zh": "多重性； 兼职， 兼任"
+  },
+  {
+   "seq": 674,
+   "word": "involvement",
+   "uk": "/ɪn'vɒlvmənt/",
+   "us": "/ɪn'vɔlvmənt/",
+   "zh": "连累； 包含"
+  },
+  {
+   "seq": 678,
+   "word": "hearing",
+   "uk": "/'hɪərɪŋ/",
+   "us": "/'hɪrɪŋ/",
+   "zh": "听力， 听觉； 听力所及之距离； 意见听取会； 申辩的机会"
+  },
+  {
+   "seq": 679,
+   "word": "acquisition",
+   "uk": "/ˌækwɪ'zɪʃn/",
+   "us": "/,ækwɪ'zɪʃən/",
+   "zh": "取得， 获得， 习得； 获得物， 增添的人"
+  },
+  {
+   "seq": 682,
+   "word": "deadline",
+   "uk": "/'dedlaɪn/",
+   "us": "/ˈdedlaɪn/",
+   "zh": "最后期限"
+  },
+  {
+   "seq": 685,
+   "word": "chip",
+   "uk": "/tʃɪp/",
+   "us": "/tʃɪp/",
+   "zh": "屑片， 碎片； 炸土豆条； 集成电路片， 集成块； 缺口， 瑕疵"
+  },
+  {
+   "seq": 703,
+   "word": "accountant",
+   "uk": "/ə'kauntənt/",
+   "us": "/ə'kaʊntənt/",
+   "zh": "会计人员， 会计师"
+  },
+  {
+   "seq": 708,
+   "word": "recreational",
+   "uk": "/ˌrekri'eɪʃənl/",
+   "us": "/,rɛkri'eʃənəl/",
+   "zh": "休养的； 娱乐的"
+  },
+  {
+   "seq": 711,
+   "word": "passport",
+   "uk": "/'pɑːspɔːt/",
+   "us": "/'pæspɔrt/",
+   "zh": "护照"
+  },
+  {
+   "seq": 716,
+   "word": "bracket",
+   "uk": "/'brækɪt/",
+   "us": "/'brækɪt/",
+   "zh": "括号； 把…归为同一类"
+  },
+  {
+   "seq": 721,
+   "word": "parcel",
+   "uk": "/'pɑːsl/",
+   "us": "/'pɑrsl/",
+   "zh": "包裹，小包，邮包； 分， 分配； 把…包起来， 捆扎"
+  },
+  {
+   "seq": 730,
+   "word": "conviction",
+   "uk": "/kən'vɪkʃn/",
+   "us": "/kən'vɪkʃən/",
+   "zh": "确信； 坚定的信仰； 说服， 信服； 定罪， 判罪"
+  },
+  {
+   "seq": 737,
+   "word": "petrol",
+   "uk": "/'petrəl/",
+   "us": "/'pɛtrəl/",
+   "zh": "汽油"
+  },
+  {
+   "seq": 741,
+   "word": "tackle",
+   "uk": "/'tækl/",
+   "us": "/'tækl/",
+   "zh": "对付，处理；与…交涉；阻截，擒抱； 阻截， 擒抱； 用具， 钓具； 辘轳， 滑车"
+  },
+  {
+   "seq": 742,
+   "word": "reckon",
+   "uk": "/'rekən/",
+   "us": "/'rɛkən/",
+   "zh": "认为， 估计； 指望， 盼望； 测算， 测量"
+  },
+  {
+   "seq": 746,
+   "word": "virtual",
+   "uk": "/'vɜːtʃuəl/",
+   "us": "/ˈvɝ​tʃʊəl/",
+   "zh": "实质上的， 事实上的， 实际上的"
+  },
+  {
+   "seq": 765,
+   "word": "bloody",
+   "uk": "/'blʌdi/",
+   "us": "/'blʌdi/",
+   "zh": "[用于加强语气]非常，很； [用于加强语气]非常的；该死的；流血的；嗜杀的； 血染"
+  },
+  {
+   "seq": 776,
+   "word": "permission",
+   "uk": "/pə'mɪʃn/",
+   "us": "/pɚ'mɪʃən/",
+   "zh": "允许， 许可， 准许"
+  },
+  {
+   "seq": 784,
+   "word": "spectacular",
+   "uk": "/spek'tækjələ/",
+   "us": "/spɛk'tækjəlɚ/",
+   "zh": "壮观的，引人注目的； 壮观的演出； 惊人之举"
+  },
+  {
+   "seq": 786,
+   "word": "peculiar",
+   "uk": "/pɪ'kjuːliə/",
+   "us": "/pɪ'kjulɪɚ/",
+   "zh": "奇怪的， 古怪的； 特有的"
+  },
+  {
+   "seq": 792,
+   "word": "invincible",
+   "uk": "/ɪn'vɪnsəbl/",
+   "us": "/ɪn'vɪnsəbl/",
+   "zh": "不能征服的， 无敌的"
+  },
+  {
+   "seq": 793,
+   "word": "discount",
+   "uk": "/'dɪskaʊnt/",
+   "us": "/dɪs'kaʊnt/",
+   "zh": "折扣； 将…打折扣； 不信； 漠视， 低估"
+  },
+  {
+   "seq": 806,
+   "word": "cigar",
+   "uk": "/sɪ'gɑː/",
+   "us": "/sɪ'ɡɑr/",
+   "zh": "雪茄烟"
+  },
+  {
+   "seq": 809,
+   "word": "whereas",
+   "uk": "/weər'æz/",
+   "us": "/'wɛr'æz/",
+   "zh": "然而， 但是， 尽管"
+  },
+  {
+   "seq": 812,
+   "word": "adoptive",
+   "uk": "/ə'dɒptɪv/",
+   "us": "/ə'dɑptɪv/",
+   "zh": "收养关系的； 采用的"
+  },
+  {
+   "seq": 826,
+   "word": "baseball",
+   "uk": "/'beɪsbɔːl/",
+   "us": "/'besbɔl/",
+   "zh": "棒球"
+  },
+  {
+   "seq": 829,
+   "word": "machinery",
+   "uk": "/mə'ʃiːnəri/",
+   "us": "/mə'ʃinəri/",
+   "zh": "机器， 机械"
+  },
+  {
+   "seq": 833,
+   "word": "inference",
+   "uk": "/'ɪnfərəns/",
+   "us": "/'ɪnfərəns/",
+   "zh": "推断结果， 结论； 推论， 推理， 推断"
+  },
+  {
+   "seq": 838,
+   "word": "notify",
+   "uk": "/'nəutɪfaɪ/",
+   "us": "/'notə'fai/",
+   "zh": "通知， 告知， 报告"
+  },
+  {
+   "seq": 844,
+   "word": "heave",
+   "uk": "/hiːv/",
+   "us": "/hiv/",
+   "zh": "起伏，隆起；呕吐，恶心； 举起，提起，拉起，拖；扔；发出； 举起； 起伏， 升降"
+  },
+  {
+   "seq": 846,
+   "word": "nourish",
+   "uk": "/'nʌrɪʃ/",
+   "us": "/'nɜrɪʃ/",
+   "zh": "提供养分， 养育"
+  },
+  {
+   "seq": 856,
+   "word": "refugee",
+   "uk": "/ˌrefju'dʒiː/",
+   "us": "/'rɛfjʊdʒi/",
+   "zh": "难民"
+  },
+  {
+   "seq": 858,
+   "word": "comparable",
+   "uk": "/'kɒmpərəbl/",
+   "us": "/'kɑmpərəbl/",
+   "zh": "可比较的； 类似的； 比得上的"
+  },
+  {
+   "seq": 863,
+   "word": "presumably",
+   "uk": "/prɪ'zjuːməbli/",
+   "us": "/prɪ'zuməbli/",
+   "zh": "大概， 可能， 据推测"
+  },
+  {
+   "seq": 871,
+   "word": "revenue",
+   "uk": "/'revənjuː/",
+   "us": "/'rɛvənu/",
+   "zh": "收入， 收益； 税收， 岁入"
+  },
+  {
+   "seq": 883,
+   "word": "oxygen",
+   "uk": "/'ɒksɪdʒən/",
+   "us": "/'ɑksɪdʒən/",
+   "zh": "氧， 氧气"
+  },
+  {
+   "seq": 888,
+   "word": "bearing",
+   "uk": "/'beərɪŋ/",
+   "us": "/'bɛrɪŋ/",
+   "zh": "举止， 风度； 方位， 方向感； 影响"
+  },
+  {
+   "seq": 891,
+   "word": "comedy",
+   "uk": "/'kɒmədi/",
+   "us": "/'kɑmədi/",
+   "zh": "喜剧， 喜剧性"
+  },
+  {
+   "seq": 896,
+   "word": "trash",
+   "uk": "/træʃ/",
+   "us": "/træʃ/",
+   "zh": "垃圾，废物；拙劣的文学作品；没用的人，社会渣滓，败类； 捣毁， 破坏"
+  },
+  {
+   "seq": 897,
+   "word": "painter",
+   "uk": "/'peɪntə/",
+   "us": "/'pentɚ/",
+   "zh": "漆工； 画家"
+  },
+  {
+   "seq": 924,
+   "word": "spokesman",
+   "uk": "/'spəuksmən/",
+   "us": "/'spoksmən/",
+   "zh": "发言人"
+  },
+  {
+   "seq": 939,
+   "word": "circulation",
+   "uk": "/ˌsɜːkjə'leɪʃn/",
+   "us": "/,sɝkjə'leʃən/",
+   "zh": "循环； 流传； 发行， 流通"
+  },
+  {
+   "seq": 942,
+   "word": "accommodation",
+   "uk": "/əˌkɒmə'deɪʃn/",
+   "us": "/ə,kɑmə'deʃən/",
+   "zh": "住处； 膳宿"
+  },
+  {
+   "seq": 961,
+   "word": "patch",
+   "uk": "/pætʃ/",
+   "us": "/pætʃ/",
+   "zh": "补丁；斑，与周围不同的部分；一小块地； 补， 修补"
+  },
+  {
+   "seq": 966,
+   "word": "contribution",
+   "uk": "/ˌkɒntrɪ'bjuːʃn/",
+   "us": "/,kɑntrɪ'bjuʃən/",
+   "zh": "贡献， 促成作用； 捐款， 捐献物； 稿件"
+  },
+  {
+   "seq": 992,
+   "word": "symptom",
+   "uk": "/'sɪmptəm/",
+   "us": "/'sɪmptəm/",
+   "zh": "症状； 征候， 征兆"
+  },
+  {
+   "seq": 997,
+   "word": "boost",
+   "uk": "/buːst/",
+   "us": "/bʊst/",
+   "zh": "提高，使增长；推动，激励；替…做广告，宣扬； 提高， 增长； 推动， 激励"
+  },
+  {
+   "seq": 1012,
+   "word": "global",
+   "uk": "/'gləubl/",
+   "us": "/'ɡlobl/",
+   "zh": "全球的， 全世界的； 总的， 完整的"
+  },
+  {
+   "seq": 1020,
+   "word": "perspective",
+   "uk": "/pə'spektɪv/",
+   "us": "/pɚ'spɛktɪv/",
+   "zh": "视角， 观点； 远景， 景观； 透视画法， 透视图"
+  },
+  {
+   "seq": 1057,
+   "word": "shrug",
+   "uk": "/ʃrʌg/",
+   "us": "/ʃrʌɡ/",
+   "zh": "耸肩"
+  },
+  {
+   "seq": 1059,
+   "word": "coordination",
+   "uk": "/kəuˌɔːdɪ'neɪʃn/",
+   "us": "/ko,ɔrdɪ'neʃən/",
+   "zh": "同等； 调和"
+  },
+  {
+   "seq": 1060,
+   "word": "presentation",
+   "uk": "/ˌprezn'teɪʃn/",
+   "us": "/,prizɛn'teʃən/",
+   "zh": "提供， 显示； 外观， 图像； 授予， 赠送； 报告， 介绍； 表演"
+  },
+  {
+   "seq": 1074,
+   "word": "owing",
+   "uk": "/'əuɪŋ/",
+   "us": "/'oɪŋ/",
+   "zh": "应付的， 未付的"
+  },
+  {
+   "seq": 1084,
+   "word": "systematical",
+   "uk": "/ˌsɪstə'mætɪk(l)/",
+   "us": "/,sistə'mætikl/",
+   "zh": "有系统的， 有计划的"
+  },
+  {
+   "seq": 1093,
+   "word": "amateur",
+   "uk": "/'æmətə/",
+   "us": "/ˈæmətər/",
+   "zh": "业余爱好的， 业余的； 外行的； 业余爱好者；外行"
+  },
+  {
+   "seq": 1097,
+   "word": "assistance",
+   "uk": "/ə'sɪstəns/",
+   "us": "/ə'sɪstəns/",
+   "zh": "协助， 援助"
+  },
+  {
+   "seq": 1116,
+   "word": "incredible",
+   "uk": "/ɪn'kredəbl/",
+   "us": "/ɪn'krɛdəbl/",
+   "zh": "不能相信的， 不可信的； 难以置信的， 不可思议的； 惊人的"
+  },
+  {
+   "seq": 1119,
+   "word": "guitar",
+   "uk": "/gɪ'tɑː/",
+   "us": "/ɡɪ'tɑr/",
+   "zh": "吉他， 六弦琴"
+  },
+  {
+   "seq": 1134,
+   "word": "balcony",
+   "uk": "/'bælkəni/",
+   "us": "/'bælkənɪ/",
+   "zh": "阳台； 楼厅， 楼座"
+  },
+  {
+   "seq": 1153,
+   "word": "collaborative",
+   "uk": "/kə'læbərətɪv/",
+   "us": "/kə'læbəretɪv/",
+   "zh": "合作的， 协作的， 协力完成的"
+  },
+  {
+   "seq": 1154,
+   "word": "cherish",
+   "uk": "/'tʃerɪʃ/",
+   "us": "/'tʃɛrɪʃ/",
+   "zh": "珍爱； 怀有"
+  },
+  {
+   "seq": 1155,
+   "word": "constitute",
+   "uk": "/'kɒnstɪtjuːt/",
+   "us": "/'kɑnstətut/",
+   "zh": "组成， 形成； 设立； 任命"
+  },
+  {
+   "seq": 1164,
+   "word": "prolong",
+   "uk": "/prə'lɒŋ/",
+   "us": "/prəˈlɑːŋ/",
+   "zh": "拉长， 延长"
+  },
+  {
+   "seq": 1175,
+   "word": "architect",
+   "uk": "/'ɑːkɪtekt/",
+   "us": "/'ɑrkɪtɛkt/",
+   "zh": "建筑师， 设计师； 缔造者"
+  },
+  {
+   "seq": 1183,
+   "word": "flexibility",
+   "uk": "/ˌfleksə'bɪləti/",
+   "us": "/,flɛksə'bɪləti/",
+   "zh": "灵活性， 机动性， 柔韧性"
+  },
+  {
+   "seq": 1186,
+   "word": "identity",
+   "uk": "/aɪ'dentətɪ/",
+   "us": "/aɪ'dɛntəti/",
+   "zh": "身份； 个性， 特性； 同一性， 一致性"
+  },
+  {
+   "seq": 1191,
+   "word": "violate",
+   "uk": "/'vaɪəleɪt/",
+   "us": "/'vaɪəlet/",
+   "zh": "违反， 违背； 亵渎； 侵犯； 妨碍"
+  },
+  {
+   "seq": 1202,
+   "word": "alongside",
+   "uk": "/əˌlɒŋ'saɪd/",
+   "us": "/ə'lɔŋ'saɪd/",
+   "zh": "在旁边，沿着边，并排地； 在…旁边， 沿着…的边； 和…在一起"
+  },
+  {
+   "seq": 1205,
+   "word": "coupon",
+   "uk": "/'kuːpɒn/",
+   "us": "/'kupɑn/",
+   "zh": "礼券， 优惠券， 配给券； 联票； 票证"
+  },
+  {
+   "seq": 1208,
+   "word": "fascinating",
+   "uk": "/'fæsɪneɪtɪŋ/",
+   "us": "/'fæsɪnetɪŋ/",
+   "zh": "迷人的， 有极大吸引力的"
+  },
+  {
+   "seq": 1212,
+   "word": "agenda",
+   "uk": "/ə'dʒendə/",
+   "us": "/ə'dʒɛndə/",
+   "zh": "议事日程"
+  },
+  {
+   "seq": 1217,
+   "word": "devotion",
+   "uk": "/dɪ'vəuʃn/",
+   "us": "/dɪ'voʃən/",
+   "zh": "献身， 奉献； 忠实； 热爱； 虔诚"
+  },
+  {
+   "seq": 1218,
+   "word": "anonymous",
+   "uk": "/ə'nɒnɪməs/",
+   "us": "/ə'nɑnəməs/",
+   "zh": "匿名的； 无名的； 无特色的"
+  },
+  {
+   "seq": 1226,
+   "word": "poll",
+   "uk": "/pəul/",
+   "us": "/pol/",
+   "zh": "民意测验；政治选举，大选； 对…进行民意测验； 获得"
+  },
+  {
+   "seq": 1231,
+   "word": "fourfold",
+   "uk": "/'fɔːfəuld/",
+   "us": "/'fɔrfold/",
+   "zh": "四倍， 四重； 四倍的，四重的"
+  },
+  {
+   "seq": 1235,
+   "word": "spite",
+   "uk": "/spaɪt/",
+   "us": "/spaɪt/",
+   "zh": "恶意，怨恨； 刁难， 欺侮"
+  },
+  {
+   "seq": 1240,
+   "word": "publicity",
+   "uk": "/pʌb'lɪsəti/",
+   "us": "/pʌb'lɪsəti/",
+   "zh": "公众的注意， 名声； 宣传， 宣扬"
+  },
+  {
+   "seq": 1245,
+   "word": "commitment",
+   "uk": "/kə'mɪtmənt/",
+   "us": "/kə'mɪtmənt/",
+   "zh": "承诺， 许诺， 保证； 信奉， 献身； 承担的义务"
+  },
+  {
+   "seq": 1250,
+   "word": "qualification",
+   "uk": "/ˌkwɒlɪfɪ'keɪʃn/",
+   "us": "/,kwɑlɪfɪ'keʃən/",
+   "zh": "资格， 资格证明， 合格证书； 限制， 限定"
+  },
+  {
+   "seq": 1252,
+   "word": "recruit",
+   "uk": "/rɪ'kruːt/",
+   "us": "/rɪ'krut/",
+   "zh": "招募，吸收； 新兵； 新成员"
+  },
+  {
+   "seq": 1255,
+   "word": "replacement",
+   "uk": "/rɪ'pleɪsmənt/",
+   "us": "/rɪ'plesmənt/",
+   "zh": "代替， 取代； 更换， 调换； 替代的人"
+  },
+  {
+   "seq": 1262,
+   "word": "according",
+   "uk": "/ə'kɔːdɪŋ/",
+   "us": "/ə'kɔrdɪŋ/",
+   "zh": "相等的， 一致的， 依…而定的"
+  },
+  {
+   "seq": 1265,
+   "word": "membership",
+   "uk": "/'membəʃɪp/",
+   "us": "/'mɛmbɚʃɪp/",
+   "zh": "会员身份， 会籍； 全体会员， 会员数"
+  },
+  {
+   "seq": 1273,
+   "word": "modernization",
+   "uk": "/ˌmɒdənaɪ'zeɪʃn/",
+   "us": "/,mɑdɚnə'zeʃən/",
+   "zh": "现代化"
+  },
+  {
+   "seq": 1275,
+   "word": "criminology",
+   "uk": "/ˌkrɪmɪ'nɒlədʒi/",
+   "us": "/,krɪmɪ'nɑlədʒi/",
+   "zh": "犯罪学， 刑事学"
+  },
+  {
+   "seq": 1280,
+   "word": "controversy",
+   "uk": "/'kɒntrəvɜːsi/",
+   "us": "/ˈkɑntrəvɝ​sɪ/",
+   "zh": "争论， 辩论"
+  },
+  {
+   "seq": 1282,
+   "word": "newsstand",
+   "uk": "/'njuːzstænd/",
+   "us": "/'njʊz,stænd/",
+   "zh": "报摊， 杂志摊"
+  },
+  {
+   "seq": 1284,
+   "word": "performance",
+   "uk": "/pə'fɔːməns/",
+   "us": "/pɚ'fɔrməns/",
+   "zh": "演出； 执行， 完成； 工作情况， 表现； 工作性能"
+  },
+  {
+   "seq": 1285,
+   "word": "dessert",
+   "uk": "/dɪ'zɜːt/",
+   "us": "/dɪ'zɝt/",
+   "zh": "甜食， 点心"
+  },
+  {
+   "seq": 1286,
+   "word": "ambassador",
+   "uk": "/æm'bæsədə/",
+   "us": "/æm'bæsədɚ/",
+   "zh": "大使， 使节， 派驻国际组织的代表"
+  },
+  {
+   "seq": 1291,
+   "word": "landscape",
+   "uk": "/'lændskeɪp/",
+   "us": "/ˈlændskep/",
+   "zh": "风景，景色；风景画；全景； 美化…的景观"
+  },
+  {
+   "seq": 1319,
+   "word": "fairy",
+   "uk": "/'feəri/",
+   "us": "/'fɛri/",
+   "zh": "小精灵， 小仙子"
+  },
+  {
+   "seq": 1332,
+   "word": "packet",
+   "uk": "/'pækɪt/",
+   "us": "/'pækɪt/",
+   "zh": "小包， 小盒"
+  },
+  {
+   "seq": 1335,
+   "word": "courtyard",
+   "uk": "/'kɔːtjɑːd/",
+   "us": "/'kɔrtjɑrd/",
+   "zh": "庭院， 院子"
+  },
+  {
+   "seq": 1345,
+   "word": "providing",
+   "uk": "/prə'vaɪdɪŋ/",
+   "us": "/prə'vaɪdɪŋ/",
+   "zh": "倘若"
+  },
+  {
+   "seq": 1356,
+   "word": "particle",
+   "uk": "/'pɑːtɪkl/",
+   "us": "/'pɑrtɪkl/",
+   "zh": "粒子， 微粒； 小品词， 语助词"
+  },
+  {
+   "seq": 1360,
+   "word": "minimize",
+   "uk": "/'mɪnɪmaɪz/",
+   "us": "/'mɪnɪmaɪz/",
+   "zh": "将…减少； 最小化"
+  },
+  {
+   "seq": 1367,
+   "word": "characterize",
+   "uk": "/'kærəktəraɪz/",
+   "us": "/'kærəktə'raɪz/",
+   "zh": "成为…的特征， 以…为特征； 描绘的特性， 描述"
+  },
+  {
+   "seq": 1370,
+   "word": "handbag",
+   "uk": "/'hændbæg/",
+   "us": "/'hænd'bæg/",
+   "zh": "手提包"
+  },
+  {
+   "seq": 1376,
+   "word": "lease",
+   "uk": "/liːs/",
+   "us": "/lis/",
+   "zh": "租约，租契； 出租； 租得， 租有"
+  },
+  {
+   "seq": 1378,
+   "word": "slap",
+   "uk": "/slæp/",
+   "us": "/slæp/",
+   "zh": "掴，掌击，拍；啪的一声放； 掴， 掌击， 拍"
+  },
+  {
+   "seq": 1381,
+   "word": "anniversary",
+   "uk": "/ˌænɪ'vɜːsəri/",
+   "us": "/,ænɪ'vɝsəri/",
+   "zh": "周年纪念日"
+  },
+  {
+   "seq": 1384,
+   "word": "persuasive",
+   "uk": "/pə'sweɪsɪv/",
+   "us": "/pɚ'swesɪv/",
+   "zh": "劝诱的； 有说服力的"
+  },
+  {
+   "seq": 1397,
+   "word": "discrimination",
+   "uk": "/dɪsˌkrɪmɪ'neɪʃn/",
+   "us": "/dɪ,skrɪmɪ'neʃən/",
+   "zh": "区别， 辨别； 识别力； 差别对待， 歧视"
+  },
+  {
+   "seq": 1405,
+   "word": "pose",
+   "uk": "/pəuz/",
+   "us": "/poz/",
+   "zh": "摆姿势；假装，装腔作势； 使摆好姿势；造成，引起；提出，陈述； 样子， 姿势"
+  },
+  {
+   "seq": 1418,
+   "word": "guideline",
+   "uk": "/'gaɪdlaɪn/",
+   "us": "/'ɡaɪdlaɪn/",
+   "zh": "指导方针， 准则"
+  },
+  {
+   "seq": 1427,
+   "word": "breakdown",
+   "uk": "/'breɪkdaun/",
+   "us": "/'brek'daʊn/",
+   "zh": "垮， 衰竭； 损坏， 故障； 倒塌"
+  },
+  {
+   "seq": 1428,
+   "word": "paste",
+   "uk": "/peɪst/",
+   "us": "/pest/",
+   "zh": "糊，糨糊； 粘， 贴"
+  },
+  {
+   "seq": 1430,
+   "word": "jeans",
+   "uk": "/dʒiːnz/",
+   "us": "-",
+   "zh": "工装裤， 牛仔裤"
+  },
+  {
+   "seq": 1459,
+   "word": "pledge",
+   "uk": "/pledʒ/",
+   "us": "/plɛdʒ/",
+   "zh": "保证，誓言； 保证， 许诺"
+  },
+  {
+   "seq": 1461,
+   "word": "reservoir",
+   "uk": "/'rezəvwɑː/",
+   "us": "/'rɛzɚ,vɔr/",
+   "zh": "水库， 蓄水池； 储藏， 汇集"
+  },
+  {
+   "seq": 1462,
+   "word": "deliberate",
+   "uk": "/dɪ'lɪb(ə)rət/",
+   "us": "/dɪ'lɪbərət/",
+   "zh": "故意的， 蓄意的； 慎重的， 深思熟虑的； 仔细考虑， 思考"
+  },
+  {
+   "seq": 1466,
+   "word": "copyright",
+   "uk": "/'kɒpiraɪt/",
+   "us": "/'kɑpɪraɪt/",
+   "zh": "版权"
+  },
+  {
+   "seq": 1467,
+   "word": "biotechnology",
+   "uk": "/ˌbaɪəutek'nɒlədʒi/",
+   "us": "/'baɪotɛk'nɑlədʒi/",
+   "zh": "生物工艺学"
+  },
+  {
+   "seq": 1472,
+   "word": "charter",
+   "uk": "/'tʃɑːtə/",
+   "us": "/'tʃɑrtɚ/",
+   "zh": "包租的， 租用的； 宪章，共同纲领；特许状，许可证；包租； 包，租"
+  },
+  {
+   "seq": 1473,
+   "word": "slim",
+   "uk": "/slɪm/",
+   "us": "/slɪm/",
+   "zh": "苗条的；薄的；少的； 减轻体重， 变苗条"
+  },
+  {
+   "seq": 1485,
+   "word": "decline",
+   "uk": "/dɪ'klaɪn/",
+   "us": "/dɪ'klaɪn/",
+   "zh": "下降， 减少； 衰退， 衰落； 谢绝， 拒绝； 下降，减少；衰退"
+  },
+  {
+   "seq": 1487,
+   "word": "succeeding",
+   "uk": "/sək'siːdɪŋ/",
+   "us": "/sək'si:diŋ/",
+   "zh": "以后的， 随后的"
+  },
+  {
+   "seq": 1497,
+   "word": "crossing",
+   "uk": "/'krɒsɪŋ/",
+   "us": "/'krɔsɪŋ/",
+   "zh": "人行横道， 交叉口； 横渡"
+  },
+  {
+   "seq": 1498,
+   "word": "script",
+   "uk": "/skrɪpt/",
+   "us": "/skrɪpt/",
+   "zh": "剧本， 广播稿； 书写用的字母； 笔迹， 手迹"
+  },
+  {
+   "seq": 1504,
+   "word": "partial",
+   "uk": "/'pɑːʃl/",
+   "us": "/'pɑrʃəl/",
+   "zh": "部分的； 不公平的； 偏爱的， 偏袒的"
+  },
+  {
+   "seq": 1527,
+   "word": "elegant",
+   "uk": "/'elɪgənt/",
+   "us": "/'ɛləgənt/",
+   "zh": "优美的， 文雅的， 讲究的； 简练的， 简洁的"
+  },
+  {
+   "seq": 1529,
+   "word": "curriculum",
+   "uk": "/kə'rɪkjələm/",
+   "us": "/kə'rɪkjələm/",
+   "zh": "课程， 全部课程"
+  },
+  {
+   "seq": 1533,
+   "word": "species",
+   "uk": "/'spiːʃiːz/",
+   "us": "/'spiʃiz/",
+   "zh": "种， 类"
+  },
+  {
+   "seq": 1536,
+   "word": "cite",
+   "uk": "/saɪt/",
+   "us": "/saɪt/",
+   "zh": "引用， 引证； 传唤， 传讯； 表彰， 嘉奖"
+  },
+  {
+   "seq": 1540,
+   "word": "internship",
+   "uk": "/'ɪntɜːnʃɪp/",
+   "us": "/'ɪntɝnʃɪp/",
+   "zh": "实习生身份； 实习医师期"
+  },
+  {
+   "seq": 1550,
+   "word": "perception",
+   "uk": "/pə'sepʃn/",
+   "us": "/pɚ'sɛpʃən/",
+   "zh": "感知， 觉察； 认识， 观念， 看法"
+  },
+  {
+   "seq": 1560,
+   "word": "pregnant",
+   "uk": "/'pregnənt/",
+   "us": "/'prɛɡnənt/",
+   "zh": "怀孕的， 妊娠的"
+  },
+  {
+   "seq": 1562,
+   "word": "estate",
+   "uk": "/ɪ'steɪt/",
+   "us": "/ɪ'stet/",
+   "zh": "土地， 住宅区， 地产； 财产， 遗产； 庄园， 种植园"
+  },
+  {
+   "seq": 1569,
+   "word": "gear",
+   "uk": "/gɪə/",
+   "us": "/ɡɪr/",
+   "zh": "齿轮，传动装置，排挡；用具，设备；衣服； 使适应， 使适合"
+  },
+  {
+   "seq": 1572,
+   "word": "elderly",
+   "uk": "/'eldəli/",
+   "us": "/'ɛldɚli/",
+   "zh": "较老的，年长的； 到了晚年的人， 老年人"
+  },
+  {
+   "seq": 1577,
+   "word": "media",
+   "uk": "/'miːdiə/",
+   "us": "-",
+   "zh": "新闻媒介， 传播媒介"
+  },
+  {
+   "seq": 1593,
+   "word": "radical",
+   "uk": "/'rædɪkl/",
+   "us": "/'rædɪkl/",
+   "zh": "根本的，基本的；激进的，激进派的； 激进分子"
+  },
+  {
+   "seq": 1611,
+   "word": "concession",
+   "uk": "/kən'seʃn/",
+   "us": "/kən'sɛʃən/",
+   "zh": "让步， 妥协； 特许， 特许权； 承认， 认可"
+  },
+  {
+   "seq": 1619,
+   "word": "elective",
+   "uk": "/ɪ'lektɪv/",
+   "us": "/ɪ'lɛktɪv/",
+   "zh": "选举的，有选举权的；可任意选择的； 选修课程"
+  },
+  {
+   "seq": 1620,
+   "word": "accusation",
+   "uk": "/ˌækju'zeɪʃn/",
+   "us": "/,ækju'zeʃən/",
+   "zh": "谴责； 【律】 指控"
+  },
+  {
+   "seq": 1623,
+   "word": "exclusive",
+   "uk": "/ɪk'skluːsɪv/",
+   "us": "/ɪk'sklusɪv/",
+   "zh": "奢华的，高级的；独有的，独享的；排斥的，排他的；不包括…的，不把…计算在内的； 独家新闻"
+  },
+  {
+   "seq": 1645,
+   "word": "housing",
+   "uk": "/'hauzɪŋ/",
+   "us": "/'haʊzɪŋ/",
+   "zh": "房屋， 住宅； 住房建筑， 住房供给； 外壳， 外罩"
+  },
+  {
+   "seq": 1652,
+   "word": "notion",
+   "uk": "/'nəuʃn/",
+   "us": "/'noʃən/",
+   "zh": "概念， 观念； 意图， 想法， 念头"
+  },
+  {
+   "seq": 1653,
+   "word": "diversity",
+   "uk": "/daɪ'vɜːsəti/",
+   "us": "/dɪˈvəsɪti/",
+   "zh": "多样性； 差异； 不同点"
+  },
+  {
+   "seq": 1656,
+   "word": "patience",
+   "uk": "/'peɪʃns/",
+   "us": "/'peʃns/",
+   "zh": "忍耐， 耐心"
+  },
+  {
+   "seq": 1661,
+   "word": "mechanism",
+   "uk": "/'mekənɪzəm/",
+   "us": "/'mɛkənɪzəm/",
+   "zh": "机械装置； 机制， 机理； 办法， 途径"
+  },
+  {
+   "seq": 1668,
+   "word": "gram",
+   "uk": "/græm/",
+   "us": "/ɡræm/",
+   "zh": "克"
+  },
+  {
+   "seq": 1669,
+   "word": "empower",
+   "uk": "/ɪm'pauə/",
+   "us": "/ɪm'paʊɚ/",
+   "zh": "授权于； 使能够"
+  },
+  {
+   "seq": 1670,
+   "word": "riot",
+   "uk": "/'raɪət/",
+   "us": "/'raɪət/",
+   "zh": "聚众闹事； 暴乱，骚乱；极度丰富； 把浪费在放荡的生活上"
+  },
+  {
+   "seq": 1675,
+   "word": "boring",
+   "uk": "/'bɔːrɪŋ/",
+   "us": "/'bɔrɪŋ/",
+   "zh": "令人厌烦的， 乏味的， 无聊的"
+  },
+  {
+   "seq": 1676,
+   "word": "classic",
+   "uk": "/'klæsɪk/",
+   "us": "/'klæsɪk/",
+   "zh": "最优秀的，典型的，标准的；传统式样的，典雅的； 文学名著， 经典作品， 杰作； 优秀的典范； 古典文学， 古典语文研究"
+  },
+  {
+   "seq": 1683,
+   "word": "grab",
+   "uk": "/græb/",
+   "us": "/ɡræb/",
+   "zh": "抓取，攫取；赶紧做；抓住；抓，夺； 抓， 夺"
+  },
+  {
+   "seq": 1697,
+   "word": "segment",
+   "uk": "/'segmənt/",
+   "us": "/'sɛɡmənt/",
+   "zh": "部分， 片段； 瓣"
+  },
+  {
+   "seq": 1701,
+   "word": "statistic",
+   "uk": "/stə'tɪstɪk/",
+   "us": "/stə'tɪstɪk/",
+   "zh": "统计数值， 统计资料； 统计学"
+  },
+  {
+   "seq": 1703,
+   "word": "superb",
+   "uk": "/sjʊː'pɜːb; sʊː'pɜːb/",
+   "us": "/suːˈpɜːrb/",
+   "zh": "极好的； 高质量的"
+  },
+  {
+   "seq": 1704,
+   "word": "mold",
+   "uk": "/məuld/",
+   "us": "/mold/",
+   "zh": "霉，霉菌；模型，铸模；性格； 用模子制作， 塑造； 使形成， 影响…的形成"
+  },
+  {
+   "seq": 1710,
+   "word": "catalogue",
+   "uk": "/'kætəlɒg/",
+   "us": "/'kætəlɔɡ/",
+   "zh": "目录； 为…编目录，把…列入目录中"
+  },
+  {
+   "seq": 1713,
+   "word": "volunteer",
+   "uk": "/ˌvɒlən'tɪə/",
+   "us": "/,vɑlən'tɪr/",
+   "zh": "自愿提供； 自愿， 志愿； 志愿者；志愿兵"
+  },
+  {
+   "seq": 1715,
+   "word": "ignorance",
+   "uk": "/'ɪgnərəns/",
+   "us": "/'ɪɡnərəns/",
+   "zh": "无知， 愚昧"
+  },
+  {
+   "seq": 1724,
+   "word": "boom",
+   "uk": "/buːm/",
+   "us": "/buːm/",
+   "zh": "激增， 繁荣， 迅速发展； 发出隆隆声； 激增，繁荣，迅速发展；隆隆声，嗡嗡声"
+  },
+  {
+   "seq": 1729,
+   "word": "cautious",
+   "uk": "/'kɔːʃəs/",
+   "us": "/'kɔʃəs/",
+   "zh": "十分小心的， 谨慎的"
+  },
+  {
+   "seq": 1731,
+   "word": "summit",
+   "uk": "/'sʌmɪt/",
+   "us": "/'sʌmɪt/",
+   "zh": "最高点， 峰顶； 最高级会议"
+  },
+  {
+   "seq": 1732,
+   "word": "recession",
+   "uk": "/rɪ'seʃn/",
+   "us": "/rɪ'sɛʃən/",
+   "zh": "衰退， 衰退期"
+  },
+  {
+   "seq": 1738,
+   "word": "ally",
+   "uk": "/'ælaɪ/",
+   "us": "/'ælaɪ/",
+   "zh": "结盟， 联合； 同盟国， 同盟者； 支持者"
+  },
+  {
+   "seq": 1756,
+   "word": "urban",
+   "uk": "/'ɜːbən/",
+   "us": "/'ɝbən/",
+   "zh": "城市的， 都市的； 住在都市的"
+  },
+  {
+   "seq": 1788,
+   "word": "counsel",
+   "uk": "/'kaunsl/",
+   "us": "/'kaʊnsl/",
+   "zh": "律师，法律顾问；忠告，劝告； 劝告， 提议"
+  },
+  {
+   "seq": 1790,
+   "word": "gene",
+   "uk": "/dʒiːn/",
+   "us": "/dʒin/",
+   "zh": "基因"
+  },
+  {
+   "seq": 1792,
+   "word": "suicide",
+   "uk": "/'suːɪsaɪd/",
+   "us": "/'suɪsaɪd/",
+   "zh": "自杀"
+  },
+  {
+   "seq": 1798,
+   "word": "hospitalize",
+   "uk": "/'hɒspɪtəlaɪz/",
+   "us": "/'hɑspɪtə'laɪz/",
+   "zh": "就医"
+  },
+  {
+   "seq": 1809,
+   "word": "pattern",
+   "uk": "/'pætn/",
+   "us": "/'pætɚn/",
+   "zh": "型，式样，模型； 仿制， 使照…样子"
+  },
+  {
+   "seq": 1811,
+   "word": "connexion",
+   "uk": "/kə'nekʃn/",
+   "us": "/kə'nekʃən/",
+   "zh": "connection的英式拼法"
+  },
+  {
+   "seq": 1849,
+   "word": "protocol",
+   "uk": "/'prəutəkɒl/",
+   "us": "/'protə'kɔl/",
+   "zh": "礼仪， 礼节； 草案， 议定书"
+  },
+  {
+   "seq": 1850,
+   "word": "whale",
+   "uk": "/weɪl/",
+   "us": "/wel/",
+   "zh": "鲸"
+  },
+  {
+   "seq": 1851,
+   "word": "provoke",
+   "uk": "/prə'vəuk/",
+   "us": "/prə'vok/",
+   "zh": "对…挑衅， 激怒； 激起， 引起"
+  },
+  {
+   "seq": 1854,
+   "word": "percentage",
+   "uk": "/pə'sentɪdʒ/",
+   "us": "/pɚ'sɛntɪdʒ/",
+   "zh": "百分比， 百分率"
+  },
+  {
+   "seq": 1855,
+   "word": "negotiate",
+   "uk": "/nɪ'gəuʃieɪt/",
+   "us": "/nɪ'ɡoʃɪet/",
+   "zh": "洽谈， 协商； 顺利通过， 成功越过； 协商， 谈判"
+  },
+  {
+   "seq": 1859,
+   "word": "remonstrate",
+   "uk": "/'remənstreɪt/",
+   "us": "/rɪ'mɑnstret/",
+   "zh": "抗议"
+  },
+  {
+   "seq": 1860,
+   "word": "package",
+   "uk": "/'pækɪdʒ/",
+   "us": "/'pækɪdʒ/",
+   "zh": "包裹，包装；一揽子交易； 把…打包； 包装"
+  },
+  {
+   "seq": 1864,
+   "word": "survival",
+   "uk": "/sə'vaɪvl/",
+   "us": "/sɚ'vaɪvl/",
+   "zh": "幸存； 幸存者， 残存物"
+  },
+  {
+   "seq": 1870,
+   "word": "detective",
+   "uk": "/dɪ'tektɪv/",
+   "us": "/dɪ'tɛktɪv/",
+   "zh": "侦探， 私人侦探"
+  },
+  {
+   "seq": 1879,
+   "word": "cruise",
+   "uk": "/kruːz/",
+   "us": "/krʊz/",
+   "zh": "航游，巡航；缓慢巡行； 航游， 游弋"
+  },
+  {
+   "seq": 1883,
+   "word": "perceive",
+   "uk": "/pə'siːv/",
+   "us": "/pɚ'siv/",
+   "zh": "感知， 感觉， 察觉； 认识到， 意识到； 理解"
+  },
+  {
+   "seq": 1887,
+   "word": "erroneous",
+   "uk": "/ɪ'rəuniəs/",
+   "us": "/ɪ'ronɪəs/",
+   "zh": "错误的， 不正确的"
+  },
+  {
+   "seq": 1893,
+   "word": "kindergarten",
+   "uk": "/'kɪndəgɑːtn/",
+   "us": "/'kɪndɚɡɑrtn/",
+   "zh": "幼儿园"
+  },
+  {
+   "seq": 1895,
+   "word": "crucial",
+   "uk": "/'kruːʃl/",
+   "us": "/'krʊʃəl/",
+   "zh": "至关重要的， 决定性的"
+  },
+  {
+   "seq": 1899,
+   "word": "insert",
+   "uk": "/ɪn'sɜːt/",
+   "us": "/'ɪnsɝt/",
+   "zh": "插入， 嵌入； 登载"
+  },
+  {
+   "seq": 1904,
+   "word": "highlight",
+   "uk": "/'haɪlaɪt/",
+   "us": "/'haɪlaɪt/",
+   "zh": "强调，突出，使显著； 最精彩的部分； 最重要的事件"
+  },
+  {
+   "seq": 1907,
+   "word": "parallel",
+   "uk": "/'pærəlel/",
+   "us": "/'pærəlɛl/",
+   "zh": "平行的；类似的；并列的，并联的； 可相比拟的事物；相似处；平行线，平行面；纬线； 与…平行； 与…相似， 与…相当， 比得上"
+  },
+  {
+   "seq": 1909,
+   "word": "patient",
+   "uk": "/'peɪʃnt/",
+   "us": "/ˈpeʃənt/",
+   "zh": "忍耐的，有耐心的； 病人"
+  },
+  {
+   "seq": 1910,
+   "word": "cashier",
+   "uk": "/kæ'ʃɪə/",
+   "us": "/kæ'ʃɪr/",
+   "zh": "出纳"
+  },
+  {
+   "seq": 1911,
+   "word": "sheer",
+   "uk": "/ʃɪə/",
+   "us": "/ʃɪr/",
+   "zh": "垂直地，陡峭地； 急转向， 偏离； 完全的，十足的；陡峭的，垂直的；极薄的，透明的"
+  },
+  {
+   "seq": 1926,
+   "word": "depression",
+   "uk": "/dɪ'preʃn/",
+   "us": "/dɪ'prɛʃən/",
+   "zh": "抑郁， 沮丧； 不景气， 萧条； 洼地， 凹陷"
+  },
+  {
+   "seq": 1930,
+   "word": "gaol",
+   "uk": "/dʒeɪl/",
+   "us": "/dʒeɪl/",
+   "zh": "监禁； 监狱"
+  },
+  {
+   "seq": 1933,
+   "word": "ban",
+   "uk": "/bæn/",
+   "us": "/bæn/",
+   "zh": "取缔，查禁；禁止； 禁止， 禁令"
+  },
+  {
+   "seq": 1934,
+   "word": "fascinate",
+   "uk": "/'fæsɪneɪt/",
+   "us": "/'fæsə'net/",
+   "zh": "有吸引力， 迷人； 迷住，强烈吸引"
+  },
+  {
+   "seq": 1936,
+   "word": "diplomatic",
+   "uk": "/ˌdɪplə'mætɪk/",
+   "us": "/,dɪplə'mætɪk/",
+   "zh": "外交的， 从事外交的； 策略的， 有手腕的"
+  },
+  {
+   "seq": 1942,
+   "word": "assumption",
+   "uk": "/ə'sʌmpʃn/",
+   "us": "/ə'sʌmpʃən/",
+   "zh": "假定， 臆断； 担任， 承担"
+  },
+  {
+   "seq": 1943,
+   "word": "pension",
+   "uk": "/'penʃn/",
+   "us": "/'pɛnʃən/",
+   "zh": "养老金，抚恤金； 发给…养老金"
+  },
+  {
+   "seq": 1955,
+   "word": "panic",
+   "uk": "/'pænɪk/",
+   "us": "/'pænɪk/",
+   "zh": "恐慌， 惊慌失措； 恐慌，惊慌，慌乱"
+  },
+  {
+   "seq": 1966,
+   "word": "competitive",
+   "uk": "/kəm'petətɪv/",
+   "us": "/kəm'pɛtətɪv/",
+   "zh": "竞争的， 比赛的； 好竞争的， 求胜心切的； 有竞争力的"
+  },
+  {
+   "seq": 1967,
+   "word": "enquiry",
+   "uk": "/ɪn'kwaɪəri/",
+   "us": "/ɛnˈkwaɪri, ˈɛnkwəri/",
+   "zh": "询问"
+  },
+  {
+   "seq": 1968,
+   "word": "applause",
+   "uk": "/ə'plɔːz/",
+   "us": "/ə'plɔz/",
+   "zh": "鼓掌， 掌声"
+  },
+  {
+   "seq": 1977,
+   "word": "virus",
+   "uk": "/'vaɪərəs/",
+   "us": "/'vaɪrəs/",
+   "zh": "病毒； 病毒性疾病， 病毒病"
+  },
+  {
+   "seq": 1984,
+   "word": "enquire",
+   "uk": "/ɪn'kwaɪə/",
+   "us": "/ɪn'kwaɪr/",
+   "zh": "询问"
+  },
+  {
+   "seq": 1986,
+   "word": "popularity",
+   "uk": "/ˌpɒpju'lærəti/",
+   "us": "/,pɑpju'lærəti/",
+   "zh": "普及， 流行； 声望"
+  },
+  {
+   "seq": 1990,
+   "word": "panel",
+   "uk": "/'pænl/",
+   "us": "/'pænl/",
+   "zh": "专门小组； 面， 板； 控制板， 仪表盘"
+  },
+  {
+   "seq": 1994,
+   "word": "oval",
+   "uk": "/'əuvl/",
+   "us": "/'ovl/",
+   "zh": "椭圆形的； 椭圆形"
+  },
+  {
+   "seq": 1998,
+   "word": "integrate",
+   "uk": "/'ɪntɪgreɪt/",
+   "us": "/'ɪntɪɡret/",
+   "zh": "成为一体， 合并"
+  },
+  {
+   "seq": 1999,
+   "word": "survivor",
+   "uk": "/sə'vaɪvə/",
+   "us": "/sɚ'vaɪvɚ/",
+   "zh": "生还者； 残存物"
+  },
+  {
+   "seq": 2000,
+   "word": "applicant",
+   "uk": "/'æplɪkənt/",
+   "us": "/'æplɪkənt/",
+   "zh": "申请人"
+  },
+  {
+   "seq": 2002,
+   "word": "partner",
+   "uk": "/'pɑːtnə/",
+   "us": "/'pɑrtnɚ/",
+   "zh": "做…的搭档； 伙伴，合伙人，搭档，配偶"
+  },
+  {
+   "seq": 2004,
+   "word": "diagnose",
+   "uk": "/'daɪəgnəuz/",
+   "us": "/,daɪəɡ'nos/",
+   "zh": "诊断"
+  },
+  {
+   "seq": 2024,
+   "word": "scary",
+   "uk": "/'skeəri/",
+   "us": "/'skɛri/",
+   "zh": "引起惊慌的"
+  },
+  {
+   "seq": 2028,
+   "word": "consultancy",
+   "uk": "/kən'sʌltənsi/",
+   "us": "/kən'sʌltənsi/",
+   "zh": "咨询公司"
+  },
+  {
+   "seq": 2033,
+   "word": "homogeneous",
+   "uk": "/ˌhɒmə'dʒiːniəs/",
+   "us": "/,homə'dʒinɪəs/",
+   "zh": "同种类的， 同性质的， 有相同特征的"
+  },
+  {
+   "seq": 2037,
+   "word": "popularize",
+   "uk": "/'pɒpjələraɪz/",
+   "us": "/'pɑpjələraɪz/",
+   "zh": "普及"
+  },
+  {
+   "seq": 2048,
+   "word": "clash",
+   "uk": "/klæʃ/",
+   "us": "/klæʃ/",
+   "zh": "发生冲突；不协调；砰地相撞，发出刺耳的撞击声； 冲突； 不协调； 刺耳的撞击声"
+  },
+  {
+   "seq": 2052,
+   "word": "parade",
+   "uk": "/pə'reɪd/",
+   "us": "/pə'red/",
+   "zh": "游行， 列队前进； 招摇而行； 游行；检阅"
+  },
+  {
+   "seq": 2056,
+   "word": "personality",
+   "uk": "/ˌpɜːsə'næləti/",
+   "us": "/,pɝsə'næləti/",
+   "zh": "人格， 个性； 人物， 名人"
+  },
+  {
+   "seq": 2058,
+   "word": "sanction",
+   "uk": "/'sæŋkʃn/",
+   "us": "/'sæŋkʃən/",
+   "zh": "批准，认可； 批准， 认可； 约束因素， 约束力；  国际制裁"
+  },
+  {
+   "seq": 2060,
+   "word": "alert",
+   "uk": "/ə'lɜːt/",
+   "us": "/ə'lɝt/",
+   "zh": "警觉的，留神的，注意的； 使认识到，使意识到； 警戒， 戒备； 警报"
+  },
+  {
+   "seq": 2063,
+   "word": "client",
+   "uk": "/'klaɪənt/",
+   "us": "/'klaɪənt/",
+   "zh": "委托人， 当事人， 顾客"
+  },
+  {
+   "seq": 2070,
+   "word": "historic",
+   "uk": "/hɪ'stɒrɪk/",
+   "us": "/hɪ'stɔrɪk/",
+   "zh": "历史上著名的， 具有重大历史意义的"
+  },
+  {
+   "seq": 2083,
+   "word": "bid",
+   "uk": "/bɪd/",
+   "us": "/bɪd/",
+   "zh": "企图，努力；喊价，出价，投标； 喊价， 投标， 出； 祝， 表示； 命令"
+  },
+  {
+   "seq": 2096,
+   "word": "fulfill",
+   "uk": "/ful'fɪl/",
+   "us": "/ful'fil/",
+   "zh": "履行， 实现， 完成； 满足， 使满意"
+  },
+  {
+   "seq": 2101,
+   "word": "recommendation",
+   "uk": "/ˌrekəmen'deɪʃn/",
+   "us": "/,rɛkəmɛn'deʃən/",
+   "zh": "推荐， 推荐信； 建议； 优点， 可取之处"
+  },
+  {
+   "seq": 2106,
+   "word": "striking",
+   "uk": "/'straɪkɪŋ/",
+   "us": "/'straɪkɪŋ/",
+   "zh": "显著的， 突出的； 惹人注目的， 容貌出众的"
+  },
+  {
+   "seq": 2119,
+   "word": "youngster",
+   "uk": "/'jʌŋstə/",
+   "us": "/'jʌŋstɚ/",
+   "zh": "青年， 年轻人， 孩子"
+  },
+  {
+   "seq": 2123,
+   "word": "distraction",
+   "uk": "/dɪ'strækʃn/",
+   "us": "/dɪ'strækʃən/",
+   "zh": "分心的事； 心烦意乱； 精神错乱； 娱乐， 消遣"
+  },
+  {
+   "seq": 2126,
+   "word": "paragraph",
+   "uk": "/'pærəgrɑːf/",
+   "us": "/'pærəɡræf/",
+   "zh": "段， 节"
+  },
+  {
+   "seq": 2132,
+   "word": "inflation",
+   "uk": "/ɪn'fleɪʃn/",
+   "us": "/ɪn'fleʃən/",
+   "zh": "通货膨胀； 膨胀"
+  },
+  {
+   "seq": 2133,
+   "word": "thinking",
+   "uk": "/'θɪŋkɪŋ/",
+   "us": "/'θɪŋkɪŋ/",
+   "zh": "深思的， 有理性的； 想法，意见，见解"
+  },
+  {
+   "seq": 2137,
+   "word": "delegate",
+   "uk": "/ˈdɛlɪˌɡeɪt; -ɡɪt; (for v.,) ˈdɛlɪˌɡeɪt/",
+   "us": "/ˈdɛləgɪt; (for v.,) ˈdɛləˌgeɪt/",
+   "zh": "代表， 代表团成员； 委派…为代表； 授 ， 把…委托给"
+  },
+  {
+   "seq": 2152,
+   "word": "systematic",
+   "uk": "/ˌsɪstə'mætɪk(l)/",
+   "us": "/'sɪstə'mætɪk/",
+   "zh": "有系统的， 有计划的"
+  },
+  {
+   "seq": 2155,
+   "word": "bacon",
+   "uk": "/'beɪkən/",
+   "us": "/'bekən/",
+   "zh": "咸肉"
+  },
+  {
+   "seq": 2162,
+   "word": "transaction",
+   "uk": "/træn'zækʃn/",
+   "us": "/træn'zækʃən/",
+   "zh": "办理， 处理； 交易， 业务； 会报， 学报"
+  },
+  {
+   "seq": 2168,
+   "word": "pants",
+   "uk": "/pænts/",
+   "us": "/pænts/",
+   "zh": "长裤， 便裤； 内裤"
+  },
+  {
+   "seq": 2175,
+   "word": "antique",
+   "uk": "/æn'tiːk/",
+   "us": "/æn'tik/",
+   "zh": "古时的， 过时的； 古物，古董"
+  },
+  {
+   "seq": 2178,
+   "word": "petroleum",
+   "uk": "/pə'trəuliəm/",
+   "us": "/pə'trolɪəm/",
+   "zh": "石油"
+  },
+  {
+   "seq": 2188,
+   "word": "astrophysics",
+   "uk": "/ˌæstrəu'fɪzɪks/",
+   "us": "/,æstro'fɪzɪks/",
+   "zh": "天体物理学"
+  },
+  {
+   "seq": 2208,
+   "word": "bride",
+   "uk": "/braɪd/",
+   "us": "/braɪd/",
+   "zh": "新娘"
+  },
+  {
+   "seq": 2229,
+   "word": "consumer",
+   "uk": "/kən'sjuːmə/",
+   "us": "/kən'sumɚ/",
+   "zh": "消费者， 用户， 消耗者"
+  },
+  {
+   "seq": 2235,
+   "word": "initiative",
+   "uk": "/ɪ'nɪʃətɪv/",
+   "us": "/ɪ'nɪʃətɪv/",
+   "zh": "主动性； 首创精神； 主动的行动， 倡议； 主动权"
+  },
+  {
+   "seq": 2240,
+   "word": "medication",
+   "uk": "/ˌmedi'keɪʃn/",
+   "us": "/'mɛdɪ'keʃən/",
+   "zh": "药物治疗； 药物"
+  },
+  {
+   "seq": 2245,
+   "word": "lobby",
+   "uk": "/'lɒbi/",
+   "us": "/'lɑbi/",
+   "zh": "向进行游说； 大厅；休息室；院外活动集团"
+  },
+  {
+   "seq": 2246,
+   "word": "acknowledge",
+   "uk": "/ək'nɒlɪdʒ/",
+   "us": "/ək'nɑlɪdʒ/",
+   "zh": "承认， 承认…的权威； 告知收到， 确认； 对…表示感谢， 报偿"
+  },
+  {
+   "seq": 2258,
+   "word": "strategic",
+   "uk": "/strə'tiːdʒɪk/",
+   "us": "/strə'tidʒɪk/",
+   "zh": "对全局有重要意义的， 关键的； 战略的"
+  },
+  {
+   "seq": 2266,
+   "word": "respondent",
+   "uk": "/rɪ'spɒndənt/",
+   "us": "/rɪ'spɑndənt/",
+   "zh": "回答者； 响应者； 被告"
+  },
+  {
+   "seq": 2267,
+   "word": "episode",
+   "uk": "/'epɪsəud/",
+   "us": "/'ɛpɪsod/",
+   "zh": "一个事件； 插曲， 片段； 连续剧的一集"
+  },
+  {
+   "seq": 2272,
+   "word": "evidently",
+   "uk": "/'evɪdəntli/",
+   "us": "/'ɛvɪdəntli/",
+   "zh": "明显地， 显然"
+  },
+  {
+   "seq": 2275,
+   "word": "victimize",
+   "uk": "/'vɪktɪmaɪz/",
+   "us": "/'vɪktɪmaɪz/",
+   "zh": "使受害， 使牺牲"
+  },
+  {
+   "seq": 2278,
+   "word": "scandal",
+   "uk": "/'skændl/",
+   "us": "/'skændl/",
+   "zh": "丑事， 丑闻； 流言蜚语； 反感， 愤慨"
+  },
+  {
+   "seq": 2279,
+   "word": "horrible",
+   "uk": "/'hɒrəbl/",
+   "us": "/ˈhɑːrəbl/",
+   "zh": "令人恐惧的， 可怕的； 骇人听闻的； 极讨厌的， 使人不愉快的； 糟透的"
+  },
+  {
+   "seq": 2293,
+   "word": "recreation",
+   "uk": "/ˌrekri'eɪʃn/",
+   "us": "/,rɛkrɪ'eʃən/",
+   "zh": "娱乐活动， 消遣"
+  },
+  {
+   "seq": 2295,
+   "word": "allowance",
+   "uk": "/ə'lauəns/",
+   "us": "/ə'laʊəns/",
+   "zh": "津贴， 补贴； 零用钱"
+  },
+  {
+   "seq": 2301,
+   "word": "attorney",
+   "uk": "/ə'tɜːni/",
+   "us": "/ə'tɝni/",
+   "zh": "律师， 代理人"
+  },
+  {
+   "seq": 2307,
+   "word": "mainframe",
+   "uk": "/'meɪnfreɪm/",
+   "us": "/'menfrem/",
+   "zh": "主机， 大型机"
+  },
+  {
+   "seq": 2326,
+   "word": "persist",
+   "uk": "/pə'sɪst/",
+   "us": "/pɚ'sɪst/",
+   "zh": "坚持， 持续"
+  },
+  {
+   "seq": 2327,
+   "word": "audio",
+   "uk": "/'ɔːdiəu/",
+   "us": "/'ɔdɪo/",
+   "zh": "听觉的， 声音的"
+  },
+  {
+   "seq": 2328,
+   "word": "civilian",
+   "uk": "/sə'vɪlɪən/",
+   "us": "/sə'vɪlɪən/",
+   "zh": "平民， 百姓"
+  },
+  {
+   "seq": 2334,
+   "word": "offensive",
+   "uk": "/ə'fensɪv/",
+   "us": "/ə'fɛnsɪv/",
+   "zh": "冒犯的，无礼的；进攻的，攻击性的； 进攻， 攻势"
+  },
+  {
+   "seq": 2335,
+   "word": "cartoon",
+   "uk": "/kɑː'tuːn/",
+   "us": "/kɑr'tun/",
+   "zh": "卡通画， 幽默画； 动画片， 卡通片"
+  },
+  {
+   "seq": 2336,
+   "word": "speculate",
+   "uk": "/'spekjuleɪt/",
+   "us": "/'spɛkjə'let/",
+   "zh": "推测， 推断； 投机， 做投机买卖"
+  },
+  {
+   "seq": 2338,
+   "word": "amid",
+   "uk": "/ə'mɪd/",
+   "us": "/ə'mɪd/",
+   "zh": "在…中间， 在…之中， 被…围绕"
+  },
+  {
+   "seq": 2345,
+   "word": "acquaint",
+   "uk": "/ə'kweɪnt/",
+   "us": "/ə'kwent/",
+   "zh": "使认识， 使了解"
+  },
+  {
+   "seq": 2350,
+   "word": "intervene",
+   "uk": "/ˌɪntə'viːn/",
+   "us": "/,ɪntɚ'vin/",
+   "zh": "干涉， 调停， 干预； 插入， 介入； 干扰， 打扰"
+  },
+  {
+   "seq": 2358,
+   "word": "advocate",
+   "uk": "/'ædvəkeɪt；-ət/",
+   "us": "/ˈædvəkeɪt；-et/",
+   "zh": "拥护， 提倡， 主张； 拥护者， 提倡者； 辩护者， 律师"
+  },
+  {
+   "seq": 2370,
+   "word": "sector",
+   "uk": "/'sektə/",
+   "us": "/'sɛktɚ/",
+   "zh": "部门， 部分； 防御地段， 防区； 扇形"
+  },
+  {
+   "seq": 2371,
+   "word": "passion",
+   "uk": "/'pæʃn/",
+   "us": "/'pæʃən/",
+   "zh": "激情， 热情； 酷爱"
+  },
+  {
+   "seq": 2378,
+   "word": "epidemic",
+   "uk": "/ˌepɪ'demɪk/",
+   "us": "/,ɛpɪ'dɛmɪk/",
+   "zh": "流行性的；传染的； 流行病； 传播"
+  },
+  {
+   "seq": 2386,
+   "word": "accountancy",
+   "uk": "/ə'kauntənsi/",
+   "us": "/ə'kaʊntənsi/",
+   "zh": "会计工作； 会计学"
+  },
+  {
+   "seq": 2387,
+   "word": "forge",
+   "uk": "/fɔːdʒ/",
+   "us": "/fɔrdʒ/",
+   "zh": "打制， 锻造； 伪造"
+  },
+  {
+   "seq": 2405,
+   "word": "misconception",
+   "uk": "/ˌmɪskən'sepʃn/",
+   "us": "/'mɪskən'sɛpʃən/",
+   "zh": "误解"
+  },
+  {
+   "seq": 2427,
+   "word": "voltage",
+   "uk": "/'vəultɪdʒ/",
+   "us": "/'voltɪdʒ/",
+   "zh": "电压"
+  },
+  {
+   "seq": 2428,
+   "word": "damn",
+   "uk": "/dæm/",
+   "us": "/dæm/",
+   "zh": "该死，见鬼〔表示很生气或失望〕； 非常，很； 该死的〔表示对某人或某事物生气〕"
+  },
+  {
+   "seq": 2431,
+   "word": "compensation",
+   "uk": "/ˌkɒmpen'seɪʃn/",
+   "us": "/,kɑmpɛn'seʃən/",
+   "zh": "补偿， 赔偿"
+  },
+  {
+   "seq": 2432,
+   "word": "bankrupt",
+   "uk": "/'bæŋkrʌpt/",
+   "us": "/'bæŋkrʌpt/",
+   "zh": "破产的"
+  },
+  {
+   "seq": 2434,
+   "word": "advertise",
+   "uk": "/'ædvətaɪz/",
+   "us": "/'ædvɚtaɪz/",
+   "zh": "为…做广告， 宣传； 公告； 登广告"
+  },
+  {
+   "seq": 2437,
+   "word": "software",
+   "uk": "/'sɒftweə/",
+   "us": "/'sɔftwɛr/",
+   "zh": "软件"
+  },
+  {
+   "seq": 2438,
+   "word": "seminar",
+   "uk": "/'semɪnɑː/",
+   "us": "/'sɛmɪnɑr/",
+   "zh": "研究班， 研讨会"
+  },
+  {
+   "seq": 2444,
+   "word": "hesitant",
+   "uk": "/'hezɪtənt/",
+   "us": "/'hɛzɪtənt/",
+   "zh": "犹豫的； 吞吞吐吐的"
+  },
+  {
+   "seq": 2457,
+   "word": "surrounding",
+   "uk": "/sə'raundɪŋ/",
+   "us": "/sə'raʊndɪŋ/",
+   "zh": "附近的；四周的"
+  },
+  {
+   "seq": 2466,
+   "word": "innovative",
+   "uk": "/'ɪnəveɪtɪv/",
+   "us": "/'ɪnəvetɪv/",
+   "zh": "创新的， 革新的"
+  },
+  {
+   "seq": 2467,
+   "word": "insight",
+   "uk": "/'ɪnsaɪt/",
+   "us": "/'ɪn'saɪt/",
+   "zh": "洞察力； 洞悉； 深刻见解"
+  },
+  {
+   "seq": 2468,
+   "word": "fabric",
+   "uk": "/'fæbrɪk/",
+   "us": "/'fæbrɪk/",
+   "zh": "织物， 纺织品； 结构"
+  },
+  {
+   "seq": 2472,
+   "word": "indoor",
+   "uk": "/'ɪndɔː/",
+   "us": "/'ɪndɔr/",
+   "zh": "在室内， 在户内； 室内的"
+  },
+  {
+   "seq": 2475,
+   "word": "sexual",
+   "uk": "/'sekʃuəl/",
+   "us": "/sɛkʃʊəl/",
+   "zh": "性的， 两性的； 性别的"
+  },
+  {
+   "seq": 2511,
+   "word": "massive",
+   "uk": "/'mæsɪv/",
+   "us": "/'mæsɪv/",
+   "zh": "大的， 大而重的； 大块的； 大量的， 大规模的"
+  },
+  {
+   "seq": 2514,
+   "word": "asset",
+   "uk": "/'æset/",
+   "us": "/'æsɛt/",
+   "zh": "资产， 财产； 有价值的特性或技能， 优点"
+  },
+  {
+   "seq": 2536,
+   "word": "realistic",
+   "uk": "/ˌriːə'lɪstɪk/",
+   "us": "/,riə'lɪstɪk/",
+   "zh": "现实的； 实际可行的； 现实主义的； 逼真的"
+  },
+  {
+   "seq": 2550,
+   "word": "excitement",
+   "uk": "/ɪk'saɪtmənt/",
+   "us": "/ɪk'saɪtmənt/",
+   "zh": "刺激， 激动， 兴奋； 令人兴奋的事， 刺激的因素"
+  },
+  {
+   "seq": 2551,
+   "word": "nightmare",
+   "uk": "/'naɪtmeə/",
+   "us": "/'naɪt'mɛr/",
+   "zh": "噩梦； 可怕的事物， 无法摆脱的恐惧"
+  },
+  {
+   "seq": 2557,
+   "word": "embassy",
+   "uk": "/'embəsi/",
+   "us": "/'ɛmbəsi/",
+   "zh": "大使馆； 大使馆全体成员"
+  },
+  {
+   "seq": 2561,
+   "word": "penalty",
+   "uk": "/'penəlti/",
+   "us": "/'pɛnəlti/",
+   "zh": "处罚， 惩罚； 罚金"
+  },
+  {
+   "seq": 2562,
+   "word": "sociology",
+   "uk": "/ˌsəusi'ɒlədʒi/",
+   "us": "/,sosɪ'ɑlədʒi/",
+   "zh": "社会学"
+  },
+  {
+   "seq": 2564,
+   "word": "flee",
+   "uk": "/fliː/",
+   "us": "/fli/",
+   "zh": "逃走， 逃掉， 逃离； 避开， 逃避"
+  },
+  {
+   "seq": 2574,
+   "word": "limp",
+   "uk": "/lɪmp/",
+   "us": "/lɪmp/",
+   "zh": "软的；不强壮的； 〔因一腿受伤而〕跛行，一瘸一拐地走； 跛行"
+  },
+  {
+   "seq": 2592,
+   "word": "passive",
+   "uk": "/'pæsɪv/",
+   "us": "/'pæsɪv/",
+   "zh": "被动的， 消极的"
+  },
+  {
+   "seq": 2600,
+   "word": "responsive",
+   "uk": "/rɪ'spɒnsɪv/",
+   "us": "/rɪ'spɑnsɪv/",
+   "zh": "响应的； 敏感的， 易受影响的"
+  },
+  {
+   "seq": 2604,
+   "word": "category",
+   "uk": "/'kætəgəri/",
+   "us": "/'kætəɡɔri/",
+   "zh": "种类， 类， 类别"
+  },
+  {
+   "seq": 2607,
+   "word": "snap",
+   "uk": "/snæp/",
+   "us": "/snæp/",
+   "zh": "咔嚓折断，啪地绷断；吧嗒一声；猛咬；厉声说话，怒声责骂； 仓促的， 突然的； 吧嗒声；快照"
+  }
+ ]
+}

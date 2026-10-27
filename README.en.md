@@ -1,6 +1,6 @@
 # Word Atlas · CET-4 free-study edition
 
-Uses the supplied Words_all.md: 4,449 source rows deduplicated into 4,445 entries, preserving distinct meanings, pronunciation variants and case-sensitive headwords. No fixed-day schedule or daily allowance remains. Choose optional rounds, browse A–Z and review with FSRS.
+Uses the supplied Words_all.md: 4,449 source rows deduplicated into 4,445 entries, preserving distinct meanings, pronunciation variants and case-sensitive headwords. An additional 403 words from the supplied core list bring the total to 4,848. All 2,607 core words come first, followed by the remaining 2,241 words; both groups use a stable mixed order. No fixed-day schedule or daily allowance remains. Choose optional rounds, browse A–Z and review with FSRS.
 
 [Use the app online](https://irinsann.github.io/word-atlas_CET-4/). No installation or account is required. Progress stays in the current browser; export a backup from the profile page to transfer it.
 

@@ -15,6 +15,8 @@
     "format": "prettier --write src vite.config.ts scripts/*.mjs package.json tsconfig.json",
     "build:cet4": "node scripts/build-cet4.mjs",
     "import:knowledge": "node scripts/import-knowledge.mjs",
+    "import:core": "node scripts/import-core-priority.mjs",
+    "extend:core": "node --import tsx scripts/extend-core-vocabulary.mjs",
     "import:papers": "node --import tsx scripts/import-paper-examples.mjs",
     "apply:paper-translations": "node scripts/apply-paper-translations.mjs"
   },

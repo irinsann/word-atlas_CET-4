@@ -16,9 +16,9 @@ export function About() {
           <p className="eyebrow">关于词光</p>
           <h1 className="display">关于词光</h1>
           <p className="lede">
-            这是一个免费的四级单词学习网站。词表整理自 Words_all.md，4,449 条记录去重后有{" "}
+            这是一个免费的四级单词学习网站。Words_all.md 去重后有 4,445 个词，再从重点词表补入 403 个，共{" "}
             {atlas.count.toLocaleString()}{" "}
-            个词。可以自己选每轮学多少，也可以随时查词、复习。
+            个词。其中 2,607 个重点词排在前面。可以自己选每轮学多少，也可以随时查词、复习。
           </p>
           <p className="lede">
             网站基于 Word Atlas 改编，无需注册。代码使用 MIT 许可，复用的插画、音频和例句遵循 CC BY 4.0，并保留原作者署名。
@@ -134,7 +134,7 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">内容从哪里来</h3>
           <p className="muted">
-            词表来自 Words_all.md，是 PDF 的文字提取稿，拼写和释义尚未逐条校订。搭配、插画和单词录音主要沿用原项目，缺少的插画由 AI 补充，缺少录音的词使用设备语音。借用其他词的插画不会改变本词的释义和发音。
+            基础词表来自 Words_all.md，是 PDF 的文字提取稿，拼写和释义尚未逐条校订。重点词来自提供的 CET4_Core_2607_Vocabulary.md，该文档标注来源为 RealKai42/qwerty-learner。搭配、插画和单词录音主要沿用原项目，缺少的插画由 AI 补充，缺少录音的词使用设备语音。借用其他词的插画不会改变本词的释义和发音。
           </p>
           <p className="muted">
             原项目：designfuchen/word-atlas，原作者 yangleiocx3。感谢原作者提供的代码和内容。

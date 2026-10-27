@@ -58,10 +58,16 @@ if (examples !== index.examples) fail(`examples ${examples} != ${index.examples}
 if (index.id === "word-atlas-cet4-words-all-v1") {
   const rows=readWordList(fs.readFileSync(path.join(root,"cet4-source/Words_all.md"),"utf8"));
   const unique=deduplicateWords(rows);
-  if (index.count !== unique.length || index.sourceCount !== rows.length) fail("Source/unique word counts do not match");
+  const supplementFile = path.join(root,"data/core-vocabulary-supplement.json");
+  const supplement = fs.existsSync(supplementFile) ? JSON.parse(fs.readFileSync(supplementFile,"utf8")).words : [];
+  if (index.count !== unique.length + supplement.length || index.sourceCount !== rows.length) fail("Source/unique word counts do not match");
   if (index.illustrated !== index.count) fail("CET-4 illustrations incomplete");
   for(let i=0;i<unique.length;i++) {
     if(index.words[i][1]!==unique[i].w || index.words[i][7]!==unique[i].seq) fail(`Source identity/order mismatch at ${i}`);
+  }
+  for(let i=0;i<supplement.length;i++) {
+    const row=index.words[unique.length+i];
+    if(row?.[1]!==supplement[i].word || row?.[0]!==`cet4-core-${String(supplement[i].seq).padStart(4,"0")}`) fail(`Core supplement identity mismatch at ${i}`);
   }
   if(fs.existsSync(path.join(root,"data/cet4-plan.json"))) fail("Old study allocation still exists");
 }

@@ -1,15 +1,15 @@
 {
-  "documents": 179,
-  "papers": 94,
-  "transcripts": 85,
-  "candidates": 15805,
-  "words": 4445,
-  "replacedWords": 3790,
-  "genuineExamples": 7129,
-  "uniqueQuotes": 4043,
-  "unmatchedWords": 655,
-  "legacyExamples": 986,
-  "wordsWithoutExamples": 162,
-  "translatedExamples": 7129,
-  "translatedQuotes": 4043
+ "documents": 179,
+ "papers": 94,
+ "transcripts": 85,
+ "candidates": 15805,
+ "words": 4848,
+ "replacedWords": 4056,
+ "genuineExamples": 7577,
+ "uniqueQuotes": 4043,
+ "unmatchedWords": 792,
+ "legacyExamples": 1140,
+ "wordsWithoutExamples": 222,
+ "translatedExamples": 7577,
+ "translatedQuotes": 4043
 }

@@ -42,3 +42,7 @@ Words_all.md 来自用户提供的 PDF 提取材料，其来源单独保留在 c
 `source.kind = "legacy-generated"` 的例句为原项目学习示例，未在本次题库中核验；其原项目署名与授权继续保留。真题新例句的朗读由设备合成，不复用不同句子的旧录音。
 
 真题例句的中文参考译文由本项目补充，由同级 Codex 大模型根据英文原句逐句翻译，并统一校核和抽查修订；生成方法、完整英文校验值及逐句译文见 `data/paper-translations.json`。参考译文不属于真题原文，也不声称为考试机构提供的官方译文；不套用原项目不同句子的旧译文。参考译文与英文原句的出处分别记录，不改变英文原句的权利归属。
+
+## 重点词表补充
+
+`data/core-vocabulary-supplement.json` 中的 403 个新增词，其音标和释义来自用户提供的 `CET4_Core_2607_Vocabulary.md`；该文档标注来源为 RealKai42/qwerty-learner。保留文件名、校验值和来源链接，不声称为 Word Atlas 贡献者原创，也不将这些来源内容纳入上文的 CC BY 4.0 授权声明。复用的 Word Atlas 插画、录音、搭配和例句继续保留原项目署名及许可；图片关联不替换本词释义。完整匹配记录见 `data/core-priority-import.json`。

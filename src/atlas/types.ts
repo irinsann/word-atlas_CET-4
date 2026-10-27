@@ -50,6 +50,8 @@ export interface Example {
 }
 
 export interface Entry {
+  /** Position in the supplemental core vocabulary document. */
+  coreSeq?: number;
   id: string;
   w: string;
   uk: string;

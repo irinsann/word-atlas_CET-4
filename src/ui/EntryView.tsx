@@ -10,6 +10,9 @@ import { shareWord } from "./share";
 import { openWord } from "../lib/router";
 import { WordMemoryNotes } from "./MemoryNotes";
 import { ExampleSource, ExampleTranslation } from "./ExampleSource";
+import corePriority from "../generated/core-priority.json";
+
+const CORE_WORDS = new Set<string>(corePriority.wordIds);
 
 export function Highlight({ text, word }: { text: string; word: string }) {
   const parts = splitHighlight(text, word);
@@ -104,6 +107,7 @@ export function EntryView({
       <div className="entry-body">
         <header className="entry-head">
           <div className="entry-tags">
+            {CORE_WORDS.has(entry.id) && <span className="chip">重点词{entry.coreSeq ? ` #${entry.coreSeq}` : ""}</span>}
             <span className={`chip chip-level lv-${entry.cefr}`}>
               {entry.cefr}
             </span>

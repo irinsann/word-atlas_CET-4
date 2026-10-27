@@ -15,7 +15,7 @@ export function newToday(p: Progress) {
   return p.days[dayKey()]?.n ?? 0;
 }
 
-/** An optional round follows the atlas's mixed order, with no daily allowance. */
+/** A new round follows the priority-first catalog order, with no daily allowance. */
 export function nextNew(atlas: Atlas, p: Progress, count: number) {
   return atlas.words.filter(w => !p.cards[w.id]).slice(0, count).map(w => w.id);
 }

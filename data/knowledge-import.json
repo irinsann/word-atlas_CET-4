@@ -4,8 +4,8 @@
   "stats": {
     "sourceEntries": 2080,
     "notes": 2075,
-    "matchedMainWords": 1533,
-    "linkedAtlasWords": 1868,
+    "matchedMainWords": 1696,
+    "linkedAtlasWords": 2082,
     "memoryNotes": 1579,
     "examExamples": 1875,
     "examples": 365,
@@ -21,20 +21,8 @@
       "id": 7
     },
     {
-      "word": "anniversary",
-      "id": 9
-    },
-    {
       "word": "revolve",
       "id": 11
-    },
-    {
-      "word": "controversy",
-      "id": 14
-    },
-    {
-      "word": "format",
-      "id": 22
     },
     {
       "word": "conform",
@@ -43,14 +31,6 @@
     {
       "word": "formulate",
       "id": 24
-    },
-    {
-      "word": "perform",
-      "id": 25
-    },
-    {
-      "word": "notify",
-      "id": 27
     },
     {
       "word": "seaside",
@@ -63,10 +43,6 @@
     {
       "word": "profound",
       "id": 48
-    },
-    {
-      "word": "soar",
-      "id": 51
     },
     {
       "word": "ascend",
@@ -89,10 +65,6 @@
       "id": 70
     },
     {
-      "word": "concede",
-      "id": 71
-    },
-    {
       "word": "successor",
       "id": 76
     },
@@ -103,10 +75,6 @@
     {
       "word": "activate",
       "id": 92
-    },
-    {
-      "word": "virtual",
-      "id": 96
     },
     {
       "word": "fragile",
@@ -121,24 +89,12 @@
       "id": 120
     },
     {
-      "word": "currency",
-      "id": 122
-    },
-    {
-      "word": "massive",
-      "id": 131
-    },
-    {
       "word": "massage",
       "id": 132
     },
     {
       "word": "innumerable",
       "id": 134
-    },
-    {
-      "word": "fulfill",
-      "id": 138
     },
     {
       "word": "fulfilling",
@@ -149,24 +105,8 @@
       "id": 151
     },
     {
-      "word": "consumer",
-      "id": 153
-    },
-    {
-      "word": "client",
-      "id": 156
-    },
-    {
-      "word": "panic",
-      "id": 164
-    },
-    {
       "word": "pastime",
       "id": 186
-    },
-    {
-      "word": "recreation",
-      "id": 187
     },
     {
       "word": "randomly",
@@ -197,10 +137,6 @@
       "id": 212
     },
     {
-      "word": "highlight",
-      "id": 213
-    },
-    {
       "word": "consolidate",
       "id": 219
     },
@@ -221,20 +157,8 @@
       "id": 237
     },
     {
-      "word": "global",
-      "id": 241
-    },
-    {
       "word": "disgrace",
       "id": 249
-    },
-    {
-      "word": "elegant",
-      "id": 250
-    },
-    {
-      "word": "charm",
-      "id": 251
     },
     {
       "word": "honor",
@@ -261,32 +185,12 @@
       "id": 268
     },
     {
-      "word": "parliament",
-      "id": 270
-    },
-    {
-      "word": "delegate",
-      "id": 271
-    },
-    {
-      "word": "senator",
-      "id": 273
-    },
-    {
       "word": "uncountable",
       "id": 276
     },
     {
-      "word": "accountant",
-      "id": 279
-    },
-    {
       "word": "counterpart",
       "id": 280
-    },
-    {
-      "word": "discount",
-      "id": 282
     },
     {
       "word": "repay",
@@ -307,10 +211,6 @@
     {
       "word": "underlie",
       "id": 308
-    },
-    {
-      "word": "deadline",
-      "id": 310
     },
     {
       "word": "outdated",
@@ -337,10 +237,6 @@
       "id": 322
     },
     {
-      "word": "bankrupt",
-      "id": 323
-    },
-    {
       "word": "deficit",
       "id": 324
     },
@@ -353,28 +249,8 @@
       "id": 327
     },
     {
-      "word": "perceive",
-      "id": 331
-    },
-    {
       "word": "conceive",
       "id": 332
-    },
-    {
-      "word": "trash",
-      "id": 339
-    },
-    {
-      "word": "clash",
-      "id": 341
-    },
-    {
-      "word": "smash",
-      "id": 344
-    },
-    {
-      "word": "enhance",
-      "id": 352
     },
     {
       "word": "enrich",
@@ -397,14 +273,6 @@
       "id": 377
     },
     {
-      "word": "particle",
-      "id": 382
-    },
-    {
-      "word": "partial",
-      "id": 384
-    },
-    {
       "word": "bias",
       "id": 385
     },
@@ -423,10 +291,6 @@
     {
       "word": "underestimate",
       "id": 414
-    },
-    {
-      "word": "reckon",
-      "id": 418
     },
     {
       "word": "reckless",
@@ -461,16 +325,8 @@
       "id": 441
     },
     {
-      "word": "reservoir",
-      "id": 443
-    },
-    {
       "word": "conserve",
       "id": 446
-    },
-    {
-      "word": "detective",
-      "id": 451
     },
     {
       "word": "fragrant",
@@ -479,10 +335,6 @@
     {
       "word": "perfume",
       "id": 454
-    },
-    {
-      "word": "ban",
-      "id": 458
     },
     {
       "word": "memo",
@@ -521,10 +373,6 @@
       "id": 528
     },
     {
-      "word": "species",
-      "id": 530
-    },
-    {
       "word": "humankind",
       "id": 536
     },
@@ -541,32 +389,16 @@
       "id": 553
     },
     {
-      "word": "virus",
-      "id": 564
-    },
-    {
       "word": "immune",
       "id": 566
-    },
-    {
-      "word": "parallel",
-      "id": 568
     },
     {
       "word": "paradox",
       "id": 569
     },
     {
-      "word": "parade",
-      "id": 570
-    },
-    {
       "word": "paradise",
       "id": 572
-    },
-    {
-      "word": "heave",
-      "id": 574
     },
     {
       "word": "bug",
@@ -577,24 +409,12 @@
       "id": 581
     },
     {
-      "word": "dessert",
-      "id": 583
-    },
-    {
       "word": "exsert",
       "id": 584
     },
     {
-      "word": "insert",
-      "id": 585
-    },
-    {
       "word": "transplant",
       "id": 586
-    },
-    {
-      "word": "transaction",
-      "id": 591
     },
     {
       "word": "opaque",
@@ -609,40 +429,16 @@
       "id": 600
     },
     {
-      "word": "boom",
-      "id": 601
-    },
-    {
       "word": "gloom",
       "id": 603
-    },
-    {
-      "word": "boost",
-      "id": 604
-    },
-    {
-      "word": "dominant",
-      "id": 614
     },
     {
       "word": "chore",
       "id": 616
     },
     {
-      "word": "agenda",
-      "id": 622
-    },
-    {
       "word": "passage",
       "id": 625
-    },
-    {
-      "word": "media",
-      "id": 630
-    },
-    {
-      "word": "allocate",
-      "id": 635
     },
     {
       "word": "situate",
@@ -653,24 +449,12 @@
       "id": 638
     },
     {
-      "word": "pose",
-      "id": 639
-    },
-    {
       "word": "posture",
       "id": 640
     },
     {
       "word": "depose",
       "id": 642
-    },
-    {
-      "word": "counsel",
-      "id": 655
-    },
-    {
-      "word": "urban",
-      "id": 658
     },
     {
       "word": "downtown",
@@ -685,10 +469,6 @@
       "id": 669
     },
     {
-      "word": "surge",
-      "id": 671
-    },
-    {
       "word": "fore",
       "id": 686
     },
@@ -701,32 +481,16 @@
       "id": 690
     },
     {
-      "word": "insight",
-      "id": 693
-    },
-    {
       "word": "oversight",
       "id": 694
-    },
-    {
-      "word": "deliberate",
-      "id": 710
     },
     {
       "word": "authentic",
       "id": 714
     },
     {
-      "word": "priority",
-      "id": 719
-    },
-    {
       "word": "superiority",
       "id": 722
-    },
-    {
-      "word": "superb",
-      "id": 723
     },
     {
       "word": "telecommunications",
@@ -745,24 +509,12 @@
       "id": 733
     },
     {
-      "word": "ally",
-      "id": 734
-    },
-    {
       "word": "hack",
       "id": 736
     },
     {
-      "word": "catalogue",
-      "id": 745
-    },
-    {
       "word": "dialogue",
       "id": 746
-    },
-    {
-      "word": "constitute",
-      "id": 748
     },
     {
       "word": "superstition",
@@ -805,14 +557,6 @@
       "id": 775
     },
     {
-      "word": "grab",
-      "id": 780
-    },
-    {
-      "word": "chaos",
-      "id": 782
-    },
-    {
       "word": "equate",
       "id": 786
     },
@@ -825,10 +569,6 @@
       "id": 797
     },
     {
-      "word": "enroll",
-      "id": 798
-    },
-    {
       "word": "payroll",
       "id": 799
     },
@@ -837,20 +577,12 @@
       "id": 800
     },
     {
-      "word": "recruit",
-      "id": 801
-    },
-    {
       "word": "recipient",
       "id": 805
     },
     {
       "word": "receptionist",
       "id": 806
-    },
-    {
-      "word": "pregnant",
-      "id": 809
     },
     {
       "word": "indulge",
@@ -869,10 +601,6 @@
       "id": 826
     },
     {
-      "word": "landscape",
-      "id": 839
-    },
-    {
       "word": "cape",
       "id": 840
     },
@@ -881,28 +609,12 @@
       "id": 843
     },
     {
-      "word": "negotiate",
-      "id": 851
-    },
-    {
       "word": "initiate",
       "id": 852
     },
     {
-      "word": "initiative",
-      "id": 853
-    },
-    {
       "word": "interact",
       "id": 856
-    },
-    {
-      "word": "intervene",
-      "id": 858
-    },
-    {
-      "word": "seminar",
-      "id": 867
     },
     {
       "word": "forum",
@@ -937,76 +649,28 @@
       "id": 893
     },
     {
-      "word": "amateur",
-      "id": 895
-    },
-    {
-      "word": "nourish",
-      "id": 898
-    },
-    {
       "word": "intellect",
       "id": 903
-    },
-    {
-      "word": "acknowledge",
-      "id": 905
-    },
-    {
-      "word": "peer",
-      "id": 907
     },
     {
       "word": "compatible",
       "id": 908
     },
     {
-      "word": "curriculum",
-      "id": 909
-    },
-    {
-      "word": "sociology",
-      "id": 913
-    },
-    {
       "word": "articulate",
       "id": 915
-    },
-    {
-      "word": "architect",
-      "id": 918
     },
     {
       "word": "infrastructure",
       "id": 921
     },
     {
-      "word": "comedy",
-      "id": 926
-    },
-    {
       "word": "absurd",
       "id": 928
     },
     {
-      "word": "ingredient",
-      "id": 930
-    },
-    {
-      "word": "paste",
-      "id": 933
-    },
-    {
       "word": "perplex",
       "id": 938
-    },
-    {
-      "word": "provoke",
-      "id": 941
-    },
-    {
-      "word": "advocate",
-      "id": 942
     },
     {
       "word": "blunt",
@@ -1057,24 +721,12 @@
       "id": 975
     },
     {
-      "word": "script",
-      "id": 976
-    },
-    {
       "word": "manuscript",
       "id": 977
     },
     {
-      "word": "biotechnology",
-      "id": 982
-    },
-    {
       "word": "technologist",
       "id": 984
-    },
-    {
-      "word": "mechanism",
-      "id": 986
     },
     {
       "word": "overdraw",
@@ -1117,10 +769,6 @@
       "id": 1010
     },
     {
-      "word": "discrimination",
-      "id": 1018
-    },
-    {
       "word": "sue",
       "id": 1019
     },
@@ -1133,16 +781,8 @@
       "id": 1032
     },
     {
-      "word": "convict",
-      "id": 1033
-    },
-    {
       "word": "verdict",
       "id": 1034
-    },
-    {
-      "word": "persist",
-      "id": 1040
     },
     {
       "word": "enterprise",
@@ -1185,10 +825,6 @@
       "id": 1072
     },
     {
-      "word": "legislation",
-      "id": 1079
-    },
-    {
       "word": "statute",
       "id": 1080
     },
@@ -1207,14 +843,6 @@
     {
       "word": "trademark",
       "id": 1092
-    },
-    {
-      "word": "budget",
-      "id": 1093
-    },
-    {
-      "word": "revenue",
-      "id": 1095
     },
     {
       "word": "outbreak",
@@ -1265,28 +893,12 @@
       "id": 1153
     },
     {
-      "word": "pension",
-      "id": 1167
-    },
-    {
-      "word": "allowance",
-      "id": 1168
-    },
-    {
       "word": "suspicious",
       "id": 1172
     },
     {
       "word": "spectator",
       "id": 1178
-    },
-    {
-      "word": "speculate",
-      "id": 1179
-    },
-    {
-      "word": "perspective",
-      "id": 1180
     },
     {
       "word": "prosper",
@@ -1301,10 +913,6 @@
       "id": 1192
     },
     {
-      "word": "passport",
-      "id": 1195
-    },
-    {
       "word": "retail",
       "id": 1199
     },
@@ -1315,14 +923,6 @@
     {
       "word": "second-hand",
       "id": 1202
-    },
-    {
-      "word": "advertise",
-      "id": 1203
-    },
-    {
-      "word": "bump",
-      "id": 1205
     },
     {
       "word": "bumper",
@@ -1345,24 +945,8 @@
       "id": 1213
     },
     {
-      "word": "peculiar",
-      "id": 1218
-    },
-    {
       "word": "weird",
       "id": 1220
-    },
-    {
-      "word": "acquaint",
-      "id": 1221
-    },
-    {
-      "word": "passive",
-      "id": 1227
-    },
-    {
-      "word": "pessimistic",
-      "id": 1229
     },
     {
       "word": "opt",
@@ -1371,14 +955,6 @@
     {
       "word": "compulsory",
       "id": 1233
-    },
-    {
-      "word": "sector",
-      "id": 1241
-    },
-    {
-      "word": "segment",
-      "id": 1243
     },
     {
       "word": "short-term",
@@ -1405,10 +981,6 @@
       "id": 1260
     },
     {
-      "word": "gym",
-      "id": 1261
-    },
-    {
       "word": "energetic",
       "id": 1262
     },
@@ -1419,10 +991,6 @@
     {
       "word": "previse",
       "id": 1271
-    },
-    {
-      "word": "deputy",
-      "id": 1276
     },
     {
       "word": "air conditioning",
@@ -1451,10 +1019,6 @@
     {
       "word": "adolescent",
       "id": 1313
-    },
-    {
-      "word": "youngster",
-      "id": 1315
     },
     {
       "word": "immigrate",
@@ -1489,28 +1053,8 @@
       "id": 1352
     },
     {
-      "word": "petrol",
-      "id": 1353
-    },
-    {
-      "word": "wagon",
-      "id": 1354
-    },
-    {
-      "word": "breakdown",
-      "id": 1359
-    },
-    {
       "word": "applaud",
       "id": 1366
-    },
-    {
-      "word": "slap",
-      "id": 1368
-    },
-    {
-      "word": "spite",
-      "id": 1384
     },
     {
       "word": "prey",
@@ -1525,10 +1069,6 @@
       "id": 1398
     },
     {
-      "word": "pledge",
-      "id": 1404
-    },
-    {
       "word": "intake",
       "id": 1411
     },
@@ -1537,24 +1077,12 @@
       "id": 1414
     },
     {
-      "word": "diagnose",
-      "id": 1415
-    },
-    {
       "word": "inject",
       "id": 1426
     },
     {
       "word": "eject",
       "id": 1432
-    },
-    {
-      "word": "participate",
-      "id": 1434
-    },
-    {
-      "word": "antique",
-      "id": 1435
     },
     {
       "word": "donate",
@@ -1573,10 +1101,6 @@
       "id": 1448
     },
     {
-      "word": "integrate",
-      "id": 1450
-    },
-    {
       "word": "disintegrate",
       "id": 1451
     },
@@ -1593,20 +1117,12 @@
       "id": 1456
     },
     {
-      "word": "cue",
-      "id": 1461
-    },
-    {
       "word": "commend",
       "id": 1462
     },
     {
       "word": "misery",
       "id": 1469
-    },
-    {
-      "word": "painful",
-      "id": 1471
     },
     {
       "word": "desperation",
@@ -1621,10 +1137,6 @@
       "id": 1477
     },
     {
-      "word": "cartoon",
-      "id": 1481
-    },
-    {
       "word": "portray",
       "id": 1482
     },
@@ -1633,20 +1145,12 @@
       "id": 1486
     },
     {
-      "word": "classic",
-      "id": 1488
-    },
-    {
       "word": "middle-class",
       "id": 1490
     },
     {
       "word": "upgrade",
       "id": 1491
-    },
-    {
-      "word": "combat",
-      "id": 1495
     },
     {
       "word": "demo",
@@ -1659,10 +1163,6 @@
     {
       "word": "explicit",
       "id": 1507
-    },
-    {
-      "word": "statistic",
-      "id": 1512
     },
     {
       "word": "resent",
@@ -1689,22 +1189,6 @@
       "id": 1531
     },
     {
-      "word": "embassy",
-      "id": 1532
-    },
-    {
-      "word": "pack",
-      "id": 1533
-    },
-    {
-      "word": "packet",
-      "id": 1534
-    },
-    {
-      "word": "parcel",
-      "id": 1535
-    },
-    {
       "word": "unveil",
       "id": 1540
     },
@@ -1717,10 +1201,6 @@
       "id": 1554
     },
     {
-      "word": "spectacular",
-      "id": 1558
-    },
-    {
       "word": "marvel",
       "id": 1559
     },
@@ -1731,10 +1211,6 @@
     {
       "word": "fabricate",
       "id": 1562
-    },
-    {
-      "word": "fabric",
-      "id": 1563
     },
     {
       "word": "nutrition",
@@ -1761,28 +1237,12 @@
       "id": 1590
     },
     {
-      "word": "violate",
-      "id": 1597
-    },
-    {
       "word": "navigate",
       "id": 1599
     },
     {
-      "word": "fantasy",
-      "id": 1605
-    },
-    {
-      "word": "fascinate",
-      "id": 1607
-    },
-    {
       "word": "illusion",
       "id": 1608
-    },
-    {
-      "word": "notion",
-      "id": 1609
     },
     {
       "word": "checkpoint",
@@ -1809,10 +1269,6 @@
       "id": 1643
     },
     {
-      "word": "applicant",
-      "id": 1647
-    },
-    {
       "word": "relay",
       "id": 1651
     },
@@ -1829,48 +1285,16 @@
       "id": 1667
     },
     {
-      "word": "pat",
-      "id": 1672
-    },
-    {
-      "word": "passion",
-      "id": 1673
-    },
-    {
       "word": "edit",
       "id": 1700
-    },
-    {
-      "word": "respondent",
-      "id": 1709
-    },
-    {
-      "word": "profile",
-      "id": 1714
-    },
-    {
-      "word": "forge",
-      "id": 1727
     },
     {
       "word": "propriety",
       "id": 1749
     },
     {
-      "word": "estate",
-      "id": 1753
-    },
-    {
-      "word": "asset",
-      "id": 1757
-    },
-    {
       "word": "dwell",
       "id": 1760
-    },
-    {
-      "word": "tackle",
-      "id": 1762
     },
     {
       "word": "gigantic",
@@ -1885,10 +1309,6 @@
       "id": 1779
     },
     {
-      "word": "sheer",
-      "id": 1783
-    },
-    {
       "word": "deduct",
       "id": 1791
     },
@@ -1899,10 +1319,6 @@
     {
       "word": "distract",
       "id": 1795
-    },
-    {
-      "word": "permanent",
-      "id": 1805
     },
     {
       "word": "eternal",
@@ -1933,20 +1349,8 @@
       "id": 1831
     },
     {
-      "word": "suicide",
-      "id": 1840
-    },
-    {
       "word": "pesticide",
       "id": 1841
-    },
-    {
-      "word": "summit",
-      "id": 1842
-    },
-    {
-      "word": "peak",
-      "id": 1843
     },
     {
       "word": "climax",
@@ -1961,10 +1365,6 @@
       "id": 1853
     },
     {
-      "word": "penetrate",
-      "id": 1857
-    },
-    {
       "word": "compensate",
       "id": 1860
     },
@@ -1977,24 +1377,12 @@
       "id": 1870
     },
     {
-      "word": "myth",
-      "id": 1871
-    },
-    {
       "word": "romance",
       "id": 1875
     },
     {
-      "word": "patience",
-      "id": 1885
-    },
-    {
       "word": "patent",
       "id": 1886
-    },
-    {
-      "word": "pace",
-      "id": 1891
     },
     {
       "word": "terminator",
@@ -2009,16 +1397,8 @@
       "id": 1921
     },
     {
-      "word": "identity",
-      "id": 1923
-    },
-    {
       "word": "identifiable",
       "id": 1924
-    },
-    {
-      "word": "decline",
-      "id": 1925
     },
     {
       "word": "drawback",
@@ -2049,10 +1429,6 @@
       "id": 1952
     },
     {
-      "word": "chip",
-      "id": 1954
-    },
-    {
       "word": "snack",
       "id": 1956
     },
@@ -2069,10 +1445,6 @@
       "id": 1963
     },
     {
-      "word": "radical",
-      "id": 1967
-    },
-    {
       "word": "terrify",
       "id": 1971
     },
@@ -2085,24 +1457,12 @@
       "id": 1974
     },
     {
-      "word": "palm",
-      "id": 1975
-    },
-    {
       "word": "caution",
       "id": 1976
     },
     {
-      "word": "alert",
-      "id": 1979
-    },
-    {
       "word": "symphony",
       "id": 2002
-    },
-    {
-      "word": "symptom",
-      "id": 2003
     },
     {
       "word": "symbolize",
@@ -2115,10 +1475,6 @@
     {
       "word": "clockwise",
       "id": 2011
-    },
-    {
-      "word": "panel",
-      "id": 2018
     },
     {
       "word": "lengthen",
@@ -2139,10 +1495,6 @@
     {
       "word": "misfortune",
       "id": 2032
-    },
-    {
-      "word": "guideline",
-      "id": 2034
     },
     {
       "word": "beverage",
@@ -2175,10 +1527,6 @@
     {
       "word": "beforehand",
       "id": 2069
-    },
-    {
-      "word": "whereas",
-      "id": 2076
     }
   ],
   "merges": [

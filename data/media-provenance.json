@@ -48897,5 +48897,4035 @@
   "source": "built-in image_gen",
   "audio": "browser speech synthesis",
   "examples": 0
+ },
+ {
+  "id": "cet4-core-0016",
+  "seq": 16,
+  "word": "persistent",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "persistent",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0030",
+  "seq": 30,
+  "word": "click",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "click",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0039",
+  "seq": 39,
+  "word": "multicultural",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "culture",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0048",
+  "seq": 48,
+  "word": "concede",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "concede",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0054",
+  "seq": 54,
+  "word": "sexism",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "discrimination",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0060",
+  "seq": 60,
+  "word": "editorial",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "editor",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0062",
+  "seq": 62,
+  "word": "rebuild",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "rebuild",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0070",
+  "seq": 70,
+  "word": "consultant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "consultant",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0082",
+  "seq": 82,
+  "word": "confront",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "confront",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0083",
+  "seq": 83,
+  "word": "dominate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "control",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0088",
+  "seq": 88,
+  "word": "pad",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "notebook",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0089",
+  "seq": 89,
+  "word": "provocation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "provocation",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0096",
+  "seq": 96,
+  "word": "implement",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "implement",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0098",
+  "seq": 98,
+  "word": "Christ",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "christian",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0100",
+  "seq": 100,
+  "word": "pat",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pat",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0101",
+  "seq": 101,
+  "word": "fantasy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fantasy",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0103",
+  "seq": 103,
+  "word": "visibility",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "visible",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0105",
+  "seq": 105,
+  "word": "paw",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "paw",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0109",
+  "seq": 109,
+  "word": "frustrate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "frustrate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0139",
+  "seq": 139,
+  "word": "perform",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "perform",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0141",
+  "seq": 141,
+  "word": "peak",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "peak",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0144",
+  "seq": 144,
+  "word": "halfway",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "journey",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0154",
+  "seq": 154,
+  "word": "personnel",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "staff",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0158",
+  "seq": 158,
+  "word": "offense",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "offence",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0165",
+  "seq": 165,
+  "word": "pea",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pea",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0169",
+  "seq": 169,
+  "word": "myth",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "legend",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0174",
+  "seq": 174,
+  "word": "bump",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "collision",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0175",
+  "seq": 175,
+  "word": "reservation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "reservation",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0176",
+  "seq": 176,
+  "word": "per",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "per",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0178",
+  "seq": 178,
+  "word": "considering",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "consider",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0186",
+  "seq": 186,
+  "word": "draught",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "breeze",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0189",
+  "seq": 189,
+  "word": "integration",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "integrate",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0199",
+  "seq": 199,
+  "word": "guy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "guy",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0206",
+  "seq": 206,
+  "word": "peer",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "peer",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0215",
+  "seq": 215,
+  "word": "particularly",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "particular",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0216",
+  "seq": 216,
+  "word": "dominant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "dominant",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0230",
+  "seq": 230,
+  "word": "cop",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "police",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0238",
+  "seq": 238,
+  "word": "lad",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "lad",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0258",
+  "seq": 258,
+  "word": "surge",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "wave",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0264",
+  "seq": 264,
+  "word": "senator",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "senator",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0270",
+  "seq": 270,
+  "word": "obligation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "obligation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0272",
+  "seq": 272,
+  "word": "gym",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "gym",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0282",
+  "seq": 282,
+  "word": "combat",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "combat",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0297",
+  "seq": 297,
+  "word": "garlic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "garlic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0312",
+  "seq": 312,
+  "word": "fantastic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fantastic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0327",
+  "seq": 327,
+  "word": "confidential",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "confidential",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0330",
+  "seq": 330,
+  "word": "chaos",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "chaos",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0333",
+  "seq": 333,
+  "word": "pace",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pace",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0339",
+  "seq": 339,
+  "word": "pack",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "package",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0342",
+  "seq": 342,
+  "word": "cue",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "signal",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0345",
+  "seq": 345,
+  "word": "stereotype",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "stereotype",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0346",
+  "seq": 346,
+  "word": "enroll",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "enrol",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0354",
+  "seq": 354,
+  "word": "entertainment",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "entertainment",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0368",
+  "seq": 368,
+  "word": "currency",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "currency",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0373",
+  "seq": 373,
+  "word": "convict",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "convict",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0374",
+  "seq": 374,
+  "word": "legislation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "law",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0375",
+  "seq": 375,
+  "word": "clause",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "clause",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0377",
+  "seq": 377,
+  "word": "participate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "participation",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0378",
+  "seq": 378,
+  "word": "ingredient",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "ingredient",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0379",
+  "seq": 379,
+  "word": "surplus",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "excess",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0380",
+  "seq": 380,
+  "word": "correspondence",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "correspondence",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0385",
+  "seq": 385,
+  "word": "declaration",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "declaration",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0393",
+  "seq": 393,
+  "word": "charm",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "attract",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0412",
+  "seq": 412,
+  "word": "deception",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "deception",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0414",
+  "seq": 414,
+  "word": "donation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "donation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0417",
+  "seq": 417,
+  "word": "budget",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "budget",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0418",
+  "seq": 418,
+  "word": "given",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "condition",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0421",
+  "seq": 421,
+  "word": "tension",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "tension",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0427",
+  "seq": 427,
+  "word": "solicitor",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "lawyer",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0436",
+  "seq": 436,
+  "word": "pepper",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pepper",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0438",
+  "seq": 438,
+  "word": "doctoral",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "graduate",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0448",
+  "seq": 448,
+  "word": "painful",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "painful",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0451",
+  "seq": 451,
+  "word": "enhance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "enhance",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0460",
+  "seq": 460,
+  "word": "generic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "generic",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0468",
+  "seq": 468,
+  "word": "studio",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "studio",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0473",
+  "seq": 473,
+  "word": "palm",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "hand",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0480",
+  "seq": 480,
+  "word": "payment",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "payment",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0481",
+  "seq": 481,
+  "word": "specifically",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "specifically",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0482",
+  "seq": 482,
+  "word": "controversial",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "controversial",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0487",
+  "seq": 487,
+  "word": "deputy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "deputy",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0491",
+  "seq": 491,
+  "word": "priority",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "priority",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0494",
+  "seq": 494,
+  "word": "preventive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "prevent",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0497",
+  "seq": 497,
+  "word": "allocate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "allocate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0512",
+  "seq": 512,
+  "word": "theme",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "theme",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0513",
+  "seq": 513,
+  "word": "smash",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "break",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0516",
+  "seq": 516,
+  "word": "fuss",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fuss",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0528",
+  "seq": 528,
+  "word": "heterogeneity",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "diversity",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0530",
+  "seq": 530,
+  "word": "permanent",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "permanent",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0531",
+  "seq": 531,
+  "word": "barely",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "barely",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0533",
+  "seq": 533,
+  "word": "chap",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "man",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0536",
+  "seq": 536,
+  "word": "alliance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "alliance",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0542",
+  "seq": 542,
+  "word": "hip",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "body",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0545",
+  "seq": 545,
+  "word": "pessimistic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pessimistic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0566",
+  "seq": 566,
+  "word": "format",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "format",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0574",
+  "seq": 574,
+  "word": "soar",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "soar",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0586",
+  "seq": 586,
+  "word": "wagon",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "wagon",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0588",
+  "seq": 588,
+  "word": "penetrate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "pierce",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0600",
+  "seq": 600,
+  "word": "therapy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "therapy",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0616",
+  "seq": 616,
+  "word": "developmental",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "development",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0620",
+  "seq": 620,
+  "word": "compassion",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "sympathy",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0622",
+  "seq": 622,
+  "word": "parliament",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "parliament",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0623",
+  "seq": 623,
+  "word": "evaluation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "evaluation",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0628",
+  "seq": 628,
+  "word": "dental",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "dental",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0629",
+  "seq": 629,
+  "word": "predictable",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "predictable",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0633",
+  "seq": 633,
+  "word": "rally",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "rally",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0638",
+  "seq": 638,
+  "word": "profile",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "profile",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0662",
+  "seq": 662,
+  "word": "pluralism",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "diversity",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0674",
+  "seq": 674,
+  "word": "involvement",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "involve",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0678",
+  "seq": 678,
+  "word": "hearing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "hearing",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0679",
+  "seq": 679,
+  "word": "acquisition",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "acquisition",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0682",
+  "seq": 682,
+  "word": "deadline",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "deadline",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0685",
+  "seq": 685,
+  "word": "chip",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "chip",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0703",
+  "seq": 703,
+  "word": "accountant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "accountant",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0708",
+  "seq": 708,
+  "word": "recreational",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "recreational",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0711",
+  "seq": 711,
+  "word": "passport",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "passport",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0716",
+  "seq": 716,
+  "word": "bracket",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "generated",
+  "source": "bracket",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0721",
+  "seq": 721,
+  "word": "parcel",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "parcel",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0730",
+  "seq": 730,
+  "word": "conviction",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "convince",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0737",
+  "seq": 737,
+  "word": "petrol",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "petrol",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0741",
+  "seq": 741,
+  "word": "tackle",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "tackle",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0742",
+  "seq": 742,
+  "word": "reckon",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "estimate",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0746",
+  "seq": 746,
+  "word": "virtual",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "virtual",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0765",
+  "seq": 765,
+  "word": "bloody",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "blood",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0776",
+  "seq": 776,
+  "word": "permission",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "permission",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0784",
+  "seq": 784,
+  "word": "spectacular",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "spectacular",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0786",
+  "seq": 786,
+  "word": "peculiar",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "peculiar",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0792",
+  "seq": 792,
+  "word": "invincible",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "victory",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0793",
+  "seq": 793,
+  "word": "discount",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "discount",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0806",
+  "seq": 806,
+  "word": "cigar",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cigar",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0809",
+  "seq": 809,
+  "word": "whereas",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "contrast",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0812",
+  "seq": 812,
+  "word": "adoptive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "adopt",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0826",
+  "seq": 826,
+  "word": "baseball",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "baseball",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0829",
+  "seq": 829,
+  "word": "machinery",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "machine",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0833",
+  "seq": 833,
+  "word": "inference",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "inference",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0838",
+  "seq": 838,
+  "word": "notify",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "notice",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0844",
+  "seq": 844,
+  "word": "heave",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "lift",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0846",
+  "seq": 846,
+  "word": "nourish",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "nourish",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0856",
+  "seq": 856,
+  "word": "refugee",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "shelter",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0858",
+  "seq": 858,
+  "word": "comparable",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "compare",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0863",
+  "seq": 863,
+  "word": "presumably",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "presumably",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0871",
+  "seq": 871,
+  "word": "revenue",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "income",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0883",
+  "seq": 883,
+  "word": "oxygen",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "oxygen",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0888",
+  "seq": 888,
+  "word": "bearing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "direction",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0891",
+  "seq": 891,
+  "word": "comedy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "comedy",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0896",
+  "seq": 896,
+  "word": "trash",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "rubbish",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0897",
+  "seq": 897,
+  "word": "painter",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "painter",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-0924",
+  "seq": 924,
+  "word": "spokesman",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "spokesman",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0939",
+  "seq": 939,
+  "word": "circulation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "circulate",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-0942",
+  "seq": 942,
+  "word": "accommodation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "accommodation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0961",
+  "seq": 961,
+  "word": "patch",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "repair",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0966",
+  "seq": 966,
+  "word": "contribution",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "contribution",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0992",
+  "seq": 992,
+  "word": "symptom",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "symptom",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-0997",
+  "seq": 997,
+  "word": "boost",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "boost",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1012",
+  "seq": 1012,
+  "word": "global",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "global",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1020",
+  "seq": 1020,
+  "word": "perspective",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "perspective",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1057",
+  "seq": 1057,
+  "word": "shrug",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "shrug",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1059",
+  "seq": 1059,
+  "word": "coordination",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "coordination",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1060",
+  "seq": 1060,
+  "word": "presentation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "presentation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1074",
+  "seq": 1074,
+  "word": "owing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "owe",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1084",
+  "seq": 1084,
+  "word": "systematical",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "systematic",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1093",
+  "seq": 1093,
+  "word": "amateur",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "amateur",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1097",
+  "seq": 1097,
+  "word": "assistance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "assistance",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1116",
+  "seq": 1116,
+  "word": "incredible",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "incredible",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1119",
+  "seq": 1119,
+  "word": "guitar",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "guitar",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1134",
+  "seq": 1134,
+  "word": "balcony",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "balcony",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1153",
+  "seq": 1153,
+  "word": "collaborative",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "collaborate",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1154",
+  "seq": 1154,
+  "word": "cherish",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "treasure",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1155",
+  "seq": 1155,
+  "word": "constitute",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "constitute",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1164",
+  "seq": 1164,
+  "word": "prolong",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "extend",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1175",
+  "seq": 1175,
+  "word": "architect",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "architect",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1183",
+  "seq": 1183,
+  "word": "flexibility",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "flexibility",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1186",
+  "seq": 1186,
+  "word": "identity",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "identity",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1191",
+  "seq": 1191,
+  "word": "violate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "violate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1202",
+  "seq": 1202,
+  "word": "alongside",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "alongside",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1205",
+  "seq": 1205,
+  "word": "coupon",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "coupon",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1208",
+  "seq": 1208,
+  "word": "fascinating",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fascinating",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1212",
+  "seq": 1212,
+  "word": "agenda",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "meeting",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1217",
+  "seq": 1217,
+  "word": "devotion",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "loyalty",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1218",
+  "seq": 1218,
+  "word": "anonymous",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "anonymous",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1226",
+  "seq": 1226,
+  "word": "poll",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "poll",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1231",
+  "seq": 1231,
+  "word": "fourfold",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "multiply",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1235",
+  "seq": 1235,
+  "word": "spite",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "spite",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1240",
+  "seq": 1240,
+  "word": "publicity",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "publicity",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1245",
+  "seq": 1245,
+  "word": "commitment",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "commitment",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1250",
+  "seq": 1250,
+  "word": "qualification",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "qualification",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1252",
+  "seq": 1252,
+  "word": "recruit",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "recruit",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1255",
+  "seq": 1255,
+  "word": "replacement",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "replacement",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1262",
+  "seq": 1262,
+  "word": "according",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "according",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1265",
+  "seq": 1265,
+  "word": "membership",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "membership",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1273",
+  "seq": 1273,
+  "word": "modernization",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "modern",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1275",
+  "seq": 1275,
+  "word": "criminology",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "crime",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1280",
+  "seq": 1280,
+  "word": "controversy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "controversy",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1282",
+  "seq": 1282,
+  "word": "newsstand",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "generated",
+  "source": "newsstand",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1284",
+  "seq": 1284,
+  "word": "performance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "performance",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1285",
+  "seq": 1285,
+  "word": "dessert",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "dessert",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1286",
+  "seq": 1286,
+  "word": "ambassador",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "ambassador",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1291",
+  "seq": 1291,
+  "word": "landscape",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "landscape",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1319",
+  "seq": 1319,
+  "word": "fairy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "fantasy",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1332",
+  "seq": 1332,
+  "word": "packet",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "packet",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1335",
+  "seq": 1335,
+  "word": "courtyard",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "courtyard",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1345",
+  "seq": 1345,
+  "word": "providing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "condition",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1356",
+  "seq": 1356,
+  "word": "particle",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "molecule",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1360",
+  "seq": 1360,
+  "word": "minimize",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "minimum",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1367",
+  "seq": 1367,
+  "word": "characterize",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "characterize",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1370",
+  "seq": 1370,
+  "word": "handbag",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "handbag",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1376",
+  "seq": 1376,
+  "word": "lease",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "lease",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1378",
+  "seq": 1378,
+  "word": "slap",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "slap",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1381",
+  "seq": 1381,
+  "word": "anniversary",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "anniversary",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1384",
+  "seq": 1384,
+  "word": "persuasive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "persuasive",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1397",
+  "seq": 1397,
+  "word": "discrimination",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "discrimination",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1405",
+  "seq": 1405,
+  "word": "pose",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "posture",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1418",
+  "seq": 1418,
+  "word": "guideline",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "guideline",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1427",
+  "seq": 1427,
+  "word": "breakdown",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "broken",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1428",
+  "seq": 1428,
+  "word": "paste",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "paste",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1430",
+  "seq": 1430,
+  "word": "jeans",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "jeans",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1459",
+  "seq": 1459,
+  "word": "pledge",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pledge",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1461",
+  "seq": 1461,
+  "word": "reservoir",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "dam",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1462",
+  "seq": 1462,
+  "word": "deliberate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "deliberate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1466",
+  "seq": 1466,
+  "word": "copyright",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "copyright",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1467",
+  "seq": 1467,
+  "word": "biotechnology",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "biology",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1472",
+  "seq": 1472,
+  "word": "charter",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "document",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1473",
+  "seq": 1473,
+  "word": "slim",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "slim",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1485",
+  "seq": 1485,
+  "word": "decline",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "decline",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1487",
+  "seq": 1487,
+  "word": "succeeding",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "successive",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1497",
+  "seq": 1497,
+  "word": "crossing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "crossing",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1498",
+  "seq": 1498,
+  "word": "script",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "drama",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1504",
+  "seq": 1504,
+  "word": "partial",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "portion",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1527",
+  "seq": 1527,
+  "word": "elegant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "elegant",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1529",
+  "seq": 1529,
+  "word": "curriculum",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "curriculum",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1533",
+  "seq": 1533,
+  "word": "species",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "species",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1536",
+  "seq": 1536,
+  "word": "cite",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cite",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1540",
+  "seq": 1540,
+  "word": "internship",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "internship",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1550",
+  "seq": 1550,
+  "word": "perception",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "sense",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1560",
+  "seq": 1560,
+  "word": "pregnant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pregnant",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1562",
+  "seq": 1562,
+  "word": "estate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "estate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1569",
+  "seq": 1569,
+  "word": "gear",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "gear",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1572",
+  "seq": 1572,
+  "word": "elderly",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "elderly",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1577",
+  "seq": 1577,
+  "word": "media",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "media",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1593",
+  "seq": 1593,
+  "word": "radical",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "radical",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1611",
+  "seq": 1611,
+  "word": "concession",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "concession",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1619",
+  "seq": 1619,
+  "word": "elective",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "optional",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1620",
+  "seq": 1620,
+  "word": "accusation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "accuse",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1623",
+  "seq": 1623,
+  "word": "exclusive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "exclusive",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1645",
+  "seq": 1645,
+  "word": "housing",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "house",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1652",
+  "seq": 1652,
+  "word": "notion",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "idea",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1653",
+  "seq": 1653,
+  "word": "diversity",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "diversity",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1656",
+  "seq": 1656,
+  "word": "patience",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "patient",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1661",
+  "seq": 1661,
+  "word": "mechanism",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "mechanism",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1668",
+  "seq": 1668,
+  "word": "gram",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "gram",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1669",
+  "seq": 1669,
+  "word": "empower",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "empower",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1670",
+  "seq": 1670,
+  "word": "riot",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "riot",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1675",
+  "seq": 1675,
+  "word": "boring",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "boring",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1676",
+  "seq": 1676,
+  "word": "classic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "classic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1683",
+  "seq": 1683,
+  "word": "grab",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "grab",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1697",
+  "seq": 1697,
+  "word": "segment",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "segment",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1701",
+  "seq": 1701,
+  "word": "statistic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "statistic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1703",
+  "seq": 1703,
+  "word": "superb",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "superb",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1704",
+  "seq": 1704,
+  "word": "mold",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "mold",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1710",
+  "seq": 1710,
+  "word": "catalogue",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "catalogue",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1713",
+  "seq": 1713,
+  "word": "volunteer",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "volunteer",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1715",
+  "seq": 1715,
+  "word": "ignorance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "ignorance",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1724",
+  "seq": 1724,
+  "word": "boom",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "boom",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1729",
+  "seq": 1729,
+  "word": "cautious",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cautious",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1731",
+  "seq": 1731,
+  "word": "summit",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "summit",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1732",
+  "seq": 1732,
+  "word": "recession",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "recession",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1738",
+  "seq": 1738,
+  "word": "ally",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "ally",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1756",
+  "seq": 1756,
+  "word": "urban",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "urban",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1788",
+  "seq": 1788,
+  "word": "counsel",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "counsel",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1790",
+  "seq": 1790,
+  "word": "gene",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "gene",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1792",
+  "seq": 1792,
+  "word": "suicide",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "suicide",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1798",
+  "seq": 1798,
+  "word": "hospitalize",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "hospital",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1809",
+  "seq": 1809,
+  "word": "pattern",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pattern",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1811",
+  "seq": 1811,
+  "word": "connexion",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "connection",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1849",
+  "seq": 1849,
+  "word": "protocol",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "agreement",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1850",
+  "seq": 1850,
+  "word": "whale",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "whale",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1851",
+  "seq": 1851,
+  "word": "provoke",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "provoke",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1854",
+  "seq": 1854,
+  "word": "percentage",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "percentage",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1855",
+  "seq": 1855,
+  "word": "negotiate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "negotiate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1859",
+  "seq": 1859,
+  "word": "remonstrate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "protest",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1860",
+  "seq": 1860,
+  "word": "package",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "package",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1864",
+  "seq": 1864,
+  "word": "survival",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "survival",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1870",
+  "seq": 1870,
+  "word": "detective",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "detective",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1879",
+  "seq": 1879,
+  "word": "cruise",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cruise",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1883",
+  "seq": 1883,
+  "word": "perceive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "notice",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1887",
+  "seq": 1887,
+  "word": "erroneous",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "error",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1893",
+  "seq": 1893,
+  "word": "kindergarten",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "kindergarten",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1895",
+  "seq": 1895,
+  "word": "crucial",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "crucial",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1899",
+  "seq": 1899,
+  "word": "insert",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "insert",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1904",
+  "seq": 1904,
+  "word": "highlight",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "highlight",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1907",
+  "seq": 1907,
+  "word": "parallel",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "railway",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-1909",
+  "seq": 1909,
+  "word": "patient",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "patient",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1910",
+  "seq": 1910,
+  "word": "cashier",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cashier",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1911",
+  "seq": 1911,
+  "word": "sheer",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "cliff",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1926",
+  "seq": 1926,
+  "word": "depression",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "depression",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1930",
+  "seq": 1930,
+  "word": "gaol",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "gaol",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1933",
+  "seq": 1933,
+  "word": "ban",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "ban",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1934",
+  "seq": 1934,
+  "word": "fascinate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fascinate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1936",
+  "seq": 1936,
+  "word": "diplomatic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "diplomatic",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1942",
+  "seq": 1942,
+  "word": "assumption",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "assumption",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1943",
+  "seq": 1943,
+  "word": "pension",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "retire",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1955",
+  "seq": 1955,
+  "word": "panic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "panic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1966",
+  "seq": 1966,
+  "word": "competitive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "competitive",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1967",
+  "seq": 1967,
+  "word": "enquiry",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "enquiry",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1968",
+  "seq": 1968,
+  "word": "applause",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "applause",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1977",
+  "seq": 1977,
+  "word": "virus",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "virus",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1984",
+  "seq": 1984,
+  "word": "enquire",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "enquire",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1986",
+  "seq": 1986,
+  "word": "popularity",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "popular",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1990",
+  "seq": 1990,
+  "word": "panel",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "panel",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1994",
+  "seq": 1994,
+  "word": "oval",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "oval",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-1998",
+  "seq": 1998,
+  "word": "integrate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "integrate",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-1999",
+  "seq": 1999,
+  "word": "survivor",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "survivor",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2000",
+  "seq": 2000,
+  "word": "applicant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "applicant",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2002",
+  "seq": 2002,
+  "word": "partner",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "partner",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2004",
+  "seq": 2004,
+  "word": "diagnose",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "diagnose",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2024",
+  "seq": 2024,
+  "word": "scary",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "scary",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2028",
+  "seq": 2028,
+  "word": "consultancy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "consult",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2033",
+  "seq": 2033,
+  "word": "homogeneous",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "homogeneous",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2037",
+  "seq": 2037,
+  "word": "popularize",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "popularize",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2048",
+  "seq": 2048,
+  "word": "clash",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "clash",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2052",
+  "seq": 2052,
+  "word": "parade",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "parade",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2056",
+  "seq": 2056,
+  "word": "personality",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "personality",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2058",
+  "seq": 2058,
+  "word": "sanction",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "sanction",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2060",
+  "seq": 2060,
+  "word": "alert",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "alarm",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2063",
+  "seq": 2063,
+  "word": "client",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "client",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2070",
+  "seq": 2070,
+  "word": "historic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "historic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2083",
+  "seq": 2083,
+  "word": "bid",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "bid",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2096",
+  "seq": 2096,
+  "word": "fulfill",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "fulfil",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2101",
+  "seq": 2101,
+  "word": "recommendation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "recommendation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2106",
+  "seq": 2106,
+  "word": "striking",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "striking",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2119",
+  "seq": 2119,
+  "word": "youngster",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "youngster",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2123",
+  "seq": 2123,
+  "word": "distraction",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "distraction",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2126",
+  "seq": 2126,
+  "word": "paragraph",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "paragraph",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2132",
+  "seq": 2132,
+  "word": "inflation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "inflation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2133",
+  "seq": 2133,
+  "word": "thinking",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "think",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2137",
+  "seq": 2137,
+  "word": "delegate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "representative",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2152",
+  "seq": 2152,
+  "word": "systematic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "systematic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2155",
+  "seq": 2155,
+  "word": "bacon",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "bacon",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2162",
+  "seq": 2162,
+  "word": "transaction",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "transaction",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2168",
+  "seq": 2168,
+  "word": "pants",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "pants",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2175",
+  "seq": 2175,
+  "word": "antique",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "antique",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2178",
+  "seq": 2178,
+  "word": "petroleum",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "oil",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2188",
+  "seq": 2188,
+  "word": "astrophysics",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "astronomy",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2208",
+  "seq": 2208,
+  "word": "bride",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "bride",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2229",
+  "seq": 2229,
+  "word": "consumer",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "consumer",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2235",
+  "seq": 2235,
+  "word": "initiative",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "initiate",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2240",
+  "seq": 2240,
+  "word": "medication",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "medication",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2245",
+  "seq": 2245,
+  "word": "lobby",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "lobby",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2246",
+  "seq": 2246,
+  "word": "acknowledge",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "admit",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2258",
+  "seq": 2258,
+  "word": "strategic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "strategic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2266",
+  "seq": 2266,
+  "word": "respondent",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "survey",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2267",
+  "seq": 2267,
+  "word": "episode",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "episode",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2272",
+  "seq": 2272,
+  "word": "evidently",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "evident",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2275",
+  "seq": 2275,
+  "word": "victimize",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "victim",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2278",
+  "seq": 2278,
+  "word": "scandal",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "newspaper",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2279",
+  "seq": 2279,
+  "word": "horrible",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "horrible",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2293",
+  "seq": 2293,
+  "word": "recreation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "recreation",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2295",
+  "seq": 2295,
+  "word": "allowance",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "allowance",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2301",
+  "seq": 2301,
+  "word": "attorney",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "lawyer",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2307",
+  "seq": 2307,
+  "word": "mainframe",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "computer",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2326",
+  "seq": 2326,
+  "word": "persist",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "persistent",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2327",
+  "seq": 2327,
+  "word": "audio",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "sound",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2328",
+  "seq": 2328,
+  "word": "civilian",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "civilian",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2334",
+  "seq": 2334,
+  "word": "offensive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "offensive",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2335",
+  "seq": 2335,
+  "word": "cartoon",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "cartoon",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2336",
+  "seq": 2336,
+  "word": "speculate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "speculate",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2338",
+  "seq": 2338,
+  "word": "amid",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "among",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2345",
+  "seq": 2345,
+  "word": "acquaint",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "acquaint",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2350",
+  "seq": 2350,
+  "word": "intervene",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "intervene",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2358",
+  "seq": 2358,
+  "word": "advocate",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "advocate",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2370",
+  "seq": 2370,
+  "word": "sector",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "sector",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2371",
+  "seq": 2371,
+  "word": "passion",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "passion",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2378",
+  "seq": 2378,
+  "word": "epidemic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "disease",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2386",
+  "seq": 2386,
+  "word": "accountancy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "accountant",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2387",
+  "seq": 2387,
+  "word": "forge",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "hammer",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2405",
+  "seq": 2405,
+  "word": "misconception",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "mistake",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2427",
+  "seq": 2427,
+  "word": "voltage",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "electricity",
+  "audio": "browser speech synthesis",
+  "examples": 0
+ },
+ {
+  "id": "cet4-core-2428",
+  "seq": 2428,
+  "word": "damn",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "damn",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2431",
+  "seq": 2431,
+  "word": "compensation",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "compensate",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2432",
+  "seq": 2432,
+  "word": "bankrupt",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "bankrupt",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2434",
+  "seq": 2434,
+  "word": "advertise",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "advertise",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2437",
+  "seq": 2437,
+  "word": "software",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "software",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2438",
+  "seq": 2438,
+  "word": "seminar",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "seminar",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2444",
+  "seq": 2444,
+  "word": "hesitant",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "hesitant",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2457",
+  "seq": 2457,
+  "word": "surrounding",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "surround",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2466",
+  "seq": 2466,
+  "word": "innovative",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "innovation",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2467",
+  "seq": 2467,
+  "word": "insight",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "insight",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2468",
+  "seq": 2468,
+  "word": "fabric",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "fabric",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2472",
+  "seq": 2472,
+  "word": "indoor",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "indoor",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2475",
+  "seq": 2475,
+  "word": "sexual",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "sexual",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2511",
+  "seq": 2511,
+  "word": "massive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "massive",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2514",
+  "seq": 2514,
+  "word": "asset",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "property",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2536",
+  "seq": 2536,
+  "word": "realistic",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "realistic",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2550",
+  "seq": 2550,
+  "word": "excitement",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "excitement",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2551",
+  "seq": 2551,
+  "word": "nightmare",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "nightmare",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2557",
+  "seq": 2557,
+  "word": "embassy",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "embassy",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2561",
+  "seq": 2561,
+  "word": "penalty",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "punishment",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2562",
+  "seq": 2562,
+  "word": "sociology",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "society",
+  "audio": "browser speech synthesis",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2564",
+  "seq": 2564,
+  "word": "flee",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "flee",
+  "audio": "original",
+  "examples": 1
+ },
+ {
+  "id": "cet4-core-2574",
+  "seq": 2574,
+  "word": "limp",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "limp",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2592",
+  "seq": 2592,
+  "word": "passive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "wait",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2600",
+  "seq": 2600,
+  "word": "responsive",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "association",
+  "source": "respond",
+  "audio": "browser speech synthesis",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2604",
+  "seq": 2604,
+  "word": "category",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "category",
+  "audio": "original",
+  "examples": 2
+ },
+ {
+  "id": "cet4-core-2607",
+  "seq": 2607,
+  "word": "snap",
+  "sourceList": "CET4_Core_2607_Vocabulary.md",
+  "kind": "exact",
+  "source": "snap",
+  "audio": "original",
+  "examples": 2
  }
 ]

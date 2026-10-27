@@ -1,6 +1,7 @@
 import type { Atlas, Entry, IndexRow, WordRef } from "./types";
 import { MEDIA } from "./types";
 import { makeWordCatalog } from "./catalog";
+import corePriority from "../generated/core-priority.json";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 const url = (p: string) => `${BASE}/atlas/${p}`;
@@ -22,7 +23,7 @@ export async function loadOpenAtlas(): Promise<Atlas> {
   const res = await fetch(url("index.json"));
   if (!res.ok) throw new Error(`词库索引加载失败（${res.status}）`);
   const idx = (await res.json()) as IndexFile;
-  const { words, sourcePositions } = makeWordCatalog(idx.words, idx.id);
+  const { words, sourcePositions } = makeWordCatalog(idx.words, idx.id, idx.id === corePriority.datasetId ? corePriority.wordIds : []);
   const byId = new Map(words.map((w) => [w.id, w]));
   const cache = new Map<string, Entry>();
   const pending = new Map<number, Promise<void>>();
