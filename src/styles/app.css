@@ -1056,9 +1056,13 @@ code {
 }
 .senses li {
   display: grid;
-  grid-template-columns: 48px 1fr;
+  grid-template-columns: minmax(0, 1fr);
   column-gap: 6px;
   align-items: baseline;
+  text-align: left;
+}
+.senses li.has-pos {
+  grid-template-columns: 48px minmax(0, 1fr);
 }
 .pos {
   font: italic 500 15px var(--serif);
@@ -1070,10 +1074,13 @@ code {
   line-height: 1.45;
 }
 .senses .en {
-  grid-column: 2;
+  grid-column: 1;
   font: italic 400 15px/1.45 var(--serif);
   color: var(--ink-3);
   font-variation-settings: "opsz" 14;
+}
+.senses li.has-pos .en {
+  grid-column: 2;
 }
 .block {
   margin-top: 26px;
@@ -3576,7 +3583,7 @@ a:hover .mark-needle,
     font-size: 14px;
     gap: 4px;
   }
-  .senses li {
+  .senses li.has-pos {
     grid-template-columns: 38px 1fr;
   }
   .specimen {

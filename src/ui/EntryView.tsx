@@ -108,8 +108,8 @@ export function EntryView({ entry, mode = "detail", eager = true }: { entry: Ent
 
         <ol className="senses">
           {entry.senses.map((s, i) => (
-            <li key={i}>
-              <span className="pos">{s.pos}</span>
+            <li key={i} className={s.pos.trim() ? "has-pos" : undefined}>
+              {s.pos.trim() && <span className="pos">{s.pos}</span>}
               <span className="zh">{s.zh}</span>
               {s.en && (
                 <span className="en" lang="en">
