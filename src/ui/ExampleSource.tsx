@@ -38,10 +38,11 @@ export function ExampleSource({ example }: { example: Example }) {
         </p>
         <p>
           {example.translation
-            ? "中文为本站补充的参考译文（机器翻译，部分经修订），非官方译文。"
+            ? "中文为本站补充的 AI 参考译文，由大模型逐句翻译并统一校核，非官方译文。"
             : "题库未附逐句译文。"}
           朗读由设备合成，并非原题录音。词图用于单词联想。
         </p>
+        {example.translation?.note && <p>{example.translation.note}</p>}
       </div>
     </details>
   );

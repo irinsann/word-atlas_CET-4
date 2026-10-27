@@ -42,7 +42,7 @@ for (let n = 0; n * index.chunk < index.count; n++) {
     entries++;
     if (!Array.isArray(e.senses) || !e.senses.length || e.senses.some((s) => !s.zh)) fail(`no senses: ${e.id}`);
     if (!Array.isArray(e.ex) || e.ex.some((x) => !x.en || !x.zh)) fail(`bad examples: ${e.id}`);
-    if (e.ex.some(x => x.source?.kind === "cet4-paper" && x.translation?.kind !== "machine-assisted")) fail(`missing translation provenance: ${e.id}`);
+    if (e.ex.some(x => x.source?.kind === "cet4-paper" && (x.translation?.kind !== "ai-authored" || x.translation?.mode !== "assistant"))) fail(`missing translation provenance: ${e.id}`);
     if (e.m !== row[6]) fail(`media flags differ: ${e.id}`);
     if (!e.ex.length) warn.sourceOnly++;
     examples += e.ex.length;

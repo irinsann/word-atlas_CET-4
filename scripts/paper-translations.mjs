@@ -6,14 +6,10 @@ export const sentenceHash = (en) =>
 
 export function reviseTranslations(
   catalog,
-  file = "data/paper-translation-revisions.json",
+  file = "data/paper-self-translation-revisions.json",
 ) {
   const byHash = new Map(catalog.translations.map((x) => [x.id, x]));
-  for (const x of catalog.translations)
-    x.zh = x.zh
-      .replace(/[\u200b-\u200f\ufeff]/g, "")
-      .replaceAll("您", "你")
-      .trim();
+  for (const x of catalog.translations) x.zh = x.zh.trim();
   if (fs.existsSync(file)) {
     const seen = new Set();
     for (const revision of JSON.parse(fs.readFileSync(file, "utf8"))) {
@@ -29,10 +25,11 @@ export function reviseTranslations(
       seen.add(id);
       x.zh = revision.zh;
       x.revised = true;
+      if (revision.note) x.note = revision.note;
     }
   }
   catalog.review = {
-    method: "sampled, with selected editorial revisions",
+    method: "Consolidated exact-sentence validation and sampled semantic review by Codex",
     revisedQuotes: catalog.translations.filter((x) => x.revised).length,
   };
   return catalog;
@@ -44,7 +41,7 @@ export function readTranslations(file = "data/paper-translations.json") {
   if (
     catalog.version !== 1 ||
     catalog.language !== "zh-CN" ||
-    !catalog.provider ||
+    catalog.provider !== "Codex" || catalog.mode !== "assistant" ||
     !Array.isArray(catalog.translations)
   )
     throw Error("Invalid translation catalog");
@@ -53,9 +50,10 @@ export function readTranslations(file = "data/paper-translations.json") {
   for (const item of catalog.translations) {
     if (
       item.id !== sentenceHash(item.en) ||
+      item.method !== "assistant-authored" ||
       byHash.has(item.id) ||
       !/[\u3400-\u9fff]/.test(item.zh) ||
-      /\[Q\d+\]/i.test(item.zh)
+      /\[Q\d+\]|<unk>|▁/i.test(item.zh)
     )
       throw Error(`Invalid / duplicate translation: ${item.id}`);
     byHash.set(item.id, item);
@@ -69,6 +67,7 @@ export function applyPaperTranslations(
   catalog,
   requireComplete = false,
 ) {
+  if (catalog && catalog.mode !== "assistant") throw Error("Only directly assistant-authored translations are permitted");
   const pending = [];
   const unique = new Set();
   let count = 0;
@@ -96,10 +95,12 @@ export function applyPaperTranslations(
       if (!item || item.en !== x.en) continue;
       x.zh = item.zh.trim();
       x.translation = {
-        kind: "machine-assisted",
+        kind: "ai-authored",
+        mode: "assistant",
         provider: catalog.provider,
         sentenceHash: hash,
         ...(item.revised ? { revised: true } : {}),
+        ...(item.note ? { note: item.note } : {}),
       };
     }
   return { translatedExamples: count, translatedQuotes: unique.size };

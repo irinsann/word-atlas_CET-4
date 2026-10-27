@@ -33,6 +33,7 @@ test("translation matching uses exact sentence hashes and preserves English, sou
   ];
   const catalog = {
     provider: "Test translator",
+    mode: "assistant",
     byHash: new Map([
       [id, { en, zh: "这家图书馆让人们能够方便地获取有用的信息。" }],
     ]),
@@ -59,10 +60,16 @@ test("translation matching uses exact sentence hashes and preserves English, sou
     original,
     "Incomplete catalogs must fail before editing entries",
   );
+  for (const mode of ["remote", "offline"])
+    assert.throws(() => applyPaperTranslations(structuredClone(original), { ...catalog, mode }, true), /Only directly assistant-authored/);
 });
 
 test("all real quotations have matching Chinese translations while provenance is retained", () => {
   const catalog = readTranslations();
+  assert.equal(catalog.mode, "assistant");
+  assert.equal(catalog.provider, "Codex");
+  assert.ok(catalog.translations.every(x => x.method === "assistant-authored"));
+  assert.equal(catalog.model, undefined);
   assert.ok(
     catalog,
     "Complete translation catalog required before publication",
@@ -83,7 +90,8 @@ test("all real quotations have matching Chinese translations while provenance is
       assert.match(x.zh, /[\u3400-\u9fff]/);
       assert.equal(x.translation.sentenceHash, sentenceHash(x.en));
       assert.equal(x.translation.provider, catalog.provider);
-      assert.equal(x.translation.kind, "machine-assisted");
+      assert.equal(x.translation.kind, "ai-authored");
+      assert.equal(x.translation.mode, "assistant");
       const quoted = selected.get(`${e.id}:${x.en}`);
       assert.ok(quoted);
       const { id, word, en, ...source } = quoted;

@@ -40,10 +40,12 @@ export interface Example {
   zh: string;
   source?: PaperExampleSource | { kind: "legacy-generated"; label: string };
   translation?: {
-    kind: "machine-assisted";
+    kind: "ai-authored";
+    mode: "assistant";
     provider: string;
     sentenceHash: string;
     revised?: boolean;
+    note?: string;
   };
 }
 
