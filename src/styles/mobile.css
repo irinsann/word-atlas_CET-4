@@ -33,11 +33,22 @@
   font-size: 12px;
   color: #d3cbbb;
 }
+.cet4-round-picker > span {
+  flex-shrink: 0;
+  line-height: 1;
+}
+.cet4-hero .journey-actions {
+  align-items: center;
+}
 .cet4-round-picker .segmented {
   background: #0a13234d;
   border-color: #ffffff35;
 }
 .cet4-round-picker .segmented button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
   color: #e5decf;
 }
 .cet4-round-picker .segmented button.is-on {

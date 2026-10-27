@@ -104,7 +104,7 @@ export function Study() {
             </button>
             {!active && (
               <button
-                className="btn btn-glass"
+                className="btn btn-glass btn-xl"
                 disabled={!plan.due.length}
                 onClick={() => start(true)}
               >
