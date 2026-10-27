@@ -2633,36 +2633,26 @@ code {
 }
 
 .feedback {
-  position: sticky;
-  bottom: 0;
-  z-index: 10;
-  margin: 0 calc(-1 * var(--gutter)) -40px;
-  padding: 0 var(--gutter) env(safe-area-inset-bottom);
-  animation: rise 0.42s var(--ease);
-}
-@keyframes rise {
-  from {
-    transform: translateY(30px);
-    opacity: 0;
-  }
+  flex-shrink: 0;
+  padding-bottom: env(safe-area-inset-bottom);
+  scroll-margin-block: 88px 16px;
 }
 .feedback-inner {
   display: grid;
-  grid-template-columns: 64px 1fr;
+  grid-template-columns: 64px minmax(0, 1fr);
   gap: 14px 16px;
   align-items: center;
   padding: 18px;
-  border-radius: 24px 24px 0 0;
+  border-radius: 24px;
   background: var(--card);
   border: 1px solid var(--line);
-  border-bottom: 0;
   box-shadow: 0 -20px 50px -30px rgba(30, 38, 64, 0.4);
 }
 .feedback.is-right .feedback-inner {
-  background: color-mix(in oklab, var(--sage-soft) 70%, var(--card));
+  background: linear-gradient(var(--sage-soft), var(--sage-soft)), var(--card);
 }
 .feedback.is-wrong .feedback-inner {
-  background: color-mix(in oklab, var(--terra-soft) 70%, var(--card));
+  background: linear-gradient(var(--terra-soft), var(--terra-soft)), var(--card);
 }
 .feedback-art {
   width: 64px;
@@ -2670,6 +2660,7 @@ code {
 }
 .feedback-text {
   min-width: 0;
+  overflow-wrap: anywhere;
 }
 .feedback-verdict {
   font-size: 13px;
@@ -2709,11 +2700,8 @@ code {
   width: 100%;
 }
 @media (min-width: 760px) {
-  .feedback {
-    margin-bottom: -40px;
-  }
   .feedback-inner {
-    grid-template-columns: 84px 1fr auto;
+    grid-template-columns: 84px minmax(0, 1fr) auto;
     border-radius: 26px;
     margin-bottom: 24px;
     border-bottom: 1px solid var(--line);

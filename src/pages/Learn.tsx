@@ -156,6 +156,7 @@ function Quiz({ step, session }: { step: Step & { kind: QuizKind }; session: Act
 
   const next = useCallback(() => {
     stopAudio();
+    window.scrollTo({ top: 0, behavior: "instant" });
     advance(elapsed());
   }, [elapsed]);
 
@@ -334,10 +335,14 @@ function SpellInput({ entry, pending, hints, onHint, onSubmit }: { entry: Entry;
 
 function Feedback({ entry, refw, correct, onNext }: { entry: Entry; refw: WordRef; correct: boolean; onNext: () => void }) {
   const atlas = useAtlas();
+  const panel = useRef<HTMLDivElement>(null);
   const btn = useRef<HTMLButtonElement>(null);
-  useEffect(() => btn.current?.focus({ preventScroll: true }), []);
+  useEffect(() => {
+    btn.current?.focus({ preventScroll: true });
+    panel.current?.scrollIntoView({ block: "nearest" });
+  }, []);
   return (
-    <div className={`feedback ${correct ? "is-right" : "is-wrong"}`} role="status">
+    <div ref={panel} className={`feedback ${correct ? "is-right" : "is-wrong"}`} role="status">
       <div className="feedback-inner">
         <Illustration src={atlas.img(entry, "thumb")} word={entry.w} topic={refw.topic} className="feedback-art" />
         <div className="feedback-text">
