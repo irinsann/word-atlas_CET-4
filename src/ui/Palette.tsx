@@ -38,6 +38,7 @@ export function Palette({
   const [q, setQ] = useState("");
   const [sel, setSel] = useState(0);
   const input = useRef<HTMLInputElement>(null);
+  const list = useRef<HTMLUListElement>(null);
   const results = useMemo(() => searchAtlas(atlas, q, 30), [atlas, q]);
   useEffect(() => {
     if (!open) return;
@@ -56,6 +57,9 @@ export function Palette({
     }
   }, [open]);
   useEffect(() => setSel(0), [q]);
+  useEffect(() => {
+    if (open) list.current?.querySelector('[aria-selected="true"]')?.scrollIntoView({ block: "nearest" });
+  }, [open, sel, results]);
   if (!open) return null;
   const pick = (w: WordRef) => {
     onClose();
@@ -109,7 +113,7 @@ export function Palette({
             <X size={20} />
           </button>
         </label>
-        <ul id="palette-list" className="palette-list" role="listbox">
+        <ul ref={list} id="palette-list" className="palette-list" role="listbox">
           {results.map((w, i) => (
             <li
               key={w.id}

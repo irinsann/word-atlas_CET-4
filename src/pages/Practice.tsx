@@ -127,7 +127,8 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
   useEffect(() => {
     setValue("");
     started.current = null;
-    input.current?.focus();
+    input.current?.focus({ preventScroll: true });
+    window.scrollTo({ top: 0, behavior: "instant" });
     if (mode === "dictation") void play(atlas.audio(e, "ex"), e.ex[0].en, settings.accent);
     if (mode === "word" && settings.autoplay) void play(atlas.audio(e, settings.accent), e.w, settings.accent);
   }, [i]); // eslint-disable-line react-hooks/exhaustive-deps
@@ -235,7 +236,6 @@ function TypingRound({ mode, entries, onExit, onAgain }: { mode: Mode; entries: 
           className="typing-input"
           value={value}
           onChange={(ev) => onChange(ev.target.value)}
-          autoFocus
           autoCapitalize="off"
           autoCorrect="off"
           autoComplete="off"

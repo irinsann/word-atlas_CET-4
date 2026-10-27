@@ -180,6 +180,19 @@ export function AtlasPage({
       </header>
 
       <div className="filters">
+        <label className="atlas-letter-select">
+          <span>首字母</span>
+          <select
+            aria-label="按首字母筛选"
+            value={route.letter ?? ""}
+            onChange={(e) => setFilter({ letter: e.target.value || undefined })}
+          >
+            <option value="">全部字母</option>
+            {"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map((letter) => (
+              <option key={letter} value={letter}>{letter}</option>
+            ))}
+          </select>
+        </label>
         <div
           className="chips chips-scroll atlas-letters"
           ref={letters}
