@@ -1,0 +1,166 @@
+.favorites-tools {
+  display: grid;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.favorites-tools .search {
+  min-width: 0;
+  width: 100%;
+}
+.favorites-tools .segmented {
+  justify-self: start;
+  max-width: 100%;
+}
+.favorites-export {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+}
+.favorites-export > span {
+  flex: 1;
+  min-width: 180px;
+  font-size: 13px;
+}
+.favorites-export > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.favorites-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+  display: grid;
+  gap: 10px;
+}
+.favorites-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--card);
+  min-width: 0;
+}
+.favorite-word {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  background: none;
+  border: 0;
+  padding: 0;
+  color: inherit;
+}
+.favorite-word .illo {
+  width: 74px;
+  height: 74px;
+  border-radius: 13px;
+  flex-shrink: 0;
+}
+.favorite-word > span {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+.favorite-word b {
+  font: 600 25px var(--serif);
+  overflow-wrap: anywhere;
+}
+.favorite-word small {
+  font-size: 11px;
+  color: var(--ink-3);
+}
+.favorite-word em {
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+.bookmark-btn {
+  flex-shrink: 0;
+}
+.bookmark-btn.is-on {
+  color: var(--ochre);
+}
+.favorites-note {
+  font-size: 13px;
+  line-height: 1.7;
+}
+@media (max-width: 520px) {
+  .favorites-tools .segmented {
+    width: 100%;
+    display: flex;
+  }
+  .favorites-tools .segmented button {
+    flex: 1;
+    padding-inline: 9px;
+    white-space: nowrap;
+    min-width: 0;
+  }
+  .favorites-export > div {
+    width: 100%;
+  }
+  .favorites-export .btn {
+    flex: 1;
+    min-width: 0;
+    padding-inline: 10px;
+    font-size: 13px;
+  }
+  .favorite-word {
+    gap: 11px;
+    align-items: flex-start;
+  }
+  .favorite-word .illo {
+    width: 54px;
+    height: 54px;
+  }
+  .favorite-word b {
+    font-size: 22px;
+  }
+  .favorite-word em {
+    font-size: 13px;
+  }
+  .favorites-list li {
+    gap: 5px;
+    padding: 11px;
+  }
+}
+.reading-guide {
+  margin: 12px 0 20px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  font-size: 13px;
+  color: var(--ink-2);
+}
+.reading-guide summary,
+.source-forms summary {
+  cursor: pointer;
+}
+.reading-guide > div {
+  display: grid;
+  gap: 5px;
+  margin-top: 12px;
+  overflow-wrap: anywhere;
+}
+.reading-guide .ipa {
+  font-size: 13px;
+  line-height: 1.7;
+}
+.pron .ipa {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.pron .speak {
+  max-width: 100%;
+  min-width: 0;
+}
+.pron .speak-label {
+  min-width: 0;
+}

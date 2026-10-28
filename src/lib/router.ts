@@ -6,6 +6,7 @@ export type Route =
   | { page: "atlas"; topic?: string; level?: string; q?: string; view?: string; letter?: string }
   | { page: "learn" }
   | { page: "practice" }
+  | { page: "favorites" }
   | { page: "me" }
   | { page: "about" }
   | { page: "knowledge"; q?: string };
@@ -26,6 +27,7 @@ function parse(hash: string): Location {
     route = { page: "atlas", topic: params.get("topic") || undefined, level: params.get("level") || undefined, q: params.get("q") || undefined, view: params.get("view") || undefined, letter: /^[A-Z]$/.test(params.get("letter") ?? "") ? params.get("letter")! : undefined };
   else if (seg[0] === "learn") route = { page: "learn" };
   else if (seg[0] === "practice") route = { page: "practice" };
+  else if (seg[0] === "favorites") route = { page: "favorites" };
   else if (seg[0] === "me") route = { page: "me" };
   else if (seg[0] === "about") route = { page: "about" };
   else if (seg[0] === "knowledge") route = { page: "knowledge", q: params.get("q") || undefined };

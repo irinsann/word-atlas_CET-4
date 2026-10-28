@@ -1,4 +1,4 @@
-import { BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Search, Sun, User } from "lucide-react";
+import { Bookmark, BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Search, Sun, User } from "lucide-react";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { scopeAtlas } from "./atlas/scope";
 import vocabulary from "./generated/vocabulary-scope.json";
@@ -13,6 +13,7 @@ import { Learn } from "./pages/Learn";
 import { Me } from "./pages/Me";
 import { Onboarding } from "./pages/Onboarding";
 import { Practice } from "./pages/Practice";
+import { Favorites } from "./pages/Favorites";
 import { Study } from "./pages/Study";
 import { Knowledge } from "./pages/Knowledge";
 import { cue } from "./lib/sound";
@@ -28,6 +29,7 @@ import { Toasts } from "./ui/Toast";
 const NAV: { page: Route["page"]; label: string; icon: typeof Compass }[] = [
   { page: "today", label: "自由学习", icon: Compass },
   { page: "atlas", label: "图鉴", icon: BookOpen },
+  { page: "favorites", label: "收藏", icon: Bookmark },
   { page: "practice", label: "练习", icon: Keyboard },
   { page: "me", label: "我的", icon: User },
 ];
@@ -161,6 +163,7 @@ function Shell({ privateAvailable }: { privateAvailable: boolean }) {
         {route.page === "atlas" && <AtlasPage route={route} />}
         {route.page === "learn" && <Learn />}
         {route.page === "practice" && <Practice />}
+        {route.page === "favorites" && <Favorites />}
         {route.page === "me" && <Me privateAvailable={privateAvailable} />}
         {route.page === "about" && <About />}
         {route.page === "knowledge" && <Knowledge query={route.q} />}

@@ -7,7 +7,7 @@
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
     "preview": "vite preview --host 0.0.0.0",
-    "test": "node --import tsx --test src/**/*.test.ts scripts/words-source.test.mjs scripts/knowledge.test.mjs scripts/papers.test.mjs scripts/paper-translations.test.mjs",
+    "test": "node --import tsx --test src/**/*.test.ts scripts/words-source.test.mjs scripts/knowledge.test.mjs scripts/papers.test.mjs scripts/paper-translations.test.mjs scripts/lexical-review.test.mjs",
     "check:atlas": "node scripts/check-atlas.mjs",
     "build:atlas": "python3 scripts/atlas/build_atlas.py",
     "render:cards": "node scripts/render-cards.mjs",

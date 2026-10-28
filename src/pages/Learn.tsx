@@ -39,6 +39,7 @@ import { Ring } from "../ui/Ring";
 import { Speak } from "../ui/Speak";
 import { shareSession } from "../ui/shareSession";
 import { sessionInScope } from "../atlas/scope";
+import { BookmarkButton } from "../ui/BookmarkButton";
 
 export function Learn() {
   const atlas = useAtlas();
@@ -113,6 +114,7 @@ function Runner({ session }: { session: ActiveSession }) {
           {session.index + 1}
           <small>/{total}</small>
         </span>
+        <BookmarkButton id={step.id}/>
         <AmbiencePicker />
       </header>
       <main className="learn-stage" key={`${session.id}-${session.index}`}>

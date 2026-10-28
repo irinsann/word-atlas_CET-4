@@ -1,9 +1,10 @@
-import { Bookmark, BookmarkCheck, Lightbulb, Share2 } from "lucide-react";
+import { Lightbulb, Share2 } from "lucide-react";
 import type { Entry, WordRef } from "../atlas/types";
 import { useAtlas } from "../atlas/context";
 import { splitHighlight, splitPair } from "../lib/text";
 import { formatInterval, isMastered } from "../store/srs";
-import { toggleBookmark, useStore } from "../store/store";
+import { useStore } from "../store/store";
+import { BookmarkButton } from "./BookmarkButton";
 import { Illustration } from "./Illustration";
 import { Speak } from "./Speak";
 import { shareWord } from "./share";
@@ -78,7 +79,6 @@ export function EntryView({
   const atlas = useAtlas();
   const ref = (atlas.allById ?? atlas.byId).get(entry.id);
   const card = useStore((s) => s.progress.cards[entry.id]);
-  const saved = useStore((s) => s.progress.bookmarks.includes(entry.id));
   const accent = useStore((s) => s.settings.accent);
   const topicIdx = atlas.topics.findIndex((t) => t[0] === entry.topic);
   const topic = atlas.topics[topicIdx];
@@ -137,15 +137,7 @@ export function EntryView({
           </div>
           {mode === "detail" && (
             <div className="entry-actions">
-              <button
-                className={`icon-btn ${saved ? "is-on" : ""}`}
-                onClick={() => toggleBookmark(entry.id)}
-                aria-pressed={saved}
-                aria-label={saved ? "取消收藏" : "收藏"}
-                title={saved ? "取消收藏" : "收藏"}
-              >
-                {saved ? <BookmarkCheck size={19} /> : <Bookmark size={19} />}
-              </button>
+              <BookmarkButton id={entry.id} word={entry.w}/>
               <button
                 className="icon-btn"
                 onClick={() => shareWord(atlas, entry)}
@@ -168,9 +160,15 @@ export function EntryView({
           {entry.w}
         </h2>
         <Pronounce entry={entry} refw={ref ?? entry} />
+        {entry.pronunciations && (
+          <details className="reading-guide">
+            <summary>这个词有几种读法</summary>
+            {entry.pronunciations.map(p=><div key={p.label}><span>{p.label}</span><small className="ipa">英 {p.uk}{p.uk!==p.us&&<> · 美 {p.us}</>}</small></div>)}
+          </details>
+        )}
         {(entry.sourceRows?.length ?? 0) > 1 && (
-          <section className="block source-forms">
-            <h3 className="eyebrow">原表读音与释义 · 已合并重复记录</h3>
+          <details className="block source-forms">
+            <summary className="eyebrow">原表记录 · 含未校订文字</summary>
             {entry.sourceRows!.map((row) => (
               <p key={row.seq}>
                 <small>
@@ -180,7 +178,7 @@ export function EntryView({
                 {row.zh}
               </p>
             ))}
-          </section>
+          </details>
         )}
 
         <ol className="senses">

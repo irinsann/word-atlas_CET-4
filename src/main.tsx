@@ -8,6 +8,7 @@ import "./styles/cet4.css";
 import "./styles/mobile.css";
 import "./styles/knowledge.css";
 import "./styles/examples.css";
+import "./styles/favorites.css";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>

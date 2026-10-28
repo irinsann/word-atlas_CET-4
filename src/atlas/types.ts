@@ -58,6 +58,7 @@ export interface Entry {
   w: string;
   uk: string;
   us: string;
+  pronunciations?: { label: string; uk: string; us: string }[];
   senses: Sense[];
   ex: Example[];
   col: string[];

@@ -88,6 +88,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
       </section>
 
       <div className="me-grid">
+        <section className="panel"><h3 className="eyebrow">我的收藏</h3><p className="muted">留下 {progress.bookmarks.length} 个词。可以集中查看，也可以导出释义、音标、例句与出处。</p><a className="btn btn-ghost" href="#/favorites">查看与导出收藏</a></section>
         <section className="panel">
           <h3 className="eyebrow">过去 20 周</h3>
           <Heatmap days={progress.days} />

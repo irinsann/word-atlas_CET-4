@@ -3,6 +3,7 @@ import { REPO_URL, UPSTREAM_REPO_URL } from "../config";
 import knowledgeSummary from "../generated/knowledge-summary.json";
 import paperSummary from "../generated/paper-summary.json";
 import vocabulary from "../generated/vocabulary-scope.json";
+import lexical from "../generated/lexical-summary.json";
 
 const BASE = import.meta.env.BASE_URL;
 
@@ -44,6 +45,16 @@ export function About() {
       </header>
 
       <div className="about-grid">
+        <section className="panel">
+          <h3 className="eyebrow">收藏与导出</h3>
+          <p className="muted">词卡和学习页上的书签，可以把想多看一遍的词留下。到「收藏」里搜索、筛选，再导出 CSV 或 Markdown，释义、英美音标、例句和出处都会带上。收藏保存在当前浏览器；换设备时，可用「我的」里的学习备份迁移。</p>
+        </section>
+        <section className="panel">
+          <h3 className="eyebrow">释义与音标校订</h3>
+          <p className="muted">已对照检查全库 {lexical.words.toLocaleString()} 词，修订 {lexical.meaningEdits} 词的释义或词性、{lexical.ipaEdits} 词的音标，并为 {lexical.readingGuides} 个词补充不同含义下的读音。改动包括原表提取残缺、词性遗漏和英美音标混用。正常的音标写法或发音差异会保留。</p>
+          <p className="muted">此次采用全库对照和疑点审校，尚不能保证每个词的全部义项都无遗漏。单词录音仍来自原项目或设备语音，多音词的录音可能只覆盖一种常见读法。原文记忆笔记中的音标不属于本次校订范围。</p>
+          <a className="link" href={`${REPO_URL}/blob/main/docs/lexical-review.md`} target="_blank" rel="noreferrer">查看校订记录 <ArrowUpRight size={14}/></a>
+        </section>
         <section className="panel">
           <h3 className="eyebrow">四级范围怎样划分</h3>
           <p className="muted">

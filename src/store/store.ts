@@ -2,6 +2,7 @@ import { useSyncExternalStore } from "react";
 import type { Accent } from "../atlas/types";
 import type { VocabularyScope } from "../atlas/types";
 import type { CardState, Grade } from "./srs";
+import { canonicalBookmarks } from "../lib/favorites";
 
 export type QuizKind = "meaning" | "picture" | "listen" | "spell";
 export type Step = { id: string; kind: "intro" } | { id: string; kind: QuizKind; retry?: boolean; options?: string[] };
@@ -142,7 +143,7 @@ export function sanitizeProgress(v: unknown, datasetId: string): Progress {
   const out = emptyProgress(datasetId);
   if (!isObj(v) || v.version !== 2) return out;
   if (isObj(v.cards)) for (const [k, c] of Object.entries(v.cards)) if (validCard(c)) out.cards[k] = c;
-  if (Array.isArray(v.bookmarks)) out.bookmarks = v.bookmarks.filter((x): x is string => typeof x === "string").slice(0, 20000);
+  if (Array.isArray(v.bookmarks)) out.bookmarks = canonicalBookmarks(v.bookmarks.filter((x): x is string => typeof x === "string").slice(0, 20000));
   if (Array.isArray(v.mistakes)) out.mistakes = v.mistakes.filter((x): x is string => typeof x === "string").slice(0, 300);
   if (isObj(v.days))
     for (const [k, d] of Object.entries(v.days))
@@ -282,6 +283,7 @@ export function bumpDay(p: Progress, patch: Partial<DayStat>): Progress {
 }
 
 export function toggleBookmark(id: string) {
+  id=canonicalBookmarks([id])[0];
   store.progress((p) => ({
     ...p,
     bookmarks: p.bookmarks.includes(id) ? p.bookmarks.filter((x) => x !== id) : [id, ...p.bookmarks],

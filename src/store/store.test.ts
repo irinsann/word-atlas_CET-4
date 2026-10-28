@@ -29,3 +29,9 @@ test("rejects other versions and unknown settings", () => {
   assert.equal(s.theme, "dark");
   assert.equal(s.retention, 0.9);
 });
+
+test("bookmark backup sanitation preserves order, deduplicates corrected IDs and retains extension IDs",()=>{
+  const p=sanitizeProgress({version:2,bookmarks:['cet4-core-0942','cet4-all-0004','cet4-all-0030',null,'cet4-all-0004']},'word-atlas-cet4-words-all-v1');
+  assert.deepEqual(p.bookmarks,['cet4-all-0030','cet4-all-0004']);
+  assert.deepEqual(sanitizeProgress(JSON.parse(JSON.stringify(p)),p.datasetId).bookmarks,p.bookmarks);
+});

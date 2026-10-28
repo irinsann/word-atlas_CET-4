@@ -34,6 +34,7 @@ test("corrected vocabulary retains every raw source row and every supplemental i
   const priority=JSON.parse(fs.readFileSync("src/generated/core-priority.json","utf8"));
   assert.equal(extra.words.length,403);
   const review=JSON.parse(fs.readFileSync("data/vocabulary-review.json","utf8"));
+  const lexical=JSON.parse(fs.readFileSync("data/lexical-review.json","utf8"));
   const byId=new Map(entries.map(e=>[e.id,e]));
   const resolve=id=>review.aliases[id]??id;
   const corrected=new Map(review.corrections.map(c=>[c.from,c.to]));
@@ -52,10 +53,13 @@ test("corrected vocabulary retains every raw source row and every supplemental i
     const e=byId.get(resolve(id));
     assert.ok(e,id);
     assert.equal(e.w,corrected.get(row.word)??row.word);
-    assert.equal(e.senses[0].zh,row.word==="systematical"?"adj. （生物）分类学的；systematic 的异体":row.zh);
+    const correction=lexical.entries.find(r=>r.id===e.id);
+    assert.ok(correction,id);
+    assert.equal(correction.before.senses[0].zh,row.word==="systematical"?"adj. （生物）分类学的；systematic 的异体":row.zh);
+    if(!correction.changed.includes('senses'))assert.deepEqual(e.senses,correction.before.senses);
     assert.equal(e.coreSeq,row.seq);
     assert.ok(e.m&1);
-    if(!review.aliases[id]) {assert.equal(e.uk,row.uk);assert.equal(e.us,row.us);}
+    if(!review.aliases[id]) {assert.equal(correction.before.uk,row.uk);assert.equal(correction.before.us,row.us);}
   }
   assert.equal(byId.get("cet4-all-1549").w,"forbidden");
   assert.deepEqual(byId.get("cet4-all-1548").sourceRows.map(r=>r.seq),[1548]);
