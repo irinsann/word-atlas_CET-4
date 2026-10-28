@@ -1,11 +1,13 @@
 import { useSyncExternalStore } from "react";
 import type { Accent } from "../atlas/types";
+import type { VocabularyScope } from "../atlas/types";
 import type { CardState, Grade } from "./srs";
 
 export type QuizKind = "meaning" | "picture" | "listen" | "spell";
 export type Step = { id: string; kind: "intro" } | { id: string; kind: QuizKind; retry?: boolean; options?: string[] };
 
 export interface ActiveSession {
+  vocabularyScope?: VocabularyScope;
   id: string;
   started: number;
   steps: Step[];
@@ -47,6 +49,7 @@ export interface Progress {
 }
 
 export interface Settings {
+  vocabularyScope: VocabularyScope;
   accent: Accent;
   autoplay: boolean;
   roundNew: number;
@@ -63,6 +66,7 @@ export interface Settings {
 }
 
 export const defaultSettings: Settings = {
+  vocabularyScope: "cet4",
   accent: "uk",
   autoplay: true,
   roundNew: 10,
@@ -170,6 +174,7 @@ export function sanitizeSettings(v: unknown): Settings {
   if (num(v.startLevel, 0, 5)) s.startLevel = Math.round(v.startLevel as number);
   if (typeof v.onboarded === "boolean") s.onboarded = v.onboarded;
   if (v.dataset === "open" || v.dataset === "private") s.dataset = v.dataset;
+  if (v.vocabularyScope === "cet4" || v.vocabularyScope === "extension") s.vocabularyScope = v.vocabularyScope;
   if (["off", "stars", "rain", "sea", "forest", "fire", "voyage", "cafe"].includes(v.ambience as string)) s.ambience = v.ambience as Settings["ambience"];
   if (num(v.ambienceVolume, 0, 1)) s.ambienceVolume = v.ambienceVolume as number;
   if (typeof v.splash === "boolean") s.splash = v.splash;

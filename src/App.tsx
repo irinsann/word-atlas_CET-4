@@ -1,5 +1,7 @@
 import { BookOpen, ChevronLeft, ChevronRight, Compass, Github, Keyboard, Moon, Search, Sun, User } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
+import { scopeAtlas } from "./atlas/scope";
+import vocabulary from "./generated/vocabulary-scope.json";
 import { AtlasContext, useAtlas, useEntry } from "./atlas/context";
 import { loadOpenAtlas } from "./atlas/data";
 import type { Atlas } from "./atlas/types";
@@ -48,6 +50,8 @@ export default function App() {
   const [priv] = useState<Atlas | null>(null);
   const [error, setError] = useState<string | null>(null);
   const dataset = useStore((s) => s.settings.dataset);
+  const vocabularyScope = useStore((s) => s.settings.vocabularyScope);
+  const scoped = useMemo(() => atlas ? scopeAtlas(atlas, vocabularyScope) : null, [atlas, vocabularyScope]);
   useTheme();
 
   useEffect(() => {
@@ -85,7 +89,7 @@ export default function App() {
       </div>
     );
   return (
-    <AtlasContext.Provider value={atlas}>
+    <AtlasContext.Provider value={scoped!}>
       <Shell privateAvailable={!!priv} />
     </AtlasContext.Provider>
   );
@@ -203,14 +207,17 @@ function WordSheet({ id }: { id: string | null }) {
     if (opened && store.get().settings.sfx) void cue("page");
   }, [opened]);
   const { entry, error } = useEntry(id);
-  const ref = id ? atlas.byId.get(id) : undefined;
+  const canonicalId = id ? (vocabulary.aliases as Record<string, string>)[id] ?? id : null;
+  const ref = canonicalId ? (atlas.allById ?? atlas.byId).get(canonicalId) : undefined;
+  const neighbors = (atlas.allWords ?? atlas.words).filter(w => w.learningScope === ref?.learningScope);
+  const position = neighbors.findIndex(w => w.id === canonicalId);
   const neighbor = useCallback(
     (d: number) => {
       if (!ref) return;
-      const n = atlas.words[ref.order + d];
+      const n = neighbors[position + d];
       if (n) go(currentLocation().route, n.id, true);
     },
-    [atlas, ref],
+    [neighbors, position, ref],
   );
   useEffect(() => {
     if (!id) return;
@@ -225,13 +232,13 @@ function WordSheet({ id }: { id: string | null }) {
   return (
     <Sheet open={!!id} onClose={closeWord} label={ref ? `${ref.word} 词条` : "词条"} wide footer={ref && (
         <nav className="sheet-nav" aria-label="切换词条">
-          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={ref.order === 0} aria-label="上一个">
+          <button className="icon-btn" onClick={() => neighbor(-1)} disabled={position <= 0} aria-label="上一个">
             <ChevronLeft size={20} />
           </button>
           <span>
-            {(ref.order + 1).toLocaleString()} / {atlas.count.toLocaleString()}
+            {(position + 1).toLocaleString()} / {neighbors.length.toLocaleString()}
           </span>
-          <button className="icon-btn" onClick={() => neighbor(1)} disabled={ref.order >= atlas.count - 1} aria-label="下一个">
+          <button className="icon-btn" onClick={() => neighbor(1)} disabled={position >= neighbors.length - 1} aria-label="下一个">
             <ChevronRight size={20} />
           </button>
         </nav>

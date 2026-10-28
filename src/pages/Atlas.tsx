@@ -17,7 +17,7 @@ import { useStore } from "../store/store";
 import { Illustration } from "../ui/Illustration";
 import { searchAtlas } from "../ui/Palette";
 import { Speak } from "../ui/Speak";
-import paperSummary from "../generated/paper-summary.json";
+import { VocabularyPicker } from "../ui/VocabularyPicker";
 
 type Status = "all" | "new" | "learning" | "mastered" | "saved";
 const STATUS: [Status, string][] = [
@@ -133,15 +133,12 @@ export function AtlasPage({
     <div className={`page atlas ${view === "galaxy" ? "is-galaxy" : ""}`}>
       <header className="atlas-head">
         <div>
-          <p className="eyebrow">图鉴 · {atlas.count.toLocaleString()} 词</p>
+          <p className="eyebrow">{atlas.scope === "extension" ? "扩展图鉴" : "四级图鉴"} · {atlas.count.toLocaleString()} 词</p>
           <h1 className="display">
             每个词，都有它的模样。
           </h1>
           <p className="lede">
-            {atlas.kind === "open"
-              ? `${paperSummary.genuineExamples.toLocaleString()} 条真题例句`
-              : `${atlas.examples.toLocaleString()} 条例句`}{" "}
-            · 英美发音 · {atlas.topics.length} 个主题 · 重点词在前，组内乱序
+            真题出处可查 · 英美发音 · {atlas.topics.length} 个主题 · 重点词在前，组内乱序
           </p>
         </div>
         <div className="atlas-search-row">
@@ -179,6 +176,7 @@ export function AtlasPage({
           )}
         </div>
       </header>
+      <VocabularyPicker />
 
       <div className="filters">
         <label className="atlas-letter-select">

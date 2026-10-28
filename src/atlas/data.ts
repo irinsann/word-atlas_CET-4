@@ -2,6 +2,7 @@ import type { Atlas, Entry, IndexRow, WordRef } from "./types";
 import { MEDIA } from "./types";
 import { makeWordCatalog } from "./catalog";
 import corePriority from "../generated/core-priority.json";
+import vocabulary from "../generated/vocabulary-scope.json";
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, "");
 const url = (p: string) => `${BASE}/atlas/${p}`;
@@ -24,6 +25,9 @@ export async function loadOpenAtlas(): Promise<Atlas> {
   if (!res.ok) throw new Error(`词库索引加载失败（${res.status}）`);
   const idx = (await res.json()) as IndexFile;
   const { words, sourcePositions } = makeWordCatalog(idx.words, idx.id, idx.id === corePriority.datasetId ? corePriority.wordIds : []);
+  const extension = new Set(idx.id === vocabulary.datasetId ? vocabulary.extensionIds : []);
+  words.forEach(w => { w.learningScope = extension.has(w.id) ? "extension" : "cet4"; });
+  const canonical = (id: string) => (vocabulary.aliases as Record<string, string>)[id] ?? id;
   const byId = new Map(words.map((w) => [w.id, w]));
   const cache = new Map<string, Entry>();
   const pending = new Map<number, Promise<void>>();
@@ -61,8 +65,9 @@ export async function loadOpenAtlas(): Promise<Atlas> {
     cefr: idx.cefr,
     words,
     byId,
-    peek: (id) => cache.get(id),
+    peek: (id) => cache.get(canonical(id)),
     async entry(id) {
+      id = canonical(id);
       const hit = cache.get(id);
       if (hit) return hit;
       const ref = byId.get(id);

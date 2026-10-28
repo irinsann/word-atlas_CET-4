@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import type { Atlas, Entry } from "./types";
+import vocabulary from "../generated/vocabulary-scope.json";
 
 export const AtlasContext = createContext<Atlas | null>(null);
 
@@ -11,6 +12,7 @@ export function useAtlas() {
 
 /** Full entry for an id; returns the cached copy synchronously when available. */
 export function useEntry(id: string | null | undefined) {
+  id = id ? (vocabulary.aliases as Record<string, string>)[id] ?? id : id;
   const atlas = useAtlas();
   const [entry, setEntry] = useState<Entry | undefined>(() => (id ? atlas.peek(id) : undefined));
   const [error, setError] = useState<string | null>(null);

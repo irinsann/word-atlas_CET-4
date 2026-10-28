@@ -48,7 +48,9 @@ test("the supplied core list covers the entire priority prefix and fresh session
   assert.ok(words.slice(0, core.size).every(w => core.has(w.id)));
   assert.ok(words.slice(core.size).every(w => !core.has(w.id)));
   assert.deepEqual(report.matched.map((r: {id: string}) => r.id), priority.wordIds);
-  const supplied = new Set(report.rows.map((r: {word: string}) => r.word));
+  const reviewReport = JSON.parse(fs.readFileSync("data/vocabulary-review.json", "utf8"));
+  const corrected = new Map<string, string>(reviewReport.corrections.map((c: {from:string;to:string}) => [c.from,c.to]));
+  const supplied = new Set(report.rows.map((r: {word: string}) => corrected.get(r.word) ?? r.word));
   assert.ok(words.every(w => core.has(w.id) === supplied.has(w.word)));
   for (const word of words) assert.equal(index.words[sourcePositions.get(word.id)!][1], word.word);
   const atlas = {id:index.id, words, byId:new Map(words.map(w => [w.id, w]))} as Atlas;

@@ -38,15 +38,17 @@ import { AmbiencePicker } from "../ui/Ambience";
 import { Ring } from "../ui/Ring";
 import { Speak } from "../ui/Speak";
 import { shareSession } from "../ui/shareSession";
+import { sessionInScope } from "../atlas/scope";
 
 export function Learn() {
   const atlas = useAtlas();
-  const session = useStore((s) => s.progress.session);
+  const storedSession = useStore((s) => s.progress.session);
+  const session = sessionInScope(storedSession, atlas) ? storedSession : null;
   const [ready, setReady] = useState(false);
 
   useEffect(() => {
     const { progress, settings } = store.get();
-    if (!progress.session) {
+    if (!sessionInScope(progress.session, atlas)) {
       const s = buildSession(atlas, progress, settings);
       if (!s.steps.length) {
         go({ page: "today" }, null, true);
@@ -61,6 +63,7 @@ export function Learn() {
     [session?.id],
   ); // eslint-disable-line react-hooks/exhaustive-deps
   useEffect(() => {
+    setReady(false);
     if (!ids.length) return;
     let live = true;
     // Load the first chunk before rendering, the rest in the background.

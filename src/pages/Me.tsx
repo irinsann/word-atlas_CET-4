@@ -4,15 +4,17 @@ import { isMastered } from "../store/srs";
 import { dayKey, exportBackup, importBackup, resetProgress, store, useStore, type Settings } from "../store/store";
 import { toast } from "../ui/Toast";
 import { streakOf } from "../store/activity";
+import { useAtlas } from "../atlas/context";
 
 export function Me({ privateAvailable }: { privateAvailable: boolean }) {
+  const atlas = useAtlas();
   const progress = useStore((s) => s.progress);
   const settings = useStore((s) => s.settings);
   const saveError = useStore((s) => s.saveError);
   const file = useRef<HTMLInputElement>(null);
 
   const stats = useMemo(() => {
-    const cards = Object.values(progress.cards);
+    const cards = Object.entries(progress.cards).filter(([id]) => atlas.byId.has(id)).map(([,card]) => card);
     const days = Object.values(progress.days);
     const r = days.reduce((n, d) => n + d.r, 0);
     const c = days.reduce((n, d) => n + d.c, 0);
@@ -28,7 +30,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
     });
     void now;
     return { learned: cards.length, mastered: cards.filter(isMastered).length, reviews: r, accuracy: r ? Math.round((c / r) * 100) : 0, minutes: Math.round(t / 60), forecast };
-  }, [progress]);
+  }, [progress, atlas]);
 
   const set = (patch: Partial<Settings>) => store.settings(patch);
   const download = () => {
@@ -93,7 +95,7 @@ export function Me({ privateAvailable }: { privateAvailable: boolean }) {
         </section>
 
         <section className="panel">
-          <h3 className="eyebrow">未来 7 天待复习</h3>
+          <h3 className="eyebrow">未来 7 天待复习 · {atlas.scope === "extension" ? "扩展词库" : "四级词库"}</h3>
           <ol className="forecast">
             {stats.forecast.map((n, i) => (
               <li key={i}>

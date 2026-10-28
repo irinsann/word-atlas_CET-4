@@ -5,13 +5,13 @@
   "papers": 94,
   "transcripts": 85,
   "candidates": 15805,
-  "words": 4848,
+  "words": 4843,
   "replacedWords": 4056,
   "genuineExamples": 7577,
   "uniqueQuotes": 4043,
-  "unmatchedWords": 792,
+  "unmatchedWords": 787,
   "legacyExamples": 1140,
-  "wordsWithoutExamples": 222,
+  "wordsWithoutExamples": 218,
   "translatedExamples": 7577,
   "translatedQuotes": 4043
  },
@@ -28,8 +28,8 @@
   },
   {
    "id": "cet4-all-0030",
-   "word": "accommodatio",
-   "retainedExamples": 0
+   "word": "accommodation",
+   "retainedExamples": 2
   },
   {
    "id": "cet4-all-0034",
@@ -78,7 +78,7 @@
   },
   {
    "id": "cet4-all-0137",
-   "word": "a.m",
+   "word": "a.m.",
    "retainedExamples": 0
   },
   {
@@ -1338,8 +1338,8 @@
   },
   {
    "id": "cet4-all-2004",
-   "word": "inser",
-   "retainedExamples": 0
+   "word": "insert",
+   "retainedExamples": 2
   },
   {
    "id": "cet4-all-2025",
@@ -1368,12 +1368,12 @@
   },
   {
    "id": "cet4-all-2091",
-   "word": "jew",
+   "word": "Jew",
    "retainedExamples": 0
   },
   {
    "id": "cet4-all-2093",
-   "word": "jewish",
+   "word": "Jewish",
    "retainedExamples": 0
   },
   {
@@ -1873,7 +1873,7 @@
   },
   {
    "id": "cet4-all-2723",
-   "word": "outskirt",
+   "word": "outskirts",
    "retainedExamples": 2
   },
   {
@@ -1953,7 +1953,7 @@
   },
   {
    "id": "cet4-all-2808",
-   "word": "P.M.",
+   "word": "p.m.",
    "retainedExamples": 2
   },
   {
@@ -2172,18 +2172,8 @@
    "retainedExamples": 2
   },
   {
-   "id": "cet4-all-3091",
-   "word": "recommendati",
-   "retainedExamples": 0
-  },
-  {
    "id": "cet4-all-3100",
    "word": "reel",
-   "retainedExamples": 2
-  },
-  {
-   "id": "cet4-all-3106",
-   "word": "reflexion",
    "retainedExamples": 2
   },
   {
@@ -2238,7 +2228,7 @@
   },
   {
    "id": "cet4-all-3186",
-   "word": "reservior",
+   "word": "reservoir",
    "retainedExamples": 0
   },
   {
@@ -3238,7 +3228,7 @@
   },
   {
    "id": "cet4-all-4407",
-   "word": "world-wide",
+   "word": "worldwide",
    "retainedExamples": 0
   },
   {
@@ -3567,11 +3557,6 @@
    "retainedExamples": 0
   },
   {
-   "id": "cet4-core-0942",
-   "word": "accommodation",
-   "retainedExamples": 2
-  },
-  {
    "id": "cet4-core-1057",
    "word": "shrug",
    "retainedExamples": 2
@@ -3670,11 +3655,6 @@
    "id": "cet4-core-1428",
    "word": "paste",
    "retainedExamples": 2
-  },
-  {
-   "id": "cet4-core-1461",
-   "word": "reservoir",
-   "retainedExamples": 0
   },
   {
    "id": "cet4-core-1467",
@@ -3790,11 +3770,6 @@
    "id": "cet4-core-1887",
    "word": "erroneous",
    "retainedExamples": 0
-  },
-  {
-   "id": "cet4-core-1899",
-   "word": "insert",
-   "retainedExamples": 2
   },
   {
    "id": "cet4-core-1907",
@@ -52581,6 +52556,25 @@
    "matchedForm": "forbidden"
   },
   {
+   "id": "cet4-all-1549",
+   "word": "forbidden",
+   "en": "Friends and acquaintances can comfortably occupy this zone, especially during informal conversations, but strangers are forbidden.",
+   "kind": "cet4-paper",
+   "documentId": "2023-12-set2-listening",
+   "file": "2023/12/Set-2/2023-12-Set2_听力原文.md",
+   "year": 2023,
+   "month": 12,
+   "set": 2,
+   "part": "listening",
+   "section": "C",
+   "passage": "Passage 3",
+   "paragraph": "",
+   "lineStart": 233,
+   "lineEnd": 233,
+   "sha256": "2c74e4c9e58f62daab5d8c88de2ae4f322d18d1ce7603d620d9abe5510e6cfd0",
+   "matchedForm": "forbidden"
+  },
+  {
    "id": "cet4-all-1550",
    "word": "force",
    "en": "The police force comprises a husband and wife, and there's one postman.",
@@ -98846,6 +98840,44 @@
    "matchedForm": "recommend"
   },
   {
+   "id": "cet4-all-3091",
+   "word": "recommendation",
+   "en": "Reich-Shapiro and fellow researchers made several recommendations to increase male representation in the field.",
+   "kind": "cet4-paper",
+   "documentId": "2021-12-set2-paper",
+   "file": "2021/12/Set-2/2021-12-Set2_试卷.md",
+   "year": 2021,
+   "month": 12,
+   "set": 2,
+   "part": "reading",
+   "section": "C",
+   "passage": "Passage Two",
+   "paragraph": "",
+   "lineStart": 249,
+   "lineEnd": 249,
+   "sha256": "e136f5f398a5e59846a8bce01f5ff7e3865e04ccdf66a75fb521fbda166206fc",
+   "matchedForm": "recommendations"
+  },
+  {
+   "id": "cet4-all-3091",
+   "word": "recommendation",
+   "en": "The academy's guidance does not include specific recommendations for the dosing of play.",
+   "kind": "cet4-paper",
+   "documentId": "2020-09-set1-paper",
+   "file": "2020/09/Set-1/2020-09-Set1_试卷.md",
+   "year": 2020,
+   "month": 9,
+   "set": 1,
+   "part": "reading",
+   "section": "B",
+   "passage": "",
+   "paragraph": "C",
+   "lineStart": 187,
+   "lineEnd": 187,
+   "sha256": "cb4da65f93406d3d6cfa7b152f53fdcb364c4730eb8c45b3e3001ebb0207f1cc",
+   "matchedForm": "recommendations"
+  },
+  {
    "id": "cet4-all-3092",
    "word": "record",
    "en": "Sales in the UK were worth a record £558.4 million this past year, an increase of 7%, according to the latest figures from the market analyst Kantar.",
@@ -121913,8 +121945,8 @@
   },
   {
    "id": "cet4-all-3863",
-   "word": "systematic(al)",
-   "en": "Big, systematic data is mostly the foundation of most of our decisions, personal and business alike.",
+   "word": "systematic",
+   "en": "They are about combining your inner wisdom with the knowledge of systematic data to make the best decisions.",
    "kind": "cet4-paper",
    "documentId": "2023-12-set3-paper",
    "file": "2023/12/Set-3/2023-12-Set3_试卷.md",
@@ -121925,14 +121957,14 @@
    "section": "C",
    "passage": "Passage Two",
    "paragraph": "",
-   "lineStart": 250,
-   "lineEnd": 250,
+   "lineStart": 252,
+   "lineEnd": 252,
    "sha256": "9bd0a9fee4ea0a89266effa9ccbad1830752ff99de52dfcc951b91c92ae658b8",
    "matchedForm": "systematic"
   },
   {
    "id": "cet4-all-3863",
-   "word": "systematic(al)",
+   "word": "systematic",
    "en": "But on the whole, there was no systematic pattern.",
    "kind": "cet4-paper",
    "documentId": "2024-06-set1-listening",
@@ -121947,6 +121979,25 @@
    "lineStart": 40,
    "lineEnd": 40,
    "sha256": "2f299634921ad6fbbbd1522ad26115f049d882b960f065c9f8221f77597129a5",
+   "matchedForm": "systematic"
+  },
+  {
+   "id": "cet4-all-3863",
+   "word": "systematic",
+   "en": "Big, systematic data is mostly the foundation of most of our decisions, personal and business alike.",
+   "kind": "cet4-paper",
+   "documentId": "2023-12-set3-paper",
+   "file": "2023/12/Set-3/2023-12-Set3_试卷.md",
+   "year": 2023,
+   "month": 12,
+   "set": 3,
+   "part": "reading",
+   "section": "C",
+   "passage": "Passage Two",
+   "paragraph": "",
+   "lineStart": 250,
+   "lineEnd": 250,
+   "sha256": "9bd0a9fee4ea0a89266effa9ccbad1830752ff99de52dfcc951b91c92ae658b8",
    "matchedForm": "systematic"
   },
   {
@@ -146327,44 +146378,6 @@
    "matchedForm": "bid"
   },
   {
-   "id": "cet4-core-2101",
-   "word": "recommendation",
-   "en": "Reich-Shapiro and fellow researchers made several recommendations to increase male representation in the field.",
-   "kind": "cet4-paper",
-   "documentId": "2021-12-set2-paper",
-   "file": "2021/12/Set-2/2021-12-Set2_试卷.md",
-   "year": 2021,
-   "month": 12,
-   "set": 2,
-   "part": "reading",
-   "section": "C",
-   "passage": "Passage Two",
-   "paragraph": "",
-   "lineStart": 249,
-   "lineEnd": 249,
-   "sha256": "e136f5f398a5e59846a8bce01f5ff7e3865e04ccdf66a75fb521fbda166206fc",
-   "matchedForm": "recommendations"
-  },
-  {
-   "id": "cet4-core-2101",
-   "word": "recommendation",
-   "en": "The academy's guidance does not include specific recommendations for the dosing of play.",
-   "kind": "cet4-paper",
-   "documentId": "2020-09-set1-paper",
-   "file": "2020/09/Set-1/2020-09-Set1_试卷.md",
-   "year": 2020,
-   "month": 9,
-   "set": 1,
-   "part": "reading",
-   "section": "B",
-   "passage": "",
-   "paragraph": "C",
-   "lineStart": 187,
-   "lineEnd": 187,
-   "sha256": "cb4da65f93406d3d6cfa7b152f53fdcb364c4730eb8c45b3e3001ebb0207f1cc",
-   "matchedForm": "recommendations"
-  },
-  {
    "id": "cet4-core-2106",
    "word": "striking",
    "en": "The video is striking: The operation is familiar, but the scene looks like the end of the world.",
@@ -146553,44 +146566,6 @@
    "lineEnd": 23,
    "sha256": "215558036f2a1bae5dd675f8fca2389ed33dc89bd05b5aece90899de352914ff",
    "matchedForm": "Delegates"
-  },
-  {
-   "id": "cet4-core-2152",
-   "word": "systematic",
-   "en": "They are about combining your inner wisdom with the knowledge of systematic data to make the best decisions.",
-   "kind": "cet4-paper",
-   "documentId": "2023-12-set3-paper",
-   "file": "2023/12/Set-3/2023-12-Set3_试卷.md",
-   "year": 2023,
-   "month": 12,
-   "set": 3,
-   "part": "reading",
-   "section": "C",
-   "passage": "Passage Two",
-   "paragraph": "",
-   "lineStart": 252,
-   "lineEnd": 252,
-   "sha256": "9bd0a9fee4ea0a89266effa9ccbad1830752ff99de52dfcc951b91c92ae658b8",
-   "matchedForm": "systematic"
-  },
-  {
-   "id": "cet4-core-2152",
-   "word": "systematic",
-   "en": "But on the whole, there was no systematic pattern.",
-   "kind": "cet4-paper",
-   "documentId": "2024-06-set1-listening",
-   "file": "2024/06/Set-1/2024-06-Set1_听力原文.md",
-   "year": 2024,
-   "month": 6,
-   "set": 1,
-   "part": "listening",
-   "section": "A",
-   "passage": "News Report Two",
-   "paragraph": "",
-   "lineStart": 40,
-   "lineEnd": 40,
-   "sha256": "2f299634921ad6fbbbd1522ad26115f049d882b960f065c9f8221f77597129a5",
-   "matchedForm": "systematic"
   },
   {
    "id": "cet4-core-2155",

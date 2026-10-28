@@ -5,6 +5,8 @@ import { buildSession, todayPlan } from "../store/session";
 import { store, useStore } from "../store/store";
 import { Illustration } from "../ui/Illustration";
 import { Ring } from "../ui/Ring";
+import { VocabularyPicker } from "../ui/VocabularyPicker";
+import { sessionInScope } from "../atlas/scope";
 
 export function Study() {
   const atlas = useAtlas();
@@ -12,7 +14,7 @@ export function Study() {
   const settings = useStore((s) => s.settings);
   const plan = todayPlan(atlas, progress, settings);
   const active =
-    progress.session && !progress.session.finished ? progress.session : null;
+    progress.session && !progress.session.finished && sessionInScope(progress.session, atlas) ? progress.session : null;
   const learned = atlas.words.filter((w) => progress.cards[w.id]).length;
   const preview = plan.fresh.slice(0, 6).map((id) => atlas.byId.get(id)!);
   const start = (reviewOnly = false) => {
@@ -31,15 +33,16 @@ export function Study() {
       <header className="cet4-heading">
         <div>
           <p className="eyebrow">WORD ATLAS / CET–4 EDITION</p>
-          <h1 className="display">四级单词，慢慢记。</h1>
+          <h1 className="display">{atlas.scope === "extension" ? "多识几个词，也好。" : "四级单词，慢慢记。"}</h1>
           <p className="lede">
             {atlas.count.toLocaleString()} 个词，配有插画、发音和例句。
           </p>
         </div>
         <span className="edition-stamp">
-          大学英语四级<b>CET–4</b>
+          {atlas.scope === "extension" ? "词汇拓展" : "大学英语四级"}<b>{atlas.scope === "extension" ? "EXTRA" : "CET–4"}</b>
         </span>
       </header>
+      <VocabularyPicker />
       <section className="cet4-hero">
         <img
           src={`${import.meta.env.BASE_URL}brand/hero.webp`}
@@ -180,7 +183,7 @@ export function Study() {
                   topic={w.topic}
                 />
                 <span>
-                  <small>{w.sourceSeq ? `原表 #${w.sourceSeq}` : "重点词"}</small>
+                  <small>{w.learningScope === "extension" ? "扩展词" : w.sourceSeq ? `原表 #${w.sourceSeq}` : "重点词"}</small>
                   <b lang="en">{w.word}</b>
                   <em>{w.zh}</em>
                 </span>

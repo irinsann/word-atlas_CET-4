@@ -16,6 +16,7 @@ import { store, useStore } from "../store/store";
 import { AmbiencePicker } from "../ui/Ambience";
 import { Illustration } from "../ui/Illustration";
 import { ExampleSource } from "../ui/ExampleSource";
+import { VocabularyPicker } from "../ui/VocabularyPicker";
 
 type Mode = "word" | "sentence" | "dictation";
 type Source = "recent" | "mistakes" | "saved" | "path";
@@ -29,7 +30,7 @@ const SOURCES: [Source, string][] = [
   ["recent", "最近学过"],
   ["mistakes", "错词本"],
   ["saved", "收藏"],
-  ["path", "全部词库"],
+  ["path", "当前词库"],
 ];
 
 export function Practice() {
@@ -87,6 +88,7 @@ export function Practice() {
         <h1 className="display">读得熟，也写得出。</h1>
         <p className="lede">单词、例句、听写，选一种练练。这里的打字练习不计入复习进度。</p>
       </header>
+      <VocabularyPicker />
       <div className="practice-grid">
         <section className="panel">
           <h3 className="eyebrow">模式</h3>

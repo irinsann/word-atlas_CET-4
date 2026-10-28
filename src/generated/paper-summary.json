@@ -3,13 +3,13 @@
  "papers": 94,
  "transcripts": 85,
  "candidates": 15805,
- "words": 4848,
+ "words": 4843,
  "replacedWords": 4056,
  "genuineExamples": 7577,
  "uniqueQuotes": 4043,
- "unmatchedWords": 792,
+ "unmatchedWords": 787,
  "legacyExamples": 1140,
- "wordsWithoutExamples": 222,
+ "wordsWithoutExamples": 218,
  "translatedExamples": 7577,
  "translatedQuotes": 4043
 }

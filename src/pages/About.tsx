@@ -1,13 +1,12 @@
 import { ArrowUpRight, Database, Github, Heart } from "lucide-react";
-import { useAtlas } from "../atlas/context";
 import { REPO_URL, UPSTREAM_REPO_URL } from "../config";
 import knowledgeSummary from "../generated/knowledge-summary.json";
 import paperSummary from "../generated/paper-summary.json";
+import vocabulary from "../generated/vocabulary-scope.json";
 
 const BASE = import.meta.env.BASE_URL;
 
 export function About() {
-  const atlas = useAtlas();
   return (
     <div className="page about">
       <header className="about-hero">
@@ -16,9 +15,9 @@ export function About() {
           <p className="eyebrow">关于词光</p>
           <h1 className="display">关于词光</h1>
           <p className="lede">
-            这是一个免费的四级单词学习网站。Words_all.md 去重后有 4,445 个词，再从重点词表补入 403 个，共{" "}
-            {atlas.count.toLocaleString()}{" "}
-            个词。其中 2,607 个重点词排在前面。可以自己选每轮学多少，也可以随时查词、复习。
+            这是一个免费的四级单词学习网站。默认词库有 {vocabulary.cet4.toLocaleString()} 个词，包含大纲四级词和基础补充，重点词排在前面。
+            另有 {vocabulary.extension} 个扩展词，包含 {vocabulary.cet6} 个六级词及同列词族、{vocabulary.outside} 个大纲外补充，想多学一点时可以主动切换。
+            可以自己选每轮学多少，也可以随时查词、复习。
           </p>
           <p className="lede">
             网站基于 Word Atlas 改编，无需注册。代码使用 MIT 许可，复用的插画、音频和例句遵循 CC BY 4.0，并保留原作者署名。
@@ -45,6 +44,15 @@ export function About() {
       </header>
 
       <div className="about-grid">
+        <section className="panel">
+          <h3 className="eyebrow">四级范围怎样划分</h3>
+          <p className="muted">
+            词库对照教育考试院《全国大学英语四、六级考试大纲（2016年修订版）》整理。六级标记词及其同列词族已移入扩展词库，默认的新词、复习、选项和打字练习分别从当前词库选取。
+            大纲没有逐个列出所有派生词。常见派生词、国家名和生活基础词经核对后保留，并标为「四级基础补充」，与「大纲四级」区分。
+          </p>
+          <p className="muted">扩展词也可能出现在四级文章里。这里划分的是学习范围，不是断言某个词绝不会出现在考试中。</p>
+          <a className="link" href={`${REPO_URL}/blob/main/docs/vocabulary-review.md`} target="_blank" rel="noreferrer">查看逐词核查记录 <ArrowUpRight size={14} /></a>
+        </section>
         <section className="panel">
           <h3 className="eyebrow">例句与真题出处</h3>
           <p className="muted">
@@ -134,7 +142,8 @@ export function About() {
         <section className="panel">
           <h3 className="eyebrow">内容从哪里来</h3>
           <p className="muted">
-            基础词表来自 Words_all.md，是 PDF 的文字提取稿，拼写和释义尚未逐条校订。重点词来自提供的 CET4_Core_2607_Vocabulary.md，该文档标注来源为 RealKai42/qwerty-learner。搭配、插画和单词录音主要沿用原项目，缺少的插画由 AI 补充，缺少录音的词使用设备语音。借用其他词的插画不会改变本词的释义和发音。
+            初始词表来自 Words_all.md 和 CET4_Core_2607_Vocabulary.md；后者与 RealKai42/qwerty-learner 的 CET4 词书对应，属于第三方词书。现已修正发现的残缺拼写、合并更正后重复的词，并按考试大纲复核学习范围。范围核查不等于所有释义和搭配都已经逐义项审校。
+            搭配、插画和单词录音主要沿用原项目，缺少的插画由 AI 补充，缺少录音的词使用设备语音。借用其他词的插画不会改变本词的释义和发音。
           </p>
           <p className="muted">
             原项目：designfuchen/word-atlas，原作者 yangleiocx3。感谢原作者提供的代码和内容。

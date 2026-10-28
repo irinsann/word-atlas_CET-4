@@ -26,6 +26,10 @@ if (rows.length !== 2607 || rows.some((r, i) => r.seq !== i + 1) || new Set(rows
 
 const index = JSON.parse(fs.readFileSync("public/atlas/index.json", "utf8"));
 const byWord = new Map(index.words.map(r => [r[1], r[0]]));
+if (fs.existsSync("data/vocabulary-review.json")) {
+  for (const {from,to} of JSON.parse(fs.readFileSync("data/vocabulary-review.json","utf8")).corrections)
+    if (byWord.has(to)) byWord.set(from,byWord.get(to));
+}
 const matched = rows.filter(r => byWord.has(r.word)).map(r => ({ ...r, id: byWord.get(r.word) }));
 const unmatched = rows.filter(r => !byWord.has(r.word));
 const summary = {

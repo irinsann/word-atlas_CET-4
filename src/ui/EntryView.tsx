@@ -76,7 +76,7 @@ export function EntryView({
   eager?: boolean;
 }) {
   const atlas = useAtlas();
-  const ref = atlas.byId.get(entry.id);
+  const ref = (atlas.allById ?? atlas.byId).get(entry.id);
   const card = useStore((s) => s.progress.cards[entry.id]);
   const saved = useStore((s) => s.progress.bookmarks.includes(entry.id));
   const accent = useStore((s) => s.settings.accent);
@@ -88,7 +88,7 @@ export function EntryView({
       .replace(/\s*\(.*\)\s*$/, "")
       .trim()
       .toLowerCase();
-    const hit = atlas.words.find((x) => x.word.toLowerCase() === w);
+    const hit = (atlas.allWords ?? atlas.words).find((x) => x.word.toLowerCase() === w);
     return { label: f, id: hit?.id };
   });
   const status = card ? (isMastered(card) ? "已掌握" : "学习中") : null;
@@ -107,7 +107,8 @@ export function EntryView({
       <div className="entry-body">
         <header className="entry-head">
           <div className="entry-tags">
-            {CORE_WORDS.has(entry.id) && <span className="chip">重点词{entry.coreSeq ? ` #${entry.coreSeq}` : ""}</span>}
+            {entry.learning && <span className="chip" title={entry.learning.reason}>{entry.learning.label}</span>}
+            {CORE_WORDS.has(entry.id) && entry.learning?.scope !== "extension" && <span className="chip">重点词{entry.coreSeq ? ` #${entry.coreSeq}` : ""}</span>}
             <span className={`chip chip-level lv-${entry.cefr}`}>
               {entry.cefr}
             </span>

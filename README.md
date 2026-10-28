@@ -6,12 +6,14 @@
 
 ## 词表与去重
 
-基础词表为 `cet4-source/Words_all.md`，由用户提供的 `Words_all.pdf` 提取。原表有 **4,449 条**，去重后为 **4,445 个独立词条**。另从用户提供的 `CET4_Core_2607_Vocabulary.md` 补入 403 个词，当前共 **4,848 个词**，其中 **2,607 个重点词优先**。
+基础词表由 `Words_all.pdf` 提取，原始 4,449 条记录保存在 `cet4-source/Words_all.md`；后补入第三方重点词书的 403 个词。经拼写校订、重复合并及范围复核，当前共 **4,843 个词**：默认四级词库 **4,558 个**，扩展词库 **285 个**。
 
-- 合并 communism / Communism、forbid、Kingdom / kingdom、present 四组重复记录。
+范围以教育考试院《全国大学英语四、六级考试大纲（2016年修订版）》为主。默认范围含大纲四级和标明来源的基础补充；扩展范围含 **211 个六级词及同列词族、74 个大纲外补充**。原来未直接匹配的 305 项均有逐项结论，见[词库核查记录](docs/vocabulary-review.md)。第三方词书的“四级”分类不等于考试院的官方分类。
+
+- 初次去重合并 communism / Communism、Kingdom / kingdom、present 等重复记录；后将误合并的 forbid / forbidden 分开。
 - 合并后保留每条原始释义、读音和来源编号；例如 present 的两种读音都可在词卡中查看。
 - angle / Angle、China / china、grant / Grant、polish / Polish 因大小写改变含义而分别保留。
-- 保留原 PDF 的拼写和释义，不擅自校订；accommodatio、inser、recommendati、reservior 等提取异常在词卡中注明。原表未提供 a.m 的音标。
+- 已修正 accommodatio、inser、recommendati、reservior 等提取异常，合并更正后重复项；原始提取文字独立保留以便追溯。原表未提供 a.m. 的音标。
 - 去重明细位于 `data/source-import.json`，所有来源编号均可追溯。图鉴编号对应原表，合并后会有正常的编号间隔。
 
 ## 自由学习
@@ -21,7 +23,7 @@
 - 首页可选择每轮新学 10、20 或 50 个词，先学重点词，再学其余新词；两组内部各自保持稳定乱序。顺序在刷新后保持稳定，每轮数量不构成每日配额，可反复开始新轮。
 - 复习依据 FSRS 记忆记录与到期时间，用户可单独选择复习或新学。
 - 图鉴支持 A–Z 首字母、主题、难度、学习状态与中英文搜索，自由浏览词卡。
-- 拼写、例句与听写练习支持全部词库、最近学过、收藏与错词本；抽词范围覆盖全部词库。
+- 首页、图鉴和练习页可在四级词库与扩展词库之间切换。新词、到期复习、测验干扰选项、拼写和听写均限定在当前词库；扩展词需主动选择。
 - 练习可随时暂停，刷新后继续，首次作答才计入正确率。
 - 新词库使用独立的数据集标识；旧编号的学习记录不会套用到新单词。旧词库的浏览器备份不自动导入新词库，也不会被主动删除。
 - 进度保存在当前浏览器，在「我的」可导出与恢复备份。备份不包含练习中间步骤；当前浏览器中的会话会自动保存。
@@ -105,10 +107,10 @@ GitHub Pages 由 `.github/workflows/pages.yml` 自动发布：推送到 `main` �
 
 ### 重点词顺序
 
-用户提供的 `CET4_Core_2607_Vocabulary.md` 含 2,607 个词，文档标注来源为 RealKai42/qwerty-learner。2,204 个词来自基础词库，缺少的 403 个使用文档中的英美音标和释义补入；全部 2,607 个重点词排在前面，其余 2,241 个词在后，两组内部各自保持稳定乱序。
+用户提供的 `CET4_Core_2607_Vocabulary.md` 与 RealKai42/qwerty-learner 的 CET4 词书逐项对应，共 2,607 词。初次补入 403 个缺词；拼写校订后合并了部分重复项。目前其中 2,504 个位于默认四级词库，103 个位于扩展词库。各自范围内重点词优先，组内稳定乱序。
 
-补充词表及来源校验值见 `data/core-vocabulary-supplement.json`；全量匹配结果见 `data/core-priority-import.json`，网页顺序使用 `src/generated/core-priority.json`。新词使用独立的 `cet4-core-` ID，不修改原词条的 ID、内容和存储位置；已开始的一轮保持原进度。
+原补充词表及校验值见 `data/core-vocabulary-supplement.json`；匹配结果见 `data/core-priority-import.json`，优先顺序见 `src/generated/core-priority.json`。校订合并的 ID 对应与逐词范围见 `data/vocabulary-review.json`。旧词卡链接可按合并别名打开；不再继续含其他词库单词或选项的旧队列。
 
 新增词复用 277 张同词插画、124 张标明“场景联想”的相关图片，以及 2 张项目中已有的生成插画。266 个新词匹配到网站已经收录并翻译的真题引文，英文、译文及出处保留。其余词保留同词的原项目例句，或暂不提供例句，不借用其他词的句子和录音。
 
-需要重建时，先运行 `npm run extend:core -- "词表文件路径"` 补入新词，再运行 `npm run import:core -- "词表文件路径"` 生成优先顺序；已有补充记录时，两者均可不传路径。若重新构建了基础词库，应在导入记忆笔记前执行这两步。
+重新构建基础词库和补充词后，必须执行 `node --import tsx scripts/apply-vocabulary-review.mjs` 应用校订与学习范围，再运行 `npm run import:core`，最后导入记忆笔记。已有核查基准和人工结论保存在仓库中；媒体复制步骤需原项目素材目录。核查文档可用 `node scripts/write-vocabulary-review.mjs` 更新。

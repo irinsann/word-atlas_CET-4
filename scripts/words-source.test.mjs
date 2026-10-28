@@ -28,31 +28,38 @@ test("reads data only, including a source with no part-of-speech label",()=>{
   assert.throws(()=>readWordList("- **2. hi** — hai 嗨"));
 });
 
-test("all supplemental core words retain supplied meanings and audio symbols without replacing base entries",()=>{
+test("corrected vocabulary retains every raw source row and every supplemental identity through explicit aliases",()=>{
   const entries=JSON.parse(fs.readFileSync("data/word-atlas.json","utf8"));
   const extra=JSON.parse(fs.readFileSync("data/core-vocabulary-supplement.json","utf8"));
   const priority=JSON.parse(fs.readFileSync("src/generated/core-priority.json","utf8"));
   assert.equal(extra.words.length,403);
-  assert.equal(entries.length,4848);
+  const review=JSON.parse(fs.readFileSync("data/vocabulary-review.json","utf8"));
+  const byId=new Map(entries.map(e=>[e.id,e]));
+  const resolve=id=>review.aliases[id]??id;
+  const corrected=new Map(review.corrections.map(c=>[c.from,c.to]));
+  assert.equal(entries.length,4843);
   assert.equal(new Set(entries.map(e=>e.w)).size,entries.length);
   assert.equal(new Set(entries.map(e=>e.id)).size,entries.length);
-  for(const [i,row] of unique.entries()) {
-    const e=entries[i];
-    assert.equal(e.w,row.w);
-    assert.equal(e.id,`cet4-all-${String(row.seq).padStart(4,"0")}`);
-    assert.equal(e.sourceSeq,row.seq);
-    for(const original of row.sources) assert.ok(e.senses.some(s=>s.zh===original.zh));
+  assert.deepEqual(entries.flatMap(e=>e.sourceRows??[]).sort((a,b)=>a.seq-b.seq),rows.map(r=>({seq:r.seq,w:r.w,ipa:r.ipa,zh:r.zh})));
+  for(const row of unique) {
+    const id=`cet4-all-${String(row.seq).padStart(4,"0")}`;
+    const e=byId.get(resolve(id));
+    assert.ok(e,id);
+    assert.equal(e.w,id==="cet4-all-3106"?"reflection":corrected.get(row.w)??row.w);
   }
-  for(const [i,row] of extra.words.entries()) {
-    const e=entries[unique.length+i];
-    assert.equal(e.id,`cet4-core-${String(row.seq).padStart(4,"0")}`);
-    assert.equal(e.w,row.word);
-    assert.equal(e.uk,row.uk);
-    assert.equal(e.us,row.us);
-    assert.equal(e.senses[0].zh,row.zh);
+  for(const row of extra.words) {
+    const id=`cet4-core-${String(row.seq).padStart(4,"0")}`;
+    const e=byId.get(resolve(id));
+    assert.ok(e,id);
+    assert.equal(e.w,corrected.get(row.word)??row.word);
+    assert.equal(e.senses[0].zh,row.word==="systematical"?"adj. （生物）分类学的；systematic 的异体":row.zh);
     assert.equal(e.coreSeq,row.seq);
     assert.ok(e.m&1);
+    if(!review.aliases[id]) {assert.equal(e.uk,row.uk);assert.equal(e.us,row.us);}
   }
+  assert.equal(byId.get("cet4-all-1549").w,"forbidden");
+  assert.deepEqual(byId.get("cet4-all-1548").sourceRows.map(r=>r.seq),[1548]);
+  assert.deepEqual(byId.get("cet4-all-1549").sourceRows.map(r=>r.seq),[1549]);
   assert.equal(priority.sourceCount,2607);
   assert.equal(priority.matchedCount,2607);
   assert.equal(priority.unmatchedCount,0);

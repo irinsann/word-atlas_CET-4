@@ -60,15 +60,28 @@ if (index.id === "word-atlas-cet4-words-all-v1") {
   const unique=deduplicateWords(rows);
   const supplementFile = path.join(root,"data/core-vocabulary-supplement.json");
   const supplement = fs.existsSync(supplementFile) ? JSON.parse(fs.readFileSync(supplementFile,"utf8")).words : [];
-  if (index.count !== unique.length + supplement.length || index.sourceCount !== rows.length) fail("Source/unique word counts do not match");
+  const review=JSON.parse(fs.readFileSync(path.join(root,"data/vocabulary-review.json"),"utf8"));
+  const aliases=review.aliases;
+  const corrected=new Map(review.corrections.map(c=>[c.from,c.to]));
+  const allEntries=JSON.parse(fs.readFileSync(path.join(root,"data/word-atlas.json"),"utf8"));
+  const sourceRows=allEntries.flatMap(e=>e.sourceRows??[]).sort((a,b)=>a.seq-b.seq);
+  if(JSON.stringify(sourceRows)!==JSON.stringify(rows.map(r=>({seq:r.seq,w:r.w,ipa:r.ipa,zh:r.zh})))) fail("Raw source rows changed or lost");
+  if (index.count !== unique.length + supplement.length - Object.keys(aliases).length + 1 || index.sourceCount !== rows.length) fail("Corrected source/unique word counts do not match");
   if (index.illustrated !== index.count) fail("CET-4 illustrations incomplete");
-  for(let i=0;i<unique.length;i++) {
-    if(index.words[i][1]!==unique[i].w || index.words[i][7]!==unique[i].seq) fail(`Source identity/order mismatch at ${i}`);
+  const byId=new Map(index.words.map(r=>[r[0],r]));
+  for(const original of unique) {
+    const id=`cet4-all-${String(original.seq).padStart(4,"0")}`;
+    const row=byId.get(aliases[id]??id);
+    const expected=id==="cet4-all-3106"?"reflection":corrected.get(original.w)??original.w;
+    if(row?.[1]!==expected) fail(`Corrected source identity mismatch ${id}`);
   }
-  for(let i=0;i<supplement.length;i++) {
-    const row=index.words[unique.length+i];
-    if(row?.[1]!==supplement[i].word || row?.[0]!==`cet4-core-${String(supplement[i].seq).padStart(4,"0")}`) fail(`Core supplement identity mismatch at ${i}`);
+  for(const original of supplement) {
+    const id=`cet4-core-${String(original.seq).padStart(4,"0")}`;
+    const row=byId.get(aliases[id]??id);
+    if(row?.[1]!== (corrected.get(original.word)??original.word)) fail(`Core supplement identity mismatch ${id}`);
   }
+  if(review.counts.total!==index.count||review.entries.length!==index.count) fail("Vocabulary review coverage mismatch");
+  if(review.entries.some(r=>!byId.has(r.id)||!r.reason||!["cet4","extension"].includes(r.scope))) fail("Unreviewed vocabulary");
   if(fs.existsSync(path.join(root,"data/cet4-plan.json"))) fail("Old study allocation still exists");
 }
 
